@@ -22,7 +22,7 @@
     <!-------------------------------------------------------------
                                 Body
     --------------------------------------------------------------->
-<!--    <body style="background:  ##F5F5F5;">-->
+<!--    <body style="background:  #F6F5F4;">-->
     <body style="background-image: linear-gradient(0deg, rgba(215,236,251,1) 0%, rgba(213,241,254,0.9391106784510679) 100%);">
     
     <!-- Divide the page into left and right bar -->
@@ -30,6 +30,7 @@
     
     <div class="container">
     <div class="row main mx-4 mt-5">
+        
         
         <!-- Menu Button (See below to show/hide items) -->
         <!-- https://getbootstrap.com/docs/4.0/utilities/display/  -->
@@ -48,18 +49,16 @@
             </div>
             
             <!-- Title -->
-            <div class="myname">   Muhammad Asif Khan </div>
-            <div class="mypos">    Postdoctoral Fellow</div>
-            <div class="myintro">  College of Engineering, Qatar University</div>
-        
-            
+            <div class="myname"> Muhammad Asif Khan </div>
+            <div class="mypos">Postdoctoral Fellow</div>
+            <div class="myintro">College of Engineering, Qatar University</div>
                 
             <!--  Navbar -->
-            <ul class="nav flex-column mx-3, my-5">
-                <li class="nav-item"> <a class="nav-link" href="#"> Home </a></li>
+            <ul class="nav flex-column mx-6, my-5">
+                <li class="nav-item"> <a class="nav-link" href="index.html"> Home </a></li>
                 <li class="nav-item"> <a class="nav-link" href="research.html"> Research </a></li>
                 <li class="nav-item"> <a class="nav-link" href="publications.html"> Publications </a></li>
-                <li class="nav-item"> <a class="nav-link" href="services.html"> Professional Services </a></li>
+                <li class="nav-item"> <a class="nav-link" href="#"> Professional Services </a></li>
             </ul>
             
             
@@ -78,48 +77,67 @@
                                  Right Bar
         ------------------------------------> 
         <div class="col-lg-10 col-sm-9 col-xs-12 right shadow rounded pb-5">
-            
-            <div class="top shadow mx-0 pl-3"> Home </div>
     
-            <!-- Biography -->
-            <div class="header mt-5 mb-2"> Short Biography </div>
-            <div class="para">
-                Muhammad Asif Khan is a Postdoc Research Fellow with the Electrical Engineering department at Qatar University, Doha, Qatar. He received the Ph.D. degree in Electrical Engineering from Qatar University (2019), M.Sc. in Telecommunication Engineering from University of Engineering and Technology Taxila, Pakistan (2013), and B.Sc. degree in Telecommunication Engineering from University of Engineering and Technology Peshawar, Pakistan (2009). He was a researcher assistant at Qatar University (Aug 2014-May 2015) and at Qatar Mobility Innovation Center, Doha, Qatar (Jan 2016-Dec 2016).
-                <br>
-                He is a senior member of IEEE and a member of IET. He is an editorial board member of Frontiers in Communications and Networks, and IEEE Future Direction Newsletter. He has served as a reviewer of various international Journals including IEEE Transactions on Emerging Topics in Computing, IEEE Communications Surveys and Tutorials, IEEE Access, IET Communications, IET Intelligent Transportation System, and KSII Transactions on Internet and Information Systems. He has served as a TPC member of several international conferences including IEEE ICC’2021, IEEE CNCC’2021, IEEE SusTech’2021, and IEEE WF-IoT’2018. His current research interests include wireless communication, mobile edge computing, federated learning, and UAV communication. 
-                <br>
-                
-                Further details can be found in my CV.
-<!--                <i class="fa fa-file-pdf-o" style="font-size:1.2em;color:red"></i>-->
-                <button class="btn" type="button" onclick=location.href="./files/CV_MAK.pdf"> Download CV <i class="fa fa-file-pdf-o" style="font-size:1em; color:red"></i></button> 
-            </div>
-            <!-- =============================================================== -->
+            <!-- Publications -->
+            <div class="top shadow pl-3"> Professional Services </div>
             
-            <!-- Research Interest -->
-            <div class="header mt-5 mb-2"> Research Interests </div>
-            <ul class="interests">
-                <li> Wireless Communication </li>
-                <li> Mobile Edge Computing </li>
-                <li> Distributed Machine learning </li>
-            </ul>
-            <!-- =============================================================== -->
             
-            <!-- Contact Information -->
-            <div class="header mt-5 mb-2"> Contact Information </div>
-            <div class="para" style="text-align: center">
-                <u> Dr. Muhammad Asif Khan </u> <br>
-                Department of Electrical Engineering, <br>
-                College of Engineering, <br>
-                Qatar University. <br>
-                P.O. Box 23200, Doha, Qatar <br>
-                Email: asifk@ieee.org <br>
+            <!-- Editorial Board Member -->
+            <div class="header mt-5 mb-2"> Member of Editorial Board </div>
+                <ul class="editorial">
+                    <li> Lead Topic Editor of "Edge Intelligence in 6G" at Frontiers in Communications and Networks </li>
+                    <li> Associate Editor at IEEE Future Directions Newsletter </li>
+                    <li> Review Editor at Frontiers in Communications and Networks </li>
+                    <li> Review Editor at Frontiers in Built Environment </li>
+                </ul>
             
-            </div>
-            <!-- =============================================================== -->
+            <!-- Journal Reviewer -->
+            <div class="header mt-5 mb-2"> Journal Reviewer </div>
+                <ul class="editorial">
+                    <li> IEEE Communications Standards Magazine </li>
+                    <li> IEEE Transactions on Emerging Topics in Computing </li>
+                    <li> IEEE Communications Surveys and Tutorials </li>
+                    <li> IEEE Access </li>
+                    <li> IET Communications </li>
+                    <li> IET Intelligent Transportation System </li>
+                    <li> KSII Transactions on Internet and Information Systems </li>
+                    <li> Wireless Personal Communication (Springer) </li>
+                    <li> Journal of Computational Design and Engineering (Oxford University Press) </li>
+                    <li> International Journal of Wireless Networks and Broadband Technologies (IJWNBT) </li>
+                </ul>
+            
+            
+            <!-- Technical Program Committee Member -->
+            <div class="header mt-5 mb-2"> Technical Program Committee Member </div>
+                <ul class="editorial">
+                    <li> IEEE CNCC 2022: IEEE Consumer Communications and Networking Conference </li>
+                    <li> IEEE SusTech2022: 2021 IEEE Conference on Technologies for Sustainability </li>
+                    <li> IEEE ICC 2021: IEEE International Conference on Communications, Symposium on Mobile and Wireless Networks </li>
+                    <li> IEEE CNCC 2021: IEEE Consumer Communications and Networking Conference </li>
+                    <li> SIPM 2021: 9th International Conference on Signal Image Processing and Multimedia, Toronto, Canada </li>
+                    <li> TCB6GN: 1st International Workshop on Traffic Congestion in Beyond 5G/6G Networks </li>
+                    <li> IEEE SusTech2021: 2021 IEEE Conference on Technologies for Sustainability </li>
+                    <li> MLIS2021: The 3rd International Conference on Machine Learning and Intelligent Systems </li>
+                    <li> IEEE BigData 2020: International Workshop on Big Data Reduction </li>
+                    <li> IEEE Sensors 2020 </li>
+                    <li> IEEE ICASSP 2020: 45th International Conference on Acoustics, Speech, and Signal Processing </li>
+                    <li> IEEE SusTech2020: 2020 IEEE Conference on Technologies for Sustainability </li>
+                    <li> DASA'20: 2020 International Conference on Decision Aid Sciences and Applications </li>
+                    <li> 3ICT 2020: 2020 International Conference on Innovation and Intelligence for Informatics, Computing, and Technologies </li>
+                    <li> MLIS2020: The 2nd International Conference on Machine Learning and Intelligent Systems </li>
+                    <li> WSPML2020: 2nd International Workshop on Signal Processing and Machine Learning (WSPML 2020) </li>
+                    <li> COMS2: Second International Conference on Computing Science, Communication and Security </li>
+                    <li> ICTIS2020: 4th International Conference on Information and Communication Technology for Intelligent Systems </li>
+                    <li> CTISC2020: 2nd International Conference on Advances in Computer Technology, Information Science and Communications </li>
+                    <li> BDML2020: 2020 3rd International Conference on Big Data and Machine Learning </li>
+                    <li> IEEE WF-IoT 2018: IEEE 4th World Forum on Internet of Things </li>
+                </ul>
+            
+            
             
         </div>
         
-
+    <!--   End row-->
     </div>
     
     <!----------------------------------
@@ -129,7 +147,7 @@
         <div class="footer mx-4 py-2">
         © 2021-2030 Muhammad Asif Khan (All rights reserved)
         </div>
-<!--   Close container-->
+<!--   End container-->
 </div> 
 
         
