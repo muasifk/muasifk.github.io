@@ -31,10 +31,17 @@
     <div class="container">
     <div class="row main mx-4 mt-5">
         
+        
+        <!-- Menu Button (See below to show/hide items) -->
+        <!-- https://getbootstrap.com/docs/4.0/utilities/display/  -->
+        <button onclick="ShowHideMenu()" class="menu_btn d-block d-sm-none">
+        <span> <i class="fa fa-bars" style="color:var(--top_bg); font-size:1em;"> Menu </i> </span>
+        </button>
+        
         <!----------------------------------
           Left Bar
         ------------------------------------>  
-        <div class="col-lg-2 col-xs-12 left shadow sticky-top">
+        <div class="left col-lg-2 col-sm-3 col-xs-12 d-none d-sm-block shadow sticky-top" id="left">
             
             <!-- Image -->
             <div class="headshot my-5 mx-3">
@@ -70,9 +77,7 @@
         <!----------------------------------
                                  Right Bar
         ------------------------------------> 
-        
-        <!--  Right -->
-        <div class="col-lg-10 col-xs-12 right shadow rounded  pb-5">
+        <div class="col-lg-10 col-sm-9 col-xs-12 right shadow rounded pb-5">
     
             <!-- Publications -->
             <div class="top shadow pl-3"> Publications </div>
@@ -182,8 +187,8 @@
 
   <script src="jquery-3.3.1.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
-  <script src="main.js"></script>
 -->
+  <script src="./js/main.js"></script>
 
         
 </body>
