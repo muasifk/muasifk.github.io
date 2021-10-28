@@ -1,20 +1,9 @@
-<<<<<<< HEAD
-:root {
-    --page_bg: linear-gradient(0deg, rgba(215,236,251,1) 0%, rgba(213,241,254,0.9391106784510679) 100%);  /* page background */
-    --main_bg:  #F5F5F5;  /* main container #F5F5F5 */
-    --left_bg: aliceblue;  /* Left bar aliceblue */
-    --right_bg: #FFFFFF;  /* right bar */
-    --footer_bg: #5b6f81;  /* footer bar  #F5F5F5 */
-    --text_color: #545454;
-    --top_bg: dodgerblue;
-=======
 #centre {
 border:1px solid #202020;
 border-bottom:0;
 border-top:0;
 color:#000;
 padding:1.5em;
->>>>>>> master
 }
 
 #conteneur {
@@ -42,24 +31,6 @@ padding-left:2em;
 padding-top:1em;
 }
 
-<<<<<<< HEAD
-.menu_btn{
-    background-color: var(--main_bg);
-    border: none;
-    outline: none;
-}
-
-/* ====================================================  Left Side of Page  ==========================  */
-
-.left {
-    font-size: 1em;
-    height: 100%;
-    background-color: var(--left_bg);
-    font-family: "Roboto", "Open Sans", sans-serif;
-    border-right: 2px solid;
-    position:fixed;
-    display:block;
-=======
 #pied {
 border:1px solid #202020;
 border-top:0;
@@ -67,7 +38,6 @@ padding:0.5em;
 text-align:center;
 background-color: #154360;
 color:white;
->>>>>>> master
 }
 
 .menuhaut {
@@ -142,14 +112,6 @@ font-size:1em;
 margin:0.7em 0.5em 0.3em 1em;
 }
 
-<<<<<<< HEAD
-/*
-@media (max-width: 768px) {.left {
-        display: none;
-    }
-}
-*/
-=======
 h4 {
 font-size: 1.8em;
 /*font-variant: small-caps;*/
@@ -160,7 +122,6 @@ ul {
     font-size: 0.9em;
 	/* padding: 0em 0em .1em 2em;*/
 	/*line-height: 1.3em;*/
->>>>>>> master
 
 }
 
@@ -192,41 +153,9 @@ color: blue;
   display: none; 
 }
 
-<<<<<<< HEAD
-.papertitle {
-    font-weight: 300;
-    color:royalblue;
-}
-
-ul.editorial li {
-    line-height: 1.2em;
-    font-size: 0.8em;
-}
-
-.date {
-    font-size: 0.8em;
-    color:val(--text_color);
-    margin: 1px 1px 1px 1px;
-    font-style: italic;
-}
-
-.org {
-    font-size: 0.8em;
-    color:val(--text_color);
-    margin: 1px 1px 1px 1px;
-    font-weight: 600;
-}
-
-.pos {
-    font-size: 0.8em;
-    color:val(--text_color);
-    margin: 1px 1px 1px 1px;
-}
-=======
 br {
    display: block;
    line-height: 5px;
    content: " ";
    margin: 0 0 0.3em 0;
 }
->>>>>>> master
