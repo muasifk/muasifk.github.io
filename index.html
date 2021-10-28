@@ -31,10 +31,16 @@
     <div class="container">
     <div class="row main mx-4 mt-5">
         
+        <!-- Menu Button (See below to show/hide items) -->
+        <!-- https://getbootstrap.com/docs/4.0/utilities/display/  -->
+        <button onclick="ShowHideMenu()" class="menu_btn d-block d-sm-none">
+        <span> <i class="fa fa-bars" style="color:var(--top_bg); font-size:1em;"> Menu </i> </span>
+        </button>
+        
         <!----------------------------------
           Left Bar
         ------------------------------------>  
-        <div class="col-2 left shadow sticky-top">
+        <div class="left col-lg-2 col-sm-3 col-xs-12 d-none d-sm-block shadow sticky-top" id="left">
             
             <!-- Image -->
             <div class="headshot my-5 mx-3">
@@ -42,25 +48,28 @@
             </div>
             
             <!-- Title -->
-            <div class="myname"> Muhammad Asif Khan </div>
-            <div class="mypos">Postdoctoral Fellow</div>
-            <div class="myintro">College of Engineering, Qatar University</div>
+            <div class="myname">   Muhammad Asif Khan </div>
+            <div class="mypos">    Postdoctoral Fellow</div>
+            <div class="myintro">  College of Engineering, Qatar University</div>
+        
+            
                 
             <!--  Navbar -->
             <ul class="nav flex-column mx-3, my-5">
                 <li class="nav-item"> <a class="nav-link" href="#"> Home </a></li>
-                <li class="nav-item"> <a class="nav-link" href="#"> Research </a></li>
+                <li class="nav-item"> <a class="nav-link" href="research.html"> Research </a></li>
                 <li class="nav-item"> <a class="nav-link" href="publications.html"> Publications </a></li>
+                <li class="nav-item"> <a class="nav-link" href="services.html"> Professional Services </a></li>
             </ul>
             
             
             <!-- Scholarly Profiles -->
             <div class="para"> Scholarly Profiles </div>
             <ul class="icons">
-                <span style="color: #b2c046;"> <a href="#"> <i class="ai ai-orcid ai-2x"></a></i></span>
-                <span style="color: #b2c046;"><i class="ai ai-google-scholar ai-2x"></i></span>
-                <span style="color: #b2c046;"><i class="ai ai-researchgate ai-2x"></i></span>
-                <span style="color: #b2c046;"><i class="ai ai-publons ai-2x"></i></span>
+                <span style="color: #b2c046;">  <a href="https://orcid.org/0000-0003-2925-8841">                        <i class="ai ai-orcid ai-2x">             </i></a>  </span>
+                <span style="color: #4885ed;">  <a href="https://scholar.google.com/citations?user=BgUrPm8AAAAJ&hl=en"> <i class="ai ai-google-scholar ai-2x">    </i></a></span>
+                <span style="color: #b2c046;">  <a href="https://www.researchgate.net/profile/Muhammad-Asif-Khan-3">    <i class="ai ai-researchgate ai-2x">      </i></a></span>
+                <span style="color: #b2c046;">  <a href="https://publons.com/researcher/1611182/muhammad-asif-khan/">   <i class="ai ai-publons ai-2x">           </i></a></span>
             </ul>
             
         </div>
@@ -68,11 +77,9 @@
         <!----------------------------------
                                  Right Bar
         ------------------------------------> 
-        
-        <!--  Right -->
-        <div class="col-10 right shadow rounded">
+        <div class="col-lg-10 col-sm-9 col-xs-12 right shadow rounded pb-5">
             
-            <div class="top shadow mx-0 px-0"> Home </div>
+            <div class="top shadow mx-0 pl-3"> Home </div>
     
             <!-- Biography -->
             <div class="header mt-5 mb-2"> Short Biography </div>
@@ -84,8 +91,9 @@
                 
                 Further details can be found in my CV.
 <!--                <i class="fa fa-file-pdf-o" style="font-size:1.2em;color:red"></i>-->
-                <button class="btn"> Download CV <i class="fa fa-file-pdf-o" style="font-size:1em; color:red"></i></button> 
+                <button class="btn" type="button" onclick=location.href="./files/CV_MAK.pdf"> Download CV <i class="fa fa-file-pdf-o" style="font-size:1em; color:red"></i></button> 
             </div>
+            <!-- =============================================================== -->
             
             <!-- Research Interest -->
             <div class="header mt-5 mb-2"> Research Interests </div>
@@ -94,18 +102,21 @@
                 <li> Mobile Edge Computing </li>
                 <li> Distributed Machine learning </li>
             </ul>
+            <!-- =============================================================== -->
             
             <!-- Contact Information -->
             <div class="header mt-5 mb-2"> Contact Information </div>
-            <div class="para">
-                Dr. Muhammad Asif Khan <br>
-                Postdoc Fellow, Department of Electrical Engineering, <br>
+            <div class="para" style="text-align: center">
+                <u> Dr. Muhammad Asif Khan </u> <br>
+                Department of Electrical Engineering, <br>
                 College of Engineering, <br>
                 Qatar University. <br>
                 P.O. Box 23200, Doha, Qatar <br>
                 Email: asifk@ieee.org <br>
             
-            </div> 
+            </div>
+            <!-- =============================================================== -->
+            
         </div>
         
 
@@ -133,8 +144,8 @@
 
   <script src="jquery-3.3.1.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
-  <script src="main.js"></script>
 -->
+  <script src="./js/main.js"></script>
 
         
 </body>

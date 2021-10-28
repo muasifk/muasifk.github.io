@@ -1,0 +1,10 @@
+
+
+============================================
+Git copy changes from one branchA to branchB
+============================================
+git checkout BranchB
+git merge BranchA
+git push origin BranchB
+
+
