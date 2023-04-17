@@ -14,7 +14,7 @@
 
 body {
   font-family: 'Montserrat', 'Merriweather', 'Source Sans Pro', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.2;
 }
 
@@ -94,10 +94,10 @@ ul li {
 /* Mobile View  */
 @media screen and (max-width: 480px) {
     main {margin: 80px auto; max-width: 90vw;}
-    h1 {font-size: 1.3rem;}
+    h1 {font-size: 1.2rem;}
     h2 {font-size: 1.1rem;}
     h3 {font-size: 1.0rem;}
-    p {font-size: 0.8rem;}
+    p {font-size: 0.7rem;}
     }
 
 
@@ -150,14 +150,6 @@ nav a:hover {
 
 
 /* ++++++++++++++ For mobile friendly +++++++++++++++++++++++++ */
-/* header and navigation bar */
-
-/*
-@media screen and (max-width: 768px) {
-nav a {font-size: 0.75rem;}
-}
-*/
-
 /* Mobile View  */
 @media screen and (max-width: 480px) {
     nav a {font-size: 0.7rem; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;}
@@ -218,11 +210,7 @@ nav a {font-size: 0.75rem;}
 }
 
 
-/* Mobile View  */
-@media screen and (max-width: 480px) {
-    #about img { max-width: 30vw; height: auto; display: block; margin: 0 auto; }
 
-    }
 
 
 /***************  Profile ********************/
@@ -267,7 +255,7 @@ nav a {font-size: 0.75rem;}
 }
 
 .interest ul li{
-  font-size: 0.8rem;
+/*  font-size: 0.8rem;*/
   margin-top: 5px;
   line-height: 1.0;
   list-style-position: inside;
@@ -275,7 +263,8 @@ nav a {font-size: 0.75rem;}
 }
 
 
-#interest h2 {
+.interest h2 {
+  color: #555;
   font-size: 1.1rem;
   font-style: normal;
   font-weight: 100;
@@ -283,33 +272,21 @@ nav a {font-size: 0.75rem;}
 }
 
 /* *****************   Responsive  ***************  */
-/*
+
+/* Media query for smaller screens */
 @media (max-width: 768px) {
-  #about {
-    flex-direction: column;
-  }
+  #about { flex-direction: column; align-items: center;}
+  .image-container { width: 40%; margin-bottom: 20px;}
+  .description {width: 90%; padding: 0;}
+  #about h1 {font-size: 1.0rem; text-align: center}
+  #about .subtitle { font-size: 0.7rem; text-align: center}
+  #profile li { margin-right: 10px; font-size: 0.7rem; text-align: center; align-items: center;}
+  .interest{ width: 100%; padding-left: 0px; padding-top: 15px; text-align: left;}  
+  .interest ul { margin: 0; padding: 0 0 0 20px; text-align: left;}
+  .interest ul li {font-size: 0.7rem; }
+  .interest h2 { font-size: 1.0rem;}
   
-  .image-container {
-    width: 100%;
-    margin-bottom: 2vw;
-  }
-  
-  .description {
-    width: 100%;
-    padding: 0;
-  }
-  
-  #about h1 {
-    font-size: 1.4rem;
-    margin-bottom: 1vw;
-  }
-  
-  #about .subtitle {
-    font-size: 0.7rem;
-    margin-bottom: 0.5vw
-*/
-
-
+}
 
 
 
@@ -320,13 +297,13 @@ nav a {font-size: 0.75rem;}
 #bio h2 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 1.5rem;
+/*  font-size: 1.5rem;*/
 }
 
 #bio h3 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 1.2rem;
+/*  font-size: 1.2rem;*/
 }
 
 
@@ -370,7 +347,7 @@ nav a {font-size: 0.75rem;}
 
 .publications li {
   margin: 15px 0px;
-  font-size: 0.8rem;
+/*  font-size: 0.8rem;*/
   line-height: 1.4;
 }
 
@@ -387,7 +364,12 @@ nav a {font-size: 0.75rem;}
 }
 
 
+/* *****************   Responsive  ***************  */
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+.publications .title {font-size: 0.7rem}
+}
 
 /***************************************************
   Research
@@ -426,7 +408,17 @@ nav a {font-size: 0.75rem;}
 }
 
 
+/* *****************   Responsive  ***************  */
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+.research-item { flex-direction: column; align-items: center;}
+.research-description {flex: 1;}
+.research-description h3 {text-align: center; align-content: center; font-size: 0.7rem;}
+.research-description p {line-height: 1.5; margin-bottom: 0; font-size: 0.7rem;}
+}
+
+    
 /***************************************************
   Services 
 ***************************************************/
@@ -470,6 +462,11 @@ nav a {font-size: 0.75rem;}
 }
 
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+.services li {margin: 0px 0px; font-size: 0.7rem;  line-height: 1.4;}
+}
+    
 /***************************************************
   Blog 
 ***************************************************/
@@ -557,8 +554,16 @@ nav a {font-size: 0.75rem;}
 }
 
 
+/* *****************   Responsive  ***************  */
 
-/* *****************  Footer  *****************/
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+}
+
+/***************************************************
+  Footer
+***************************************************/
 footer{
     text-align: center;
     border-top: 1px solid #ccc;
