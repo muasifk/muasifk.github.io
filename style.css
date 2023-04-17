@@ -1,0 +1,568 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', 'Merriweather', 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+
+main {
+  margin: 80px auto;
+  max-width: 800px;
+}
+
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.0rem;
+  font-style: normal;
+  font-weight: 100;
+}
+
+
+p {
+  font-size: 0.8rem;
+}
+
+a {
+  color: #1E90FF;
+}
+
+hover {
+  border-bottom-color: #1E90FF;
+}
+
+
+ul {
+  list-style-type: disc;
+  font-size: 0.8rem;
+  padding-left: 20px;
+}
+
+
+ul li {
+  margin-top: 10px;
+}
+
+
+/* ++++++++++++++++++++++++++  Mediq querries  +++++++++++++++++++++ */
+
+/*@media only screen and (min-width : 340px) {}*/
+/*@media only screen and (min-width : 480px) {}*/
+/*@media only screen and (min-width : 768px) {}*/
+/*@media only screen and (min-width : 992px) {}*/
+/*@media only screen and (min-width : 1200px) {}*/
+
+
+/*  Page width  */
+/*
+@media (max-width:320px){max-width: 300px;}  
+@media (max-width:480px){max-width: 450px;}  
+@media (max-width:960px){max-width: 800px;}
+*/
+
+
+
+/* Mobile View  */
+@media screen and (max-width: 480px) {
+    main {margin: 80px auto; max-width: 90vw;}
+    h1 {font-size: 1.3rem;}
+    h2 {font-size: 1.1rem;}
+    h3 {font-size: 1.0rem;}
+    p {font-size: 0.8rem;}
+    }
+
+
+
+
+
+/***************************************************
+  header and navigation bar
+***************************************************/
+
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav li {
+  margin: 0 20px;
+  font-size: 0.8rem;
+}
+
+nav a {
+  color: #333;
+  font-size: 0.95rem;
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.2s ease-in-out;
+  
+}
+
+nav a:hover {
+  border-bottom-color: #1E90FF;
+}
+
+
+
+
+/* ++++++++++++++ For mobile friendly +++++++++++++++++++++++++ */
+/* header and navigation bar */
+
+/*
+@media screen and (max-width: 768px) {
+nav a {font-size: 0.75rem;}
+}
+*/
+
+/* Mobile View  */
+@media screen and (max-width: 480px) {
+    nav a {font-size: 0.7rem; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;}
+    }
+
+
+
+/***************************************************
+  About
+***************************************************/
+
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 40px 0px;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.image-container {
+  width: 200px;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: grayscale(20%) blur(0px) brightness(110%) contrast(100%) sepia(15%);
+}
+
+.description {
+  width: 60%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+#about h1 {
+  font-size: 1.3rem;
+  margin: 0px 10px 0px 0;
+  white-space: nowrap;
+  font-weight: normal;
+  background-image: linear-gradient(to right, #1e90ff, #00ced1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#about .subtitle {
+  font-size: 0.9rem;
+  margin: 0 0 5px 0;
+  font-weight: 400;
+  color: #777;
+}
+
+
+/* Mobile View  */
+@media screen and (max-width: 480px) {
+    #about img { max-width: 30vw; height: auto; display: block; margin: 0 auto; }
+
+    }
+
+
+/***************  Profile ********************/
+#profile {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#profile li {
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+
+#profile a {
+  color: #1E90FF;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+#profile a:hover {
+  border-bottom-color: #1E90FF;
+}
+
+
+
+/***************  Research Interests ********************/
+.interest {
+  width: 50%;
+  padding-left: 20px;
+  margin-top: 0px;
+}
+
+.interest ul{
+  display: block;
+  list-style: disc;
+  margin-top: 20px;
+  padding-left: 10px;
+  list-style-position: inside;
+}
+
+.interest ul li{
+  font-size: 0.8rem;
+  margin-top: 5px;
+  line-height: 1.0;
+  list-style-position: inside;
+  color: #555;
+}
+
+
+#interest h2 {
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 100;
+  margin: 0 0 10px 0;
+}
+
+/* *****************   Responsive  ***************  */
+/*
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;
+  }
+  
+  .image-container {
+    width: 100%;
+    margin-bottom: 2vw;
+  }
+  
+  .description {
+    width: 100%;
+    padding: 0;
+  }
+  
+  #about h1 {
+    font-size: 1.4rem;
+    margin-bottom: 1vw;
+  }
+  
+  #about .subtitle {
+    font-size: 0.7rem;
+    margin-bottom: 0.5vw
+*/
+
+
+
+
+
+/***************************************************
+  Bio
+***************************************************/
+
+#bio h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+#bio h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+
+#bio p {
+  margin: 0;
+/*  font-size: 0.8rem;*/
+  line-height: 1.5;
+}
+
+#bio a {
+  color: #1E90FF;
+}
+
+
+
+/***************************************************
+  Publications
+***************************************************/
+
+
+.publications h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.5rem;*/
+}
+
+
+.publications h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.2rem;*/
+  text-underline-position: below;
+}
+
+.publications ol {
+  padding-left: 20px;
+  list-style-position: outside;
+  text-align: left;
+  order: reversed;
+}
+
+.publications li {
+  margin: 15px 0px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.publications .title {
+    font-weight: normal;
+}
+
+.publications .link {
+  margin-left: 10px;
+}
+
+.publications a {
+  color: #1E90FF;
+}
+
+
+
+
+/***************************************************
+  Research
+***************************************************/
+.research-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.research-item img {
+  width: 200px;
+  margin-right: 30px;
+  margin-top: 0px;
+  filter: grayscale(20%) blur(0px) brightness(100%) contrast(100%) sepia(5%);
+}
+
+.research-description {
+  flex: 1;
+}
+
+.research-description h3 {
+/*  font-size: 20px;*/
+  font-weight: 100;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.research-description p {
+/*  font-size: 0.9rem;*/
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+
+
+/***************************************************
+  Services 
+***************************************************/
+
+.services h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.5rem;*/
+}
+
+
+.services h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.2rem;*/
+  text-underline-position: below;
+}
+
+.services ul {
+  padding-left: 20px;
+  list-style-position: inside;
+  text-align: left;
+}
+
+.services li {
+  margin: 0px 0px;
+/*  font-size: 0.8rem;*/
+  line-height: 1.4;
+}
+
+.services .title {
+    font-weight: normal;
+}
+
+.services .link {
+  margin-left: 10px;
+}
+
+.services a {
+  color: #1E90FF;
+}
+
+
+/***************************************************
+  Blog 
+***************************************************/
+.container {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.video {
+  display: inline-block;
+  margin: 10px;
+  width: 150px;
+  height: 84px;
+  position: relative;
+}
+
+.video img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video:before,
+.video:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.video:before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.video:after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.video:hover:before,
+.video:hover:after {
+  opacity: 1;
+}
+
+
+
+/*********** */
+.magazine-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.magazine {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.magazine img {
+/*
+  width: 100%;
+  height: auto;
+    */
+  width: 150px;
+  height: 84px;
+}
+
+.magazine-caption {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+
+/* *****************  Footer  *****************/
+footer{
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
