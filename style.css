@@ -97,7 +97,7 @@ ul li {
     h1 {font-size: 1.2rem;}
     h2 {font-size: 1.1rem;}
     h3 {font-size: 1.0rem;}
-    p {font-size: 0.7rem;}
+    p {font-size: 0.8rem;}
     }
 
 
@@ -153,6 +153,7 @@ nav a:hover {
 /* Mobile View  */
 @media screen and (max-width: 480px) {
     nav a {font-size: 0.7rem; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;}
+    p {font-size: 0.8rem;}
     }
 
 
@@ -278,12 +279,12 @@ nav a:hover {
   #about { flex-direction: column; align-items: center;}
   .image-container { width: 40%; margin-bottom: 20px;}
   .description {width: 90%; padding: 0;}
-  #about h1 {font-size: 1.0rem; text-align: center}
-  #about .subtitle { font-size: 0.7rem; text-align: center}
-  #profile li { margin-right: 10px; font-size: 0.7rem; text-align: center; align-items: center;}
+  #about h1 {font-size: 1.2rem; text-align: center}
+  #about .subtitle { font-size: 0.8rem; text-align: center}
+  #profile li { margin-right: 10px; font-size: 0.8rem; text-align: center; align-items: center;}
   .interest{ width: 100%; padding-left: 0px; padding-top: 15px; text-align: left;}  
   .interest ul { margin: 0; padding: 0 0 0 20px; text-align: left;}
-  .interest ul li {font-size: 0.7rem; }
+  .interest ul li {font-size: 0.8rem; }
   .interest h2 { font-size: 1.0rem;}
   
 }
@@ -368,7 +369,7 @@ nav a:hover {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-.publications .title {font-size: 0.7rem}
+.publications .title {font-size: 0.8rem}
 }
 
 /***************************************************
@@ -414,8 +415,8 @@ nav a:hover {
 @media (max-width: 768px) {
 .research-item { flex-direction: column; align-items: center;}
 .research-description {flex: 1;}
-.research-description h3 {text-align: center; align-content: center; font-size: 0.7rem;}
-.research-description p {line-height: 1.5; margin-bottom: 0; font-size: 0.7rem;}
+.research-description h3 {text-align: center; align-content: center; font-size: 0.8rem;}
+.research-description p {line-height: 1.5; margin-bottom: 0; font-size: 0.8rem;}
 }
 
     
@@ -464,7 +465,7 @@ nav a:hover {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-.services li {margin: 0px 0px; font-size: 0.7rem;  line-height: 1.4;}
+.services li {margin: 0px 0px; font-size: 0.8rem;  line-height: 1.4;}
 }
     
 /***************************************************
