@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -282,10 +283,10 @@ nav a:hover {
   #about h1 {font-size: 1.2rem; text-align: center}
   #about .subtitle { font-size: 0.8rem; text-align: center}
   #profile li { margin-right: 10px; font-size: 0.8rem; text-align: center; align-items: center;}
-  .interest{ width: 100%; padding-left: 0px; padding-top: 15px; text-align: left;}  
-  .interest ul { margin: 0; padding: 0 0 0 20px; text-align: left;}
-  .interest ul li {font-size: 0.8rem; }
-  .interest h2 { font-size: 1.0rem;}
+  .interest{ width: 100%; padding-left: 0px; padding-top: 15px; text-align: left; display: none;}  
+  .interest ul { margin: 0; padding: 0 0 0 20px; text-align: left; display: none;}
+  .interest ul li {font-size: 0.8rem; display: none;}
+  .interest h2 { font-size: 1.0rem; display: none;}
   
 }
 
@@ -377,12 +378,13 @@ nav a:hover {
 ***************************************************/
 .research-item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
+/*
 
 .research-item img {
   width: 200px;
@@ -390,6 +392,7 @@ nav a:hover {
   margin-top: 0px;
   filter: grayscale(20%) blur(0px) brightness(100%) contrast(100%) sepia(5%);
 }
+*/
 
 .research-description {
   flex: 1;
@@ -408,6 +411,38 @@ nav a:hover {
   margin-bottom: 0;
 }
 
+.research-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.research-images img {
+  width: 200px;
+  height: 150px;
+  margin-right: 50px;
+  margin-top: 0px;
+  filter: grayscale(20%) blur(0px) brightness(100%) contrast(100%) sepia(5%);
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* add this line */
+}
+
+figcaption {
+/*  text-align: center;*/
+font-style: italic;
+color: #1E90FF;
+margin-top: 10px;
+display: block;
+max-width: 200px;
+text-align: center;
+}
 
 /* *****************   Responsive  ***************  */
 
@@ -417,6 +452,8 @@ nav a:hover {
 .research-description {flex: 1;}
 .research-description h3 {text-align: center; align-content: center; font-size: 0.8rem;}
 .research-description p {line-height: 1.5; margin-bottom: 0; font-size: 0.8rem;}
+.research-images {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; margin-top: 30px; margin-bottom: 20px;}
+figure {display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom:20px}
 }
 
     
