@@ -135,7 +135,7 @@ nav li {
 
 nav a {
   color: #333;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 300;
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -194,8 +194,8 @@ nav a:hover {
 }
 
 
-#about h1 {
-  font-size: 1.3rem;
+#about .title {
+  font-size: 1.0rem;  /* Title  */
   margin: 0px 10px 0px 0;
   white-space: nowrap;
   font-weight: normal;
@@ -207,7 +207,7 @@ nav a:hover {
 #about .subtitle {
   font-size: 0.9rem;
   margin: 0 0 5px 0;
-  font-weight: 400;
+  font-weight: 300;
   color: #777;
 }
 
@@ -267,7 +267,7 @@ nav a:hover {
 
 .interest h2 {
   color: #555;
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   font-style: normal;
   font-weight: 100;
   margin: 0 0 10px 0;
@@ -320,6 +320,46 @@ nav a:hover {
 }
 
 
+.sel_publications ol {
+  padding-left: 20px;
+  list-style-position: outside;
+  text-align: left;
+  order: reversed;
+}
+
+.sel_publications li {
+  margin: 15px 0px;
+/*  font-size: 0.8rem;*/
+  line-height: 1.4;
+}
+
+/***************************************************
+  News
+***************************************************/
+
+.news-item {
+  width: calc(100% - 20px);
+  margin-left: 15px;
+  margin-bottom: 40px;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.news-date {
+  margin-top: 10px;
+  padding-right: 10px;
+  color: #999;
+  font-weight: 300;
+}
+
+.news-title {
+  color: #1E90FF;    
+/*  margin: 0;*/
+}
+
+
 
 /***************************************************
   Publications
@@ -363,7 +403,10 @@ nav a:hover {
 
 .publications a {
   color: #1E90FF;
+  font-weight: 300;
 }
+
+
 
 
 /* *****************   Responsive  ***************  */
@@ -421,7 +464,7 @@ nav a:hover {
 
 .research-images img {
   width: 200px;
-  height: 150px;
+  height: 130px;
   margin-right: 50px;
   margin-top: 0px;
   filter: grayscale(20%) blur(0px) brightness(100%) contrast(100%) sepia(5%);
