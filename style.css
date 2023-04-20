@@ -153,6 +153,7 @@ nav a:hover {
 /* ++++++++++++++ For mobile friendly +++++++++++++++++++++++++ */
 /* Mobile View  */
 @media screen and (max-width: 480px) {
+    nav li {margin: 0 10px; font-size: 0.8rem;}
     nav a {font-size: 0.7rem; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;}
     p {font-size: 0.8rem;}
     }
