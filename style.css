@@ -215,7 +215,6 @@ nav a:hover {
 
 
 
-
 /***************  Profile ********************/
 #profile {
   list-style: none;
@@ -240,6 +239,11 @@ nav a:hover {
   border-bottom-color: #1E90FF;
 }
 
+#cv {
+  margin-top: 10px;
+  font-weight: 300;
+  color: #777;
+}
 
 
 /***************  Research Interests ********************/
@@ -282,8 +286,11 @@ nav a:hover {
   .image-container { width: 40%; margin-bottom: 20px;}
   .description {width: 90%; padding: 0;}
   #about h1 {font-size: 1.2rem; text-align: center}
+  
+#about .title {text-align: center; }
   #about .subtitle { font-size: 0.8rem; text-align: center}
   #profile li { margin-right: 10px; font-size: 0.8rem; text-align: center; align-items: center;}
+  #cv {text-align: center; margin-top: 10px;}
   .interest{ width: 100%; padding-left: 0px; padding-top: 15px; text-align: left; display: none;}  
   .interest ul { margin: 0; padding: 0 0 0 20px; text-align: left; display: none;}
   .interest ul li {font-size: 0.8rem; display: none;}
