@@ -17,12 +17,14 @@ body {
   font-family: 'Montserrat', 'Merriweather', 'Source Sans Pro', sans-serif;
   font-size: 12px;
   line-height: 1.2;
+/*  background-color: floralwhite;*/
 }
 
 
 main {
   margin: 80px auto;
   max-width: 800px;
+/*  background-color: floralwhite;*/
 }
 
 
@@ -183,7 +185,9 @@ nav a:hover {
   height: auto;
   display: block;
   margin: 0 auto;
-  filter: grayscale(20%) blur(0px) brightness(110%) contrast(100%) sepia(15%);
+/*  filter: grayscale(20%) blur(0px) brightness(110%) contrast(100%) sepia(15%);*/
+  filter: hue-rotate(300deg) saturate(1);
+  border-radius: 50%;
 }
 
 .description {
@@ -196,11 +200,12 @@ nav a:hover {
 
 
 #about .title {
-  font-size: 1.5rem;  /* Title  */
+  font-size: 1.2rem;  /* Title  */
   margin: 0px 10px 0px 0;
   white-space: nowrap;
   font-weight: normal;
-  background-image: linear-gradient(to right, #1e90ff, #00ced1);
+/*  background-image: linear-gradient(to right, #1e90ff, #00ced1);*/
+  background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb, #553c9a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
