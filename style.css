@@ -200,10 +200,11 @@ nav a:hover {
 
 
 #about .title {
-  font-size: 1.2rem;  /* Title  */
+  font-size: 1.2rem;
+  font-stretch: condensed;
+  font-weight: 600;
   margin: 0px 10px 0px 0;
   white-space: nowrap;
-  font-weight: normal;
 /*  background-image: linear-gradient(to right, #1e90ff, #00ced1);*/
   background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb, #553c9a);
   -webkit-background-clip: text;
@@ -664,4 +665,31 @@ footer{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+/* The typing effect */
+@keyframes typing{
+    from {width: 0}
+    to {width: 100%}
+}
+
+/* The typewriter cursor effect */
+/*
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+*/
+
+.email{
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    border-right: .15em solid orange; /* The typwriter cursor */
+    /* white-space: nowrap; /* Keeps the content on a single line */ */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3s steps(20, end) forwards;
+/*    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;*/
+}
+
 
