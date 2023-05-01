@@ -1,0 +1,18 @@
+
+
+.animated-image {
+  width: 200px;
+  height: 200px;
+  background: url('image1.jpg');
+  animation: animateImage 1s steps(4) infinite;
+}
+
+@keyframes animateImage {
+  0% { background-position: 0px 0px; }
+  100% { background-position: -800px 0px; }
+}
+
+.animated-image:hover {
+  animation-play-state: paused;
+}
+
