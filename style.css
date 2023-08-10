@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
 
 
 
@@ -14,7 +15,7 @@
 }
 
 body {
-  font-family: 'Montserrat', 'Merriweather', 'Source Sans Pro', sans-serif;
+  font-family: 'Lexend', 'Montserrat', 'Merriweather', 'Source Sans Pro', sans-serif;
   font-size: 12px;
   line-height: 1.2;
 /*  background-color: floralwhite;*/
@@ -177,7 +178,7 @@ nav a:hover {
 }
 
 .image-container {
-  width: 200px;
+  width: 110px;
 }
 
 #about img {
@@ -186,7 +187,7 @@ nav a:hover {
   display: block;
   margin: 0 auto;
 /*  filter: grayscale(20%) blur(0px) brightness(110%) contrast(100%) sepia(15%);*/
-  filter: hue-rotate(300deg) saturate(1);
+  filter: hue-rotate(300deg) saturate(0.9);
   border-radius: 50%;
 }
 
@@ -253,6 +254,7 @@ nav a:hover {
 
 
 /***************  Research Interests ********************/
+/*
 .interest {
   width: 50%;
   padding-left: 20px;
@@ -262,17 +264,18 @@ nav a:hover {
 .interest ul{
   display: block;
   list-style: disc;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-left: 15px;
   padding-left: 10px;
   list-style-position: inside;
 }
 
 .interest ul li{
-/*  font-size: 0.8rem;*/
-  margin-top: 5px;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  margin-left: 15px;
   line-height: 1.0;
   list-style-position: inside;
-  color: #555;
 }
 
 
@@ -283,6 +286,7 @@ nav a:hover {
   font-weight: 100;
   margin: 0 0 10px 0;
 }
+*/
 
 /* *****************   Responsive  ***************  */
 
@@ -335,6 +339,27 @@ nav a:hover {
 
 
 /***************************************************
+  Research Interest
+***************************************************/
+
+
+
+.interest ul{
+  margin-top: 10px;
+  margin-left: 15px;
+  padding-left: 10px;
+}
+
+.interest ul li{
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+
+
+
+
+/***************************************************
   Selected Publications
 ***************************************************/
 .sel_publications ol {
@@ -344,11 +369,32 @@ nav a:hover {
   order: reversed;
 }
 
+/*
 .sel_publications li {
   margin: 15px 0px;
-/*  font-size: 0.8rem;*/
+  font-size: 0.8rem;
   line-height: 1.4;
 }
+*/
+
+.sel_pub li {
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.pub_title {
+color: #3e3c3c  ;  /* #1E90FF a01e2a */
+    font-weight: 600;
+/*  margin: 0;*/
+}
+
 
 /***************************************************
   Awards
@@ -372,7 +418,7 @@ nav a:hover {
 
 .news-item {
   width: calc(100% - 20px);
-  margin-left: 15px;
+  margin-left: 35px;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 8px;
@@ -388,7 +434,8 @@ nav a:hover {
 }
 
 .news-title {
-  color: #1E90FF;    
+  color: #1E90FF;
+/*  font-weight: 600;*/
 /*  margin: 0;*/
 }
 
