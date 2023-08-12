@@ -1,0 +1,361 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif, 'Montserrat', 'Lexend', 'Merriweather';
+    font-size: 14px;
+    line-height: 1.2;
+    background-color: #f0f0f0; /* Grey background color */
+    margin: 0;
+}
+
+
+main {
+  margin: 80px auto;
+  max-width: 1200px;
+  background-color: #fff;
+  padding: 20px; /* Add some padding for spacing */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.0rem;
+  font-style: normal;
+  font-weight: 100;
+}
+
+
+p {
+  font-size: 0.9rem;
+}
+
+a {
+  color: #3e3c3c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1E90FF;
+    border-bottom: 2px solid;
+    border-bottom-color: #1E90FF;  
+}
+
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+
+ul li {
+  margin-top: 10px;
+}
+
+
+/* ++++++++++++++++++++++++++  Mediq querries  +++++++++++++++++++++ */
+
+@media only screen and (min-width : 340px) {}
+@media only screen and (min-width : 480px) {}
+@media only screen and (min-width : 768px) {}
+@media only screen and (min-width : 992px) {}
+@media only screen and (min-width : 1200px) {}
+
+
+/*  Page width  */
+/*
+@media (max-width:320px){max-width: 300px;}  
+@media (max-width:480px){max-width: 450px;}  
+@media (max-width:960px){max-width: 800px;}
+*/
+
+
+
+/* Mobile View  */
+@media screen and (max-width: 480px) {
+/*    main {margin: 80px auto; max-width: 90vw;}*/
+    h1 {font-size: 1.2rem;}
+    h2 {font-size: 1.1rem;}
+    h3 {font-size: 1.0rem;}
+    p {font-size: 0.8rem;}
+    }
+
+
+
+
+
+/***************************************************
+  header and navigation bar
+***************************************************/
+
+
+header {
+/*
+  background-color: #001f3f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+*/
+  background-color: #333333;
+  background-image: linear-gradient(to bottom, #333333, #001f3f);
+  color: #fff;   
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav li {
+  margin: 0 20px;
+  font-size: 0.8rem;
+}
+
+nav a {
+/*  color: #333;*/
+  color:whitesmoke;
+  font-size: 0.85rem;
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.2s ease-in-out;
+  
+}
+
+nav a:hover {
+  border-bottom-color: #1E90FF;
+}
+
+
+
+
+/* ++++++++++++++ For mobile friendly +++++++++++++++++++++++++ */
+/* Mobile View  */
+@media screen and (max-width: 480px) {
+    nav li {margin: 0 10px; font-size: 0.8rem;}
+    nav a {font-size: 0.7rem; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;}
+    p {font-size: 0.8rem;}
+    }
+
+
+
+/***************************************************
+  About
+***************************************************/
+
+#about {
+  display: flex;
+/*  background-color: dimgrey;*/
+/*  border-radius: 8px;  Add rounded corners */
+  background-color: #4A4A4A;
+  color: #fff;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+/*  margin: 40px 0px;*/
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.image-container {
+  width: 100px;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+/*  filter: grayscale(20%) blur(0px) brightness(110%) contrast(100%) sepia(15%);*/
+  filter: hue-rotate(300deg) saturate(0.9);
+  border-radius: 50%;
+}
+
+.description {
+  width: 60%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+#about .title {
+  font-size: 1.5rem;
+/*  font-stretch: condensed;*/
+/*  font-weight: 600;*/
+  margin: 0px 10px 0px 0;
+/*  white-space: nowrap;*/
+/*  background-image: linear-gradient(to right, #1e90ff, #00ced1);*/
+/*  background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb, #553c9a);*/
+/*
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+*/
+}
+
+#about .subtitle {
+  font-size: 0.99rem;
+  margin: 0 0 5px 0;
+  font-weight: 300;
+/*  color: #777;*/
+}
+
+
+
+
+/***************  Profile ********************/
+#profile {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#profile li {
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+
+#profile a {
+  color: #1E90FF;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+#profile a:hover {
+  border-bottom-color: #1E90FF;
+}
+
+#cv {
+  margin-top: 10px;
+  font-weight: 300;
+  color: #777;
+}
+
+#cv a{
+    color: #1E90FF;
+}
+
+
+/***************  Research Interests ********************/
+.interest {
+}
+
+.interest ul{
+  padding-left: 15px;
+  list-style-position: outside;
+  text-align: left;
+}
+
+.interest ul li{
+  margin: 10px 10px;
+  line-height: 1.2;
+}
+
+
+
+/* *****************   Responsive  ***************  */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  #about { flex-direction: column; align-items: center;}
+  .image-container { width: 40%; margin-bottom: 20px;}
+  .description {width: 90%; padding: 0;}
+  #about h1 {font-size: 1.2rem; text-align: center}
+  
+#about .title {text-align: center; }
+  #about .subtitle { font-size: 0.8rem; text-align: center}
+  #profile li { margin-right: 10px; font-size: 0.8rem; text-align: center; align-items: center;}
+  #cv {text-align: center; margin-top: 10px;}
+  .interest{ width: 100%; padding-left: 0px; padding-top: 15px; text-align: left; display: none;}  
+  .interest ul { margin: 0; padding: 0 0 0 20px; text-align: left; display: none;}
+  .interest ul li {font-size: 0.8rem; display: none;}
+  .interest h2 { font-size: 1.0rem; display: none;}
+  
+}
+
+
+
+
+
+
+
+/***************************************************
+  Footer
+***************************************************/
+footer{
+text-align: center;
+border-top: 1px solid #ccc;
+padding-top: 10px;
+padding-bottom: 10px;
+background-color: #333333;
+background-image: linear-gradient(to bottom, #333333, #001f3f);
+color: #fff;
+}
+
+/* The typing effect */
+@keyframes typing{
+    from {width: 0}
+    to {width: 100%}
+}
+
+/* The typewriter cursor effect */
+/*
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+*/
+
+.email{
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    border-right: .15em solid orange; /* The typwriter cursor */
+    /* white-space: nowrap; /* Keeps the content on a single line */ */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3s steps(20, end) forwards;
+/*    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;*/
+}
+
+

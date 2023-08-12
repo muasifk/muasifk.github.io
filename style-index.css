@@ -1,0 +1,313 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+
+
+/***************************************************
+  Bio
+***************************************************/
+
+#bio h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.5rem;*/
+}
+
+#bio h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.2rem;*/
+}
+
+
+#bio p {
+  margin: 0;
+/*  font-size: 0.8rem;*/
+  line-height: 1.5;
+}
+
+#bio a {
+  color: #1E90FF;
+}
+
+
+/***************************************************
+  Research Interest
+***************************************************/
+
+
+
+.interest ul{
+  margin-top: 10px;
+  margin-left: 15px;
+  padding-left: 10px;
+}
+
+.interest ul li{
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+
+
+
+
+/***************************************************
+  Selected Publications
+***************************************************/
+.sel_publications ol {
+  padding-left: 20px;
+  list-style-position: outside;
+  text-align: left;
+  order: reversed;
+}
+
+/*
+.sel_publications li {
+  margin: 15px 0px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+*/
+
+.sel_publications li {
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.sel_publications a {
+    color: #3e3c3c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sel_publications a:hover {
+    color: #1E90FF;
+/*    font-weight: 400;*/
+    border-bottom: 2px solid;
+    border-bottom-color: #1E90FF;  
+}
+
+
+
+/***************************************************
+  News
+***************************************************/
+
+.news_item {
+  width: calc(100% - 20px);
+  margin-left: 30px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.news_date {
+  margin-top: 10px;
+  padding-right: 10px;
+  color: #999;
+  font-weight: 600;
+}
+
+.news_title {
+  color: #1E90FF;
+/*  font-weight: 600;*/
+/*  margin: 0;*/
+}
+
+
+
+
+    
+/***************************************************
+  Services 
+***************************************************/
+
+.services h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.5rem;*/
+}
+
+
+.services h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.2rem;*/
+  text-underline-position: below;
+}
+
+.services ul {
+  padding-left: 20px;
+  list-style-position: inside;
+  text-align: left;
+}
+
+.services li {
+  margin: 0px 0px;
+/*  font-size: 0.8rem;*/
+  line-height: 1.4;
+}
+
+.services .title {
+    font-weight: normal;
+}
+
+.services .link {
+  margin-left: 10px;
+}
+
+.services a {
+  color: #1E90FF;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+.services li {margin: 0px 0px; font-size: 0.8rem;  line-height: 1.4;}
+}
+    
+/***************************************************
+  Blog 
+***************************************************/
+.container {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.video {
+  display: inline-block;
+  margin: 10px;
+  width: 150px;
+  height: 84px;
+  position: relative;
+}
+
+.video img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video:before,
+.video:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.video:before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.video:after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.video:hover:before,
+.video:hover:after {
+  opacity: 1;
+}
+
+
+
+/*********** */
+.magazine-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.magazine {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.magazine img {
+/*
+  width: 100%;
+  height: auto;
+    */
+  width: 150px;
+  height: 84px;
+}
+
+.magazine-caption {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* *****************   Responsive  ***************  */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+}
+
+/***************************************************
+  Footer
+***************************************************/
+footer{
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* The typing effect */
+@keyframes typing{
+    from {width: 0}
+    to {width: 100%}
+}
+
+/* The typewriter cursor effect */
+/*
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+*/
+
+.email{
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    border-right: .15em solid orange; /* The typwriter cursor */
+    /* white-space: nowrap; /* Keeps the content on a single line */ */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3s steps(20, end) forwards;
+/*    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;*/
+}
+
+

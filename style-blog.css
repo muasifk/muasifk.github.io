@@ -1,0 +1,96 @@
+
+    
+/***************************************************
+  Blog 
+***************************************************/
+.container {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.video {
+  display: inline-block;
+  margin: 10px;
+  width: 150px;
+  height: 84px;
+  position: relative;
+}
+
+.video img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video:before,
+.video:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.video:before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.video:after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.video:hover:before,
+.video:hover:after {
+  opacity: 1;
+}
+
+
+
+/*********** */
+.magazine-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.magazine {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.magazine img {
+/*
+  width: 100%;
+  height: auto;
+    */
+  width: 150px;
+  height: 84px;
+}
+
+.magazine-caption {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* *****************   Responsive  ***************  */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+}
+

@@ -1,0 +1,82 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+
+
+
+
+
+
+/***************************************************
+  Publications
+***************************************************/
+
+.publications{margin-top: 15px;}
+
+.publications h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.5rem;*/
+}
+
+
+.publications h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.2rem;*/
+  text-underline-position: below;
+}
+
+.publications ol {
+  padding-left: 15px;
+  list-style-position: outside;
+  text-align: left;
+  order: reversed;
+}
+
+.publications li {
+  margin: 10px 20px;
+  line-height: 1.4;
+}
+
+
+.publications a {
+    color: #3e3c3c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.publications a:hover {
+    color: #1E90FF;
+/*    font-weight: 400;*/
+    border-bottom: 2px solid;
+    border-bottom-color: #1E90FF;  
+}
+
+
+
+/*
+.publications li {
+  width: calc(100% - 10px);
+  margin-left: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+*/
+
+
+
+/* *****************   Responsive  ***************  */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+.publications .title {font-size: 0.8rem}
+}
+

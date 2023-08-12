@@ -445,18 +445,17 @@ color: #3e3c3c  ;  /* #1E90FF a01e2a */
   Publications
 ***************************************************/
 
+/*
 .publications{margin-top: 15px;}
 .publications h2 {
   margin-top: 20px;
   margin-bottom: 10px;
-/*  font-size: 1.5rem;*/
 }
 
 
 .publications h3 {
   margin-top: 20px;
   margin-bottom: 10px;
-/*  font-size: 1.2rem;*/
   text-underline-position: below;
 }
 
@@ -469,7 +468,6 @@ color: #3e3c3c  ;  /* #1E90FF a01e2a */
 
 .publications li {
   margin: 15px 0px;
-/*  font-size: 0.8rem;*/
   line-height: 1.4;
 }
 
@@ -487,14 +485,10 @@ color: #3e3c3c  ;  /* #1E90FF a01e2a */
 }
 
 
-
-
-/* *****************   Responsive  ***************  */
-
-/* Media query for smaller screens */
 @media (max-width: 768px) {
 .publications .title {font-size: 0.8rem}
 }
+*/
 
 /***************************************************
   Research
