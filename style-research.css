@@ -139,6 +139,7 @@ text-align: center;
 
 .important{
     background-color: #f5f5f5;
+    color:darkslategrey;
     font-family: monospace;
 }
 
