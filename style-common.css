@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif, 'Montserrat', 'Lexend', 'Merriweather';
+    font-family:  'Source Sans Pro', sans-serif, 'Montserrat', 'Lexend', 'Merriweather';
     font-size: 14px;
     line-height: 1.2;
     background-color: #f0f0f0; /* Grey background color */
@@ -25,20 +25,24 @@ body {
 
 main {
   margin: 80px auto;
+  margin-top: 46px;
   max-width: 800px;
   background-color: #fff;
   padding: 20px; /* Add some padding for spacing */
-  border-radius: 8px; /* Add rounded corners */
+/*  border-radius: 8px;  */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 
 h1 {
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-family:  'Source Sans Pro', sans-serif, 'Montserrat', 'Lexend', 'Merriweather';
+  font-weight: 400;
+  font-size: 1.4rem;
   font-style: normal;
   margin-top: 20px;
   margin-bottom: 20px;
+/*  color: deepskyblue;*/
+/*  text-shadow: 0 1px white, 0 1px #777;  */
 }
 
 h2 {
@@ -140,7 +144,7 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 nav li {
@@ -151,7 +155,7 @@ nav li {
 nav a {
 /*  color: #333;*/
   color:whitesmoke;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 300;
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -171,7 +175,7 @@ nav a:hover {
 @media screen and (max-width: 480px) {
     nav li {margin: 0 10px; font-size: 0.8rem;}
     nav a {font-size: 0.7rem; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;}
-    p {font-size: 0.8rem;}
+    p {font-size: 0.9rem;}
     }
 
 
@@ -184,14 +188,15 @@ nav a:hover {
   display: flex;
 /*  background-color: dimgrey;*/
 /*  border-radius: 8px;  Add rounded corners */
-  background-color: #4A4A4A;
-  color: #fff;
+/*  background-color: #4A4A4A;*/
+/*  color: #fff;*/
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
 /*  margin: 40px 0px;*/
   padding: 20px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
+/*  border-radius: 5%;*/
 }
 
 .image-container {
@@ -209,7 +214,7 @@ nav a:hover {
 }
 
 .description {
-  width: 60%;
+  width: 80%;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
@@ -219,13 +224,14 @@ nav a:hover {
 
 #about .title {
   font-size: 1.5rem;
-/*  font-stretch: condensed;*/
-/*  font-weight: 600;*/
+  font-stretch: condensed;
+  font-weight: 400;
   margin: 0px 10px 0px 0;
+  text-transform: full-width;
 /*  white-space: nowrap;*/
 /*  background-image: linear-gradient(to right, #1e90ff, #00ced1);*/
-/*  background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb, #553c9a);*/
 /*
+  background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb, #553c9a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 */
@@ -256,13 +262,13 @@ nav a:hover {
 }
 
 #profile a {
-  color: #1E90FF;
+  color: deepskyblue;
   text-decoration: none;
   border-bottom: 2px solid transparent;
 }
 
 #profile a:hover {
-  border-bottom-color: #1E90FF;
+  border-bottom-color: deepskyblue;
 }
 
 #cv {
@@ -272,7 +278,7 @@ nav a:hover {
 }
 
 #cv a{
-    color: #1E90FF;
+    color: deepskyblue;
 }
 
 
