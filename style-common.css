@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family:  'Source Sans Pro', sans-serif, 'Montserrat', 'Lexend', 'Merriweather';
+    font-family:  'Source Sans Pro', sans-serif, 'Montserrat',    'Lexend', 'Merriweather';
     font-size: 14px;
     line-height: 1.2;
     background-color: #f0f0f0; /* Grey background color */
@@ -41,6 +41,8 @@ h1 {
   font-style: normal;
   margin-top: 20px;
   margin-bottom: 20px;
+  border-bottom:2px solid #CCC;
+  padding-bottom:3px;
 /*  color: deepskyblue;*/
 /*  text-shadow: 0 1px white, 0 1px #777;  */
 }
@@ -61,7 +63,7 @@ h3 {
 
 
 p {
-  font-size: 0.9rem;
+/*  font-size: 0.9rem;*/
 }
 
 a {
@@ -71,9 +73,9 @@ a {
 }
 
 a:hover {
-    color: #1E90FF;
+    color: deepskyblue; 
     border-bottom: 2px solid;
-    border-bottom-color: #1E90FF;  
+    border-bottom-color: deepskyblue;  
 }
 
 
