@@ -25,7 +25,7 @@
   object-fit: cover;
 }
 
-.video:before,
+/*.video:before,*/
 .video:after {
   content: "";
   position: absolute;
@@ -87,10 +87,58 @@
 }
 
 
+/* ============================  New style =============== */
+
+
+/* Style the video gallery */
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+/* Style individual video cards */
+.video-card {
+    width: 200px; 
+/*    height: 220px; */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+.video-card:hover {
+    transform: scale(1.05);
+}
+
+/* Style video thumbnails */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-card h2 {
+    font-size: 1.1rem;
+    text-align: center;
+    
+}
+
+.video-card p {
+    font-size: 0.85rem;
+/*    margin-bottom: 20px;*/
+    text-align:justify-all;
+    padding: 10px 5px;
+}
+
+.video-card a:hover{border-bottom: none}
+
+
+
 /* *****************   Responsive  ***************  */
 
 /* Media query for smaller screens */
-@media (max-width: 768px) {
-
-}
+/*@media (max-width: 768px) {*/
+/*}*/
 

@@ -37,7 +37,7 @@ main {
 h1 {
   font-family:  'Source Sans Pro', sans-serif, 'Montserrat', 'Lexend', 'Merriweather';
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-style: normal;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -69,7 +69,7 @@ p {
 }
 
 a {
-    color: #3e3c3c;
+    color: deepskyblue;
     font-weight: 600;
     text-decoration: none;
 }
