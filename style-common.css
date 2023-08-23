@@ -134,7 +134,7 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 */
   background-color: #333333;
-  background-image: linear-gradient(to bottom, #333333, #001f3f);
+/*  background-image: linear-gradient(to bottom, #333333, #001f3f);*/
   color: #fff;   
   position: fixed;
   top: 0;
@@ -332,6 +332,7 @@ nav a:hover {
 /***************************************************
   Footer
 ***************************************************/
+/*
 footer{
 text-align: center;
 border-top: 1px solid #ccc;
@@ -342,30 +343,75 @@ background-image: linear-gradient(to bottom, #333333, #001f3f);
 color: #fff;
 }
 
-/* The typing effect */
 @keyframes typing{
     from {width: 0}
     to {width: 100%}
 }
 
-/* The typewriter cursor effect */
-/*
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
-*/
 
 .email{
     display: inline-block;
     overflow: hidden;
     width: 0;
-    border-right: .15em solid orange; /* The typwriter cursor */
-    /* white-space: nowrap; /* Keeps the content on a single line */ */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    border-right: .15em solid orange; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
     animation: typing 3s steps(20, end) forwards;
-/*    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;*/
 }
+*/
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #333333;
+/*    background-image: linear-gradient(to bottom, #333333, #001f3f);*/
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color:deepskyblue;
+    border-bottom: none;
+    font-size: 21px;
+}
+
+/* Typing Animation for Email */
+.email {
+/*    display: inline-block;*/
+    overflow: hidden;
+    width: 0;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    color:deepskyblue;
+}
+
+
 
 

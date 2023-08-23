@@ -139,6 +139,10 @@ img {
 /* *****************   Responsive  ***************  */
 
 /* Media query for smaller screens */
-/*@media (max-width: 768px) {*/
-/*}*/
+@media (max-width: 768px) {
+.video-gallery { display: flex; flex-direction: column; align-items: center;}
+.video-card {width: 100%; max-width: 250px; }
+    
+    
+}
 
