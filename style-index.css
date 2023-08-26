@@ -59,6 +59,7 @@
 /***************************************************
   Selected Publications
 ***************************************************/
+/*
 .sel_publications ol {
   padding-left: 20px;
   list-style-position: outside;
@@ -66,13 +67,6 @@
   order: reversed;
 }
 
-/*
-.sel_publications li {
-  margin: 15px 0px;
-  font-size: 0.8rem;
-  line-height: 1.4;
-}
-*/
 
 .sel_publications li {
   width: calc(100% - 20px);
@@ -94,10 +88,37 @@
 
 .sel_publications a:hover {
     color: deepskyblue;
+    border-bottom: 2px solid;
+    border-bottom-color: deepskyblue; 
+}
+*/
+
+.publications ol {
+  padding-left: 15px;
+  list-style-position: outside;
+  text-align: left;
+  order: reversed;
+}
+
+.publications li {
+  margin: 10px 20px;
+  line-height: 1.4;
+}
+
+
+.publications a {
+    color: #3e3c3c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.publications a:hover {
+    color: deepskyblue; /*#1E90FF;*/
 /*    font-weight: 400;*/
     border-bottom: 2px solid;
-    border-bottom-color: deepskyblue; /*#1E90FF */
+    border-bottom-color: deepskyblue; /* #1E90FF;   */
 }
+
 
 
 
@@ -105,14 +126,28 @@
   News
 ***************************************************/
 
+.news {
+  margin: 0px auto;
+  margin-top: 0px;
+  max-width: 1000px;
+  background-color: #03497A;
+  color:aliceblue;
+/*  background-image: linear-gradient(darkcyan, gray 95%);*/
+  padding: 20px; /* Add some padding for spacing */
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
 .news_item {
-  width: calc(100% - 20px);
+/*  width: calc(100% - 20px);*/
+/*
   margin-left: 30px;
   margin-bottom: 15px;
+*/
   padding: 10px;
-  border-radius: 8px;
+/*  border-radius: 8px;*/
   overflow: hidden;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+/*  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);*/
+*/
 }
 
 .news_date {
@@ -123,15 +158,14 @@
 }
 
 .news_title {
-  color: #1E90FF;
+    font-family: monospace;
+    font-size: 0.85rem;
+/*  color: #1E90FF;*/
 /*  font-weight: 600;*/
 /*  margin: 0;*/
 }
 
 
-
-
-    
 
 
 /* *****************   Responsive  ***************  */

@@ -15,6 +15,30 @@
   Services
 ***************************************************/
 
+.services{margin-top: 15px;}
+
+.services h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.5rem;*/
+}
+
+
+.services a {
+    color: #3e3c3c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.services a:hover {
+    color: deepskyblue; /*#1E90FF;*/
+/*    font-weight: 400;*/
+    border-bottom: 2px solid;
+    border-bottom-color: deepskyblue; /* #1E90FF;   */
+}
+
+
+
 .services h2 {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -49,9 +73,7 @@
   margin-left: 10px;
 }
 
-.services a {
-  color: #1E90FF;
-}
+
 
 
 /* Media query for smaller screens */
