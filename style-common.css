@@ -36,19 +36,41 @@ main {
 
 
 h1 {
-  font-family:  'Source Sans Pro', sans-serif, 'Montserrat', 'Lexend', 'Merriweather';
+/*  font-family:  'Source Sans Pro', sans-serif, 'Montserrat', 'Lexend', 'Merriweather';*/
+  font-family: 'Hammersmith One', 'Source Sans Pro', sans-serif, 'Montserrat', 'Merriweather';
   font-weight: 400;
   font-size: 1.5rem;
   font-style: normal;
-  margin-top: 20px;
-  margin-bottom: 20px;
-/*
-  border-bottom:2px solid #CCC;
-  padding-bottom:3px;
-*/
-/*  color: deepskyblue;*/
-/*  text-shadow: 0 1px white, 0 1px #777;  */
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: midnightblue;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  background-clip: text;
+  -webkit-background-clip: text;
+    
 }
+
+.seven h1 {
+text-align: center;
+    font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+    text-transform: uppercase;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.seven h1:after,.seven h1:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #c50000;
+    border-top: 1px solid #c50000;
+    height: 5px;
+  background-color:#f8f8f8;
+}
+
 
 h2 {
   font-size: 1.2rem;

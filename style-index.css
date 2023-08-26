@@ -126,6 +126,9 @@
   News
 ***************************************************/
 
+.news h1{
+    color:aliceblue;
+}
 .news {
   margin: 0px auto;
   margin-top: 0px;
@@ -172,7 +175,8 @@
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-
+.news_title {
+    font-size: 0.8rem;
 }
 
 
