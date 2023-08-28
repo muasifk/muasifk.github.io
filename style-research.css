@@ -91,10 +91,10 @@ text-align: center;
 }
 
 .research a:hover {
-    color: deepskyblue; /*#1E90FF;*/
+    color: midnightblue; /*#1E90FF;*/
 /*    font-weight: 400;*/
     border-bottom: 2px solid;
-    border-bottom-color: deepskyblue; 
+    border-bottom-color: midnightblue;
 }
 
 
@@ -106,7 +106,7 @@ text-align: center;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
-  height: 150px;
+/*  height: 150px;*/
 }
 
 .research-image {

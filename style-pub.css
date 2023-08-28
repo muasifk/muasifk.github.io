@@ -51,10 +51,10 @@
 }
 
 .publications a:hover {
-    color: deepskyblue; /*#1E90FF;*/
+    color: midnightblue; /*#1E90FF;*/
 /*    font-weight: 400;*/
     border-bottom: 2px solid;
-    border-bottom-color: deepskyblue; /* #1E90FF;   */
+    border-bottom-color: midnightblue; /* #1E90FF;   */
 }
 
 
