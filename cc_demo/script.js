@@ -128,9 +128,9 @@ async function main() {
 loadModelButton.addEventListener('click', async () => {
 //    model = await main();
     if (!modelLoaded) {
-        loadModelButton.innerText = "Downloading...";
+        loadModelButton.innerText = "Loading model...";
         model = await main();
-        loadModelButton.innerText = "Download complete";
+        loadModelButton.innerText = "Loading complete";
     }
 });
 

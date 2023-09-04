@@ -1,165 +1,303 @@
-// =====================================================
-// Get references to HTML elements
-// =====================================================
-const imageInput      = document.getElementById('imageInput');
-const selectedImage   = document.getElementById('selectedImage');
+//================================================================
+// Get references to the button and canvas elements
+//================================================================
 
+const imgContainer    = document.getElementById("img");
+const dmapContainer   = document.getElementById("dmap");
+const countElement    = document.getElementById("count");
+
+const loadImageButton = document.getElementById('loadImageButton');
 const loadModelButton = document.getElementById('loadModelButton');
-var predictButton     = document.getElementById('predictButton');
-var heatmapContainer  = document.getElementById('heatmapContainer');
+const predictButton   = document.getElementById('predictButton');
 
-let model; // Declare a global variable to hold the loaded model
-let modelPath = 'https://huggingface.co/muasifk/CSRNet_lite/resolve/main/CSRNet_lite.onnx';
+const imageCanvas     = document.getElementById('imageCanvas');
+const processedCanvas = document.getElementById('processedCanvas');
+const ctx             = imageCanvas.getContext('2d');
+const ctx2            = processedCanvas.getContext('2d');
 
-// =====================================================
-// Load image
-// =====================================================
-function imageInputButton(event) {
-   const file = event.target.files[0]; // seelct first file
-   if (file) {
-       const imageURL = URL.createObjectURL(file);
-       selectedImage.src = imageURL;
-       
-       const canvas = document.createElement('canvas');
-       const ctx    = canvas.getContext('2d');
-       // Set the canvas dimensions to match the image dimensions
-       canvas.width = selectedImage.width;
-       canvas.height= selectedImage.height;
-       // Draw the image onto the canvas
-       ctx.drawImage(selectedImage, 0, 0);
-       // Get the pixel data from the canvas
-       const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-       console.log('Selected Image Width:', imageData);
-       return selectedImage;
-   }
-}
-// Attach the event listener to the image input
-imageInput.addEventListener('change', imageInputButton);
-
-//imageInput.addEventListener('change', function(event) {
-////    const selectedImageElement = imageInputButton(event);
-//    if (selectedImageElement) {
-//        // Example: Display the width of the selected image
-//        console.log('Selected Image Width:', selectedImage.width);
-//    } else {
-//        console.log('No image selected.');
-//    }
-//});
+// Define the model URL
+//let modelUrl = 'https://huggingface.co/muasifk/CSRNet_lite/resolve/main/CSRNet_lite.onnx';
+//let modelUrl = 'https://huggingface.co/muasifk/MCNN/resolve/main/MCNN.onnx';
+let modelUrl = 'https://huggingface.co/muasifk/CSRNet/resolve/main/model1_A.onnx'
 
 
-// =====================================================
+
+imageCanvas.width = 1024; 
+imageCanvas.height = 768;
+
+
+//================================================================
+// Load and Display image
+//================================================================
+//loadImageButton.onclick = // Try this
+// Add a click event listener to the "Load Image" button
+loadImageButton.addEventListener('click', () => {
+    const fileInput = document.createElement('input');
+    fileInput.type = 'file';
+    fileInput.addEventListener('change', (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            // Add an event listener for when the FileReader finishes loading the image
+            reader.onload = (e) => {
+                const img = new Image();
+                img.src = e.target.result;
+
+                const img2 = img; // For display
+                // Draw the image on the canvas (img is resized to canvas size)
+                img.onload = () => {
+                    ctx.drawImage(img, 0, 0, imageCanvas.width, imageCanvas.height); // display=none in css to not show
+                    console.log('Image is resized to:', img.width, img.height);//, img.channels);
+                    
+                    // Plot using html
+                    // Set the width and height of the "img" element
+                    // Calculate the desired dimensions (e.g., scaling down by a factor)
+                    const desiredWidth = img2.width / 4; 
+                    const desiredHeight = img2.height / 4; 
+                    imgContainer.style.width = `${desiredWidth}px`;
+                    imgContainer.style.height = `${desiredHeight}px`;
+                    dmapContainer.style.width = `${desiredWidth}px`;
+                    dmapContainer.style.height = `${desiredHeight}px`;
+                
+                    imgContainer.innerHTML = "";
+                    imgContainer.appendChild(img2);
+
+                    
+//                    loadImageButton.innerText = "Load Image";
+//                    loadImageButton.disabled = false;
+                    
+                    console.log('Resized plotted as', img.width, img.height);//, img.channels);
+                    loadImageButton.style.backgroundColor = 'green';
+                    predictButton.style.backgroundColor   = '#333';
+                    
+                };
+            };
+
+            // Read the selected file as a data URL
+            reader.readAsDataURL(file);
+        }
+    });
+
+    // Trigger a click event on the file input to open the file selection dialog
+    fileInput.click();
+});
+
+//================================================================
 // Load model
-// =====================================================
-class modelLoaderButton {
-   constructor() {
-       this.model = null; // Initialize model to null
-   }
+//================================================================
 
-   async loadModel(modelPath) {
-       try {
-           // Initialize ONNX Runtime Web
-//           await ort.initialize({ backendHint: 'webgl' }); // webgl, WASM
+let model = null;
+let modelLoaded = false;
 
-           // Load the ONNX model
-           this.model = ort.InferenceSession.create(modelPath);
-
-           // Save the model to local storage for future use
-           localStorage.setItem('onnxModel', modelPath);
-           console.log('Model loaded successfully');
-       } catch (error) {
-           console.error('Error loading the model:', error);
-           throw error;
-       }
-   }
-
-   getModel() {
-       return this.model;
-   }
+async function loadModel(modelUrl) {
+    try {
+        const cachedModel = localStorage.getItem(modelUrl);
+        if (cachedModel) {
+            console.log('Loading model from local storage...');
+            const model = await ort.InferenceSession.create(cachedModel);
+            loadModelButton.style.backgroundColor = 'green';
+            console.log('Model loaded from local storage.');
+            return model;
+        } else {
+            console.log(`Model not found in local storage. Loading from ${modelUrl}...`);
+            const model = await ort.InferenceSession.create(modelUrl);
+            loadModelButton.style.backgroundColor = 'green';
+            console.log('Model loaded from URL.');
+            localStorage.setItem('onnxModel', modelUrl);
+            return model;
+        }
+    } catch (error) {
+        console.error('Error loading the model:', error);
+        throw error;
+    }
 }
 
-// Create an instance of the ModelLoader class
-const modelLoader = new modelLoaderButton();
+// Usage: Call this function when you want to load the model
+async function main() {
+    try {
+        const model = await loadModel(modelUrl);
+        modelLoaded = true;
+        return model; // Use the loaded model for inference or further processing
+    } catch (error) {
+    }
+}
 
-// Handle the "Load Model" button click
+// Call the main function to load the model when needed (load when the page loads)
+//let model = main();
+// Load model when "Load Model" button is clicked.
 loadModelButton.addEventListener('click', async () => {
-   await modelLoader.loadModel(modelPath);
+//    model = await main();
+    if (!modelLoaded) {
+        loadModelButton.innerText = "Downloading...";
+        model = await main();
+        loadModelButton.innerText = "Download complete";
+    }
 });
 
 
 
-// =====================================================
-// Predict Button
-// =====================================================
+//================================================================
+// Preprocessing images
+//================================================================
+
+async function preprocessInput(inputImage) {
+//    console.log('Before preprocess', inputImage.data);
+    const width  = inputImage.width;
+    const height = inputImage.height;
+    const data   = inputImage.data;
+    const rgbData = new Float32Array(width * height * 3); // 3 channels for RGB
+    for (let i = 0, j = 0; i < data.length; i += 4, j += 3) {
+        const r = data[i];
+        const g = data[i + 1];
+        const b = data[i + 2];
+        rgbData[j] = r/255;
+        rgbData[j + 1] = g/255;
+        rgbData[j + 2] = b/255;
+    }
+//    console.log('After preprocess (input to model)', rgbData);
+    return rgbData;
+}
+
+
+//================================================================
+// Output to heatmap
+//================================================================
+
+function postprocess(tensor) {
+  const shape = tensor.dims;
+  const numRows = shape[2]; // Assuming height is the third dimension
+  const numCols = shape[3]; // Assuming width is the fourth dimension
+  const data2D = [];
+  const data = tensor.data;
+  for (let i = 0; i < numRows; i++) {
+    const row = [];
+    for (let j = 0; j < numCols; j++) {
+      const dataIndex = i * numCols + j;
+      const value = data[dataIndex];
+      row.push(value);
+    }
+    data2D.push(row);
+  }
+  return data2D;
+}
+
+
+function createRandom2DArray(rows, cols) {
+  const randomArray = [];
+  for (let i = 0; i < rows; i++) {
+    const row = [];
+    for (let j = 0; j < cols; j++) {
+      // Generate a random float between 0 and 1
+      const randomValue = Math.random();
+      row.push(randomValue);
+    }
+    randomArray.push(row);
+  }
+  return randomArray;
+}
+
+
+
+
+
+//================================================================
+// Run Prediction
+//================================================================
+// Function to perform inference and display the output
+async function predictImage(model, inputImage) {
+    try {
+        console.log('Running inference..')
+        // Preprocess (remove alpha channel)
+        const processedImage = await preprocessInput(inputImage);
+        const imageArray = new Float32Array(processedImage);
+        var inputTensor = new ort.Tensor(imageArray, [1, 3, 768, 1024]);
+//        console.log('Input to model (inputTensor)', inputTensor); // Use .dims for dimensions
+        
+        // Run inference
+        const outputMap = await model.run({ input: inputTensor });
+        
+        // Postprocessing
+        const outputTensor = outputMap.output;
+//        console.log('Model output (outputTensor)', outputTensor);
+        
+        // Plot density map
+        const data2D = postprocess(outputTensor);
+//        console.log('data2D', data2D);
+        const trace = {z: data2D, type: 'heatmap', colorscale: 'Jet', showscale: false};
+        const layout = {xaxis: {tickvals: [], ticktext: [], showticklabels: false}, yaxis: {tickvals: [], ticktext: [], showticklabels: false}, autosize: true};
+        const data = [trace];
+        const config = {responsive: false};
+        Plotly.newPlot('dmap', data, layout, {displayModeBar: false});
+
+        // Manually adjust the size of the plot to fit within the container
+//        const plotContainer = document.getElementById('dmap');
+//        const plot = plotContainer.getElementsByClassName('js-plotly-plot')[0];
+//        plot.style.width = '100%'; // Set the width to 100% to fill the container
+//        plot.style.height = '100%'; // Set the height to 100% to fill the container
+        
+        var count = parseInt(outputTensor.data.reduce(function(acc, val) { return acc + val; }, 0)); 
+        countElement.textContent = `${count}`;
+//        console.log('Count:', count);
+        
+        // Done
+        console.log('Inference complete');
+    } catch (error) {
+        console.error('Error during inference:', error);
+        throw error;
+    }
+}
+
+// Add an event listener to the "Predict" button
+let inferenceDone = false;
 predictButton.addEventListener('click', async () => {
-   try {
-       if (!modelLoader.getModel()) {
-           window.alert("Model has not been loaded yet.");
-           return;
-       }
-       const predictions = await predict(selectedImage); // Pass the selected image through predict()
-       displayHeatmap(predictions); // Display the heatmap based on predictions
-   } catch (error) {
-       // Handle errors
-   }
+    try {
+        if (!model) {
+            window.alert("Model has not been loaded yet.");
+            return;
+        }
+        const inputImage = ctx.getImageData(0,0, imageCanvas.width, imageCanvas.height); // { willReadFrequently: true }
+        const inputImageChannels = inputImage.data.length / (inputImage.width * inputImage.height);
+//        await predictImage(model, inputImage);
+        
+        if (!inferenceDone) {
+            predictButton.innerText = "Running inference...";
+            predictButton.disabled  = true;
+            predictButton.style.backgroundColor = 'orange';
+            await predictImage(model, inputImage);
+            predictButton.disabled  = false;
+            predictButton.innerText = "Count People";
+        }
+            predictButton.style.backgroundColor = 'green';
+            loadImageButton.style.backgroundColor = '#333';
+        
+    } catch (error) {
+        // Handle errors
+    }
 });
 
 
-// =====================================================
-// Load the ONNX model and perform inference
-//====================================================== 
-async function predict(img) {
-   try {
-//       const ort = require('onnxruntime-web');
-       // Load the ONNX model
-//       const model = await ort.InferenceSession.create(modelUrl);
-       const model = modelLoader.getModel();
+//================================================================
+// Utils
+//================================================================
 
-       
-       // Prepare the input tensor (assuming your model expects a tensor)
-//       const img_tensor = new ort.Tensor(new Float32Array(img.data), 'float32', [1, 3, img.height, img.width]);
-       console.log('>>>>>>', img)
-       const img_tensor = new ort.Tensor('float32', new Float32Array(img.data), [1, 3, img.height, img.width]);  // new ort.Tensor("float32", img_arr, dims);
-       console.log('>>> Input Tensor Shape:', img_tensor.shape);
+function getVariableInfo(variable) {
+    const type = typeof variable;
 
-       // Run inference
-       const outputMap = await model.run({ input: img_tensor });
-       console.log('Output Tensor Shape:', outputMap.shape);
+    // For arrays and objects, determine their shape or size
+    let shapeSize = null;
+    if (Array.isArray(variable)) {
+        shapeSize = `Array with ${variable.length} elements`;
+    } else if (type === 'object') {
+        if (variable === null) {
+            shapeSize = 'Null';
+        } else {
+            const keys = Object.keys(variable);
+            shapeSize = `Object with ${keys.length} properties`;
+        }
+    }
 
-       // Extract the output tensor (modify 'output' to match your model's output name)
-       const outputTensor = outputMap.values().next().value;
-       console.log('Output Tensor Shape:', outputTensor.shape);
-
-       // Get the predictions as a JavaScript array
-       const predictions = Array.from(outputTensor.data);
-
-       // You can process the predictions here
-       console.log('Prediction is ready')
-       return predictions;
-       
-   } catch (error) {
-       console.error('Error during inference:', error);
-       throw error;
-   }
+    return {
+        type,
+        shapeSize,
+    };
 }
-
-// =====================================================
-// Define a function to display the heatmap
-// =====================================================
-function displayHeatmap(predictions) {
-   const canvas = document.createElement('canvas');
-   canvas.width = selectedImage.width; // Match canvas size to image size
-   canvas.height = selectedImage.height;
-   heatmapContainer.innerHTML = ''; // Clear previous content
-   heatmapContainer.appendChild(canvas);
-   const ctx = canvas.getContext('2d');
-   const imageData = ctx.createImageData(canvas.width, canvas.height);
-   // Modify the imageData based on your heatmap format
-   // Example: Fill the red channel with heatmap values
-   for (let i = 0; i < canvas.width * canvas.height; i++) {
-       const value = predictions[i]; // Replace with how your prediction data is structured
-       imageData.data[i * 4] = value * 255; // Red channel
-       imageData.data[i * 4 + 3] = 255; // Alpha channel
-   }
-   ctx.putImageData(imageData, 0, 0);
-}
-
