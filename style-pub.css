@@ -15,6 +15,43 @@
   Publications
 ***************************************************/
 
+.category {
+    text-align: center;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+
+.category ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.category li {
+  margin: 0 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.category a {
+  color: darkblue;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.2s ease-in-out;
+  
+}
+
+.category a:hover {
+color: #1E90FF;
+border-bottom-color: #1E90FF;
+}
+
 .publications{margin-top: 15px;}
 
 .publications h2 {
@@ -51,10 +88,10 @@
 }
 
 .publications a:hover {
-    color: midnightblue; /*#1E90FF;*/
+    color: #1E90FF; /*#1E90FF;*/
 /*    font-weight: 400;*/
     border-bottom: 2px solid;
-    border-bottom-color: midnightblue; /* #1E90FF;   */
+    border-bottom-color: #1E90FF; /* #1E90FF;   */
 }
 
 

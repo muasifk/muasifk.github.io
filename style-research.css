@@ -91,10 +91,10 @@ text-align: center;
 }
 
 .research a:hover {
-    color: midnightblue; /*#1E90FF;*/
+    color: #1E90FF; /*#1E90FF;*/
 /*    font-weight: 400;*/
     border-bottom: 2px solid;
-    border-bottom-color: midnightblue;
+    border-bottom-color: #1E90FF;
 }
 
 
