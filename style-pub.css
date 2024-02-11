@@ -29,6 +29,7 @@
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
+  color: var(--c_txt)
 }
 
 .category li {
@@ -38,7 +39,7 @@
 }
 
 .category a {
-  color: darkblue;
+/*  color: darkblue;*/
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
@@ -48,7 +49,7 @@
 }
 
 .category a:hover {
-color: #1E90FF;
+/*color: #1E90FF;*/
 border-bottom-color: #1E90FF;
 }
 
@@ -82,16 +83,16 @@ border-bottom-color: #1E90FF;
 
 
 .publications a {
-    color: #3e3c3c;
-    font-weight: 600;
+/*    color: #3e3c3c;*/
+    font-weight: 300;
     text-decoration: none;
 }
 
 .publications a:hover {
-    color: #1E90FF; /*#1E90FF;*/
+/*    color: #1E90FF; #1E90FF;*/
 /*    font-weight: 400;*/
     border-bottom: 2px solid;
-    border-bottom-color: #1E90FF; /* #1E90FF;   */
+/*    border-bottom-color: #1E90FF;  #1E90FF;   */
 }
 
 

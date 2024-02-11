@@ -15,6 +15,8 @@
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+  color: var(--c_hdr1);
+  background-color:  color: var(--c_mn_bg);
 }
 
 .video {
@@ -108,7 +110,7 @@
 .video-card {
     width: 200px; 
 /*    height: 220px; */
-    background-color: #f9f9f9;
+    background-color: var(--c_mn_bg) /*#f9f9f9; */
     border: 1px solid #ddd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -135,7 +137,7 @@ img {
 .video-card p {
     font-size: 0.85rem;
 /*    margin-bottom: 20px;*/
-    text-align:justify-all;
+    text-align: center;
     padding: 10px 5px;
 }
 

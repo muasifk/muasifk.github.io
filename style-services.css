@@ -25,13 +25,13 @@
 
 
 .services a {
-    color: #3e3c3c;
+/*    color: #3e3c3c;*/
     font-weight: 600;
     text-decoration: none;
 }
 
 .services a:hover {
-    color: deepskyblue; /*#1E90FF;*/
+/*    color: deepskyblue; */
 /*    font-weight: 400;*/
     border-bottom: 2px solid;
     border-bottom-color: deepskyblue; /* #1E90FF;   */
