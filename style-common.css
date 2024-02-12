@@ -11,12 +11,26 @@
 :root {
 --c_pg_bg  : #0E435F;
 --c_mn_bg  : #031F32 ;
---c_mn_nav : #0E435F  /* rgba(3, 31, 50, 0.5) ; */
+--c_mn_nav : #0E435F;  
 --c_mn_ftr : #031F32 ;
---c_hdr1  : #96C5E0;  /*  96C5E0   96DDE0 */
+--c_hdr1  : #96C5E0;  
 --c_txt : floralwhite ;
 --c_hyp: #96C5E0;
 }
+
+/*
+:root {
+--c_pg_bg  : #EBEFF3;
+--c_mn_bg  : #FDFDFF ;
+--c_mn_nav : #0E435F;  
+--c_mn_ftr : #FDFDFF ;
+--c_hdr1   : #064A8E;  
+--c_txt    : #0E0F10 ;
+--c_hyp    : #064A8E;
+}
+*/
+
+
 
 * {
   box-sizing: border-box;

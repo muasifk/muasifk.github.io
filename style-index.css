@@ -126,7 +126,7 @@
   .description {width: 90%; padding: 0;}
   #about h1 {font-size: 1.2rem; text-align: center}
   
-#about .title {text-align: center; }
+#about .title {font-size: 1.2rem; text-align: center; }
   #about .subtitle { font-size: 0.8rem; text-align: center}
   #profile li { margin-right: 10px; font-size: 0.8rem; text-align: center; align-items: center;}
   #cv {text-align: center; margin-top: 10px;}
