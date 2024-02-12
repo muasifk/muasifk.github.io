@@ -135,7 +135,7 @@ ol li {
 
 /* Mobile View  */
 @media screen and (max-width: 480px) {
-/*    main {margin: 80px auto; max-width: 90vw;}*/
+    main {margin: 20px auto; max-width: 95vw;}
     h1 {font-size: 1.2rem;}
     h2 {font-size: 1.1rem;}
     h3 {font-size: 1.0rem;}
@@ -200,7 +200,8 @@ nav a:hover {
 /* ++++++++++++++ For mobile friendly +++++++++++++++++++++++++ */
 /* Mobile View  */
 @media screen and (max-width: 480px) {
-    nav li {margin: 0 10px; font-size: 0.8rem;}
+    nav ul {margin: 0px 0px 0px 0px; justify-content: center; padding-left: 0px;}
+    nav li {margin: 5px 8px; font-size: 0.8rem; }
     nav a {font-size: 0.7rem; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;}
     p {font-size: 0.9rem;}
     }
@@ -225,9 +226,9 @@ footer {
     border-top: 1px solid #ccc;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #333333;
+/*    background-color: #333333;*/
 /*    background-image: linear-gradient(to bottom, #333333, #001f3f);*/
-    color: #fff;
+    color: var(--c_txt);
 }
 
 .footer-content {
@@ -235,6 +236,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
 /* Social Media Icons */
