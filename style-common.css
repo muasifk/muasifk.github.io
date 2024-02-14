@@ -117,6 +117,7 @@ ul {
 ul li {
   margin-top: 10px;
   color: var(--c_txt);
+  list-style-position: outside;
 }
 
 li {
@@ -191,7 +192,8 @@ nav ul {
 
 nav li {
   margin: 0 20px;
-  font-size: 0.8rem;
+  font-size: 1.0rem;
+  font-weight: 300;
 }
 
 nav a {

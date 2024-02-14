@@ -17,14 +17,14 @@
 
 .category {
     text-align: center;
-    border-top: 2px solid gray;
+/*    border-top: 2px solid gray;*/
     border-bottom: 2px solid gray;
 }
 
 
 .category ul {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   list-style-type: none;
   margin: 0;
   padding-top: 10px;
@@ -40,7 +40,7 @@
 
 .category a {
 /*  color: darkblue;*/
-  font-size: 0.9rem;
+/*  font-size: 0.9rem;*/
   font-weight: 600;
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -118,6 +118,7 @@ border-bottom-color: #1E90FF;
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+    .category ul li {font-size:  0.8rem;}
 .publications .title {font-size: 0.8rem}
 }
 
