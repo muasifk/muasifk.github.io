@@ -1,8 +1,47 @@
 
-    
+/***************************************************
+ Photo Gallery 
+***************************************************/
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.photo {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.photo img {
+  width: 200px; /* Set the fixed width */
+  height: 150px; /* Set the fixed height */
+  object-fit: cover; /* Ensure the image maintains its aspect ratio and covers the container */
+  transition: transform 0.3s ease;
+}
+
+.caption {
+  padding: 10px;
+  text-align: center;
+  color: var(--c_txt);
+  margin-top: 5px;
+}
+
+.image:hover img {
+  transform: scale(1.05);
+}
+
+
+
 /***************************************************
   Blog 
 ***************************************************/
+
 
 .blog{
   margin-top: 40px;
