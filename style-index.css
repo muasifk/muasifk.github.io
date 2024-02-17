@@ -25,7 +25,7 @@
 
 .image-container {
   width: auto;
-  max-width: 100px;
+  max-width: 150px;
 }
 
 #about img {
@@ -38,6 +38,8 @@
 .description {
   width: 80%;
   padding: 0 20px;
+  margin-top: 10px;
+  line-height: 1.6em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -80,7 +82,7 @@
 }
 
 #profile a {
-  color: deepskyblue;
+/*  color: deepskyblue;*/
   text-decoration: none;
   border-bottom: 2px solid transparent;
 }
@@ -96,7 +98,7 @@
 }
 
 #cv a{
-    color: deepskyblue;
+    color: var(--c_hyp);
 }
 
 
