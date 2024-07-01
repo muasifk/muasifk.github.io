@@ -271,7 +271,7 @@
 /* Media query for smaller screens */
 @media (max-width: 768px) {
 .news_title {
-    font-size: 0.8rem;
+/*    font-size: 0.8rem;*/
 }
 
 
