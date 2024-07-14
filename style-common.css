@@ -28,6 +28,7 @@
 --c_hdr1   : #0E0F10; /* #064A8E;   */
 --c_txt    : #0E0F10 ;
 --c_hyp    : #1772d0 ; /*#1772d0; /* #064A8E;  */
+--c_uline  : #1E90FF;
 }
 
 
@@ -216,9 +217,12 @@ nav a {
 }
 
 nav a:hover {
-  border-bottom-color: #1E90FF;
+  border-bottom-color: var(--c_uline); 
 }
 
+nav a.active {
+  border-bottom-color: var(--c_uline); 
+}
 
 nav ul li ul {
     display: none;
