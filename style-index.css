@@ -51,7 +51,7 @@
   font-stretch: condensed;
   font-weight: 300;
   margin: 0px 10px 0px 0;
-  text-transform: full-width;
+/*  text-transform: full-width;*/
   color: var(--c_hdr1)
   
 }

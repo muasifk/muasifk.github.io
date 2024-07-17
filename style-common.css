@@ -5,6 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Chivo');
+@import url('https://fonts.googleapis.com/css?family=Archivo:400,700');
+@import url('https://fonts.googleapis.com/css?family=Space+Grotesk:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+
 
 
 /***************  Color templates  *********/
@@ -40,7 +46,7 @@
 }
 
 body {
-    font-family:  'Lato', 'Palatino', 'Source Sans Pro', 'Lexend', 'Merriweather', 'Montserrat',  sans-serif ;
+    font-family:  'Lato', 'Space Grotesk',  sans-serif, 'Varela Round',   'Archivo',  'Merriweather', 'Chivo', 'Montserrat', 'Lexend', 'Source Sans Pro', 'Palatino' ;
     font-size: 14px;
     line-height: 1.2;
     background-color: var(--c_pg_bg); /* Grey background color */
