@@ -114,6 +114,22 @@ a:hover {
     border-bottom-color: deepskyblue;  
 }
 
+.external-link {
+            color: #007BFF; /* Link color */
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+        }
+
+.external-link:hover {
+            color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Add space between text and icon */
+.external-link i {
+            margin-left: 5px;
+            font-size: 0.85em; /* Slightly smaller icon */
+        }
 
 ul {
     list-style-type: disc;
@@ -144,7 +160,43 @@ ol li {
 }
 
 
+.cite-button {
+            display: inline-block;
+            padding: 2px 8px;
+            font-size: 0.7rem;
+            font-family: Arial, sans-serif;
+            color: #007BFF;
+            background-color: #f8f9fa;
+            border: 1px solid #007BFF;
+            border-radius: 3px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
 
+        .cite-button:hover {
+            background-color: #007BFF;
+            color: #ffffff;
+        }
+
+.video-button {
+            display: inline-block;
+            padding: 2px 8px;
+            font-size: 0.7rem;
+            font-family: Arial, sans-serif;
+            color: #007BFF;
+            background-color: #f8f9fa;
+            border: 1px solid #007BFF;
+            border-radius: 3px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .video-button:hover {
+            background-color: #007BFF;
+            color: #ffffff;
+        }
 
 /* ++++++++++++++++++++++++++  Mediq querries  +++++++++++++++++++++ */
 
