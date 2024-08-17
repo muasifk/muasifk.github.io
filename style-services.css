@@ -78,7 +78,7 @@
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-.services li {margin: 0px 0px; font-size: 0.8rem;  line-height: 1.4;}
+.services li {margin: 0px 0px; font-size: 0.9rem;  line-height: 1.4;}
 }
     
 

@@ -119,7 +119,18 @@ border-bottom-color: #1E90FF;
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+    .category ul {justify-content: center; }
     .category ul li {font-size:  0.8rem;}
 .publications .title {font-size: 0.8rem}
 }
 
+/*
+.category ul {
+  display: flex;
+  justify-content: left;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--c_txt)
+}*/

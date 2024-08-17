@@ -331,9 +331,10 @@ nav ul li:hover ul {
 /* Mobile View  */
 @media screen and (max-width: 480px) {
     nav ul {margin: 0px 0px 0px 0px; justify-content: center; padding-left: 0px;}
-    nav li {margin: 5px 8px; font-size: 0.8rem; }
-    nav a {font-size: 0.7rem; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;}
+    nav li {margin: 5px 8px; font-size: 0.9rem; }
+    nav a {font-size: 0.8rem; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;}
     p {font-size: 0.9rem;}
+    li {font-size: 0.9rem;}
     }
 
 
