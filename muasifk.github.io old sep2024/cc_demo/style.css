@@ -1,0 +1,204 @@
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 100px;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    color: darkblue;
+    padding: 10px;
+    
+    background-image: url('img/header1.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100px; 
+    font-family: cursive;  
+}
+
+a {color:aliceblue;}
+a:hover{
+    color:aqua;
+}
+
+main{
+    display: block;
+/*    max-width: 80%;*/
+    background-color: white;
+/*    height: 100%;*/
+}
+
+.intro {
+    display: block;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+.ul{
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-column {
+    flex: 1;
+    padding: 10px;
+    background-color: cornsilk;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-right: 5px solid gray;
+}
+
+.right-column {
+    flex: 2;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Style for the "Load Model" button */
+/*
+#loadModelButton {
+    background-color: #007bff; 
+    color: white;
+    transition: background-color 0.3s; 
+}
+*/
+
+canvas {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+/*    border: 1px solid #ddd;*/
+}
+
+#img {
+    display: inline-block;
+/*
+    width: 600px;
+    height: 400px;
+*/
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+}
+
+#img img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto; /* To maintain the aspect ratio */
+    height: auto; /* To maintain the aspect ratio */
+}
+
+#dmap {
+    display: inline-block;
+/*
+    width: desiredWidthpx;
+    height: desiredHeightpx;
+*/
+    align-items: center;
+    justify-content: center;    
+    border: 1px solid #ddd;
+}
+
+#dmap dmap {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto; 
+    height: auto; 
+}
+
+#count{
+    display: block;
+    font-weight: 600;
+    color: firebrick;
+    background-color: aquamarine;
+}
+
+footer {
+    background-color: #333; /* Set the background color of the footer */
+    color: #fff; /* Set the text color of the footer */
+    padding: 20px; /* Add padding to the footer content */
+    text-align: center; /* Center-align the footer content */
+}
+
+
+
+/* ============================================================================ */
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        margin: 20px;
+    }
+
+    header {
+        height: 60px;
+    }
+    
+    h1{font-size: 1.0rem;}
+
+    .container {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .left-column, .right-column {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+        border-right: none;
+    }
+}
+
+/* Tablet and Desktop Styles */
+/*
+@media (min-width: 769px) {
+    body {
+        margin: 100px;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .left-column {
+        flex: 1;
+        padding: 10px;
+    }
+
+    .right-column {
+        flex: 2;
+        padding: 10px;
+    }
+}
+*/
+

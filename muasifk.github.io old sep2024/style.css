@@ -1,0 +1,755 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lexend', 'Montserrat', 'Merriweather', 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+/*  background-color: floralwhite;*/
+}
+
+
+main {
+  margin: 80px auto;
+  max-width: 800px;
+/*  background-color: floralwhite;*/
+}
+
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.0rem;
+  font-style: normal;
+  font-weight: 100;
+}
+
+
+p {
+  font-size: 0.8rem;
+}
+
+a {
+  color: #1E90FF;
+}
+
+hover {
+  border-bottom-color: #1E90FF;
+}
+
+
+ul {
+  list-style-type: disc;
+  font-size: 0.8rem;
+  padding-left: 20px;
+}
+
+
+ul li {
+  margin-top: 10px;
+}
+
+
+/* ++++++++++++++++++++++++++  Mediq querries  +++++++++++++++++++++ */
+
+/*@media only screen and (min-width : 340px) {}*/
+/*@media only screen and (min-width : 480px) {}*/
+/*@media only screen and (min-width : 768px) {}*/
+/*@media only screen and (min-width : 992px) {}*/
+/*@media only screen and (min-width : 1200px) {}*/
+
+
+/*  Page width  */
+/*
+@media (max-width:320px){max-width: 300px;}  
+@media (max-width:480px){max-width: 450px;}  
+@media (max-width:960px){max-width: 800px;}
+*/
+
+
+
+/* Mobile View  */
+@media screen and (max-width: 480px) {
+    main {margin: 80px auto; max-width: 90vw;}
+    h1 {font-size: 1.2rem;}
+    h2 {font-size: 1.1rem;}
+    h3 {font-size: 1.0rem;}
+    p {font-size: 0.8rem;}
+    }
+
+
+
+
+
+/***************************************************
+  header and navigation bar
+***************************************************/
+
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav li {
+  margin: 0 20px;
+  font-size: 0.8rem;
+}
+
+nav a {
+  color: #333;
+  font-size: 0.85rem;
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.2s ease-in-out;
+  
+}
+
+nav a:hover {
+  border-bottom-color: #1E90FF;
+}
+
+
+
+
+/* ++++++++++++++ For mobile friendly +++++++++++++++++++++++++ */
+/* Mobile View  */
+@media screen and (max-width: 480px) {
+    nav li {margin: 0 10px; font-size: 0.8rem;}
+    nav a {font-size: 0.7rem; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;}
+    p {font-size: 0.8rem;}
+    }
+
+
+
+/***************************************************
+  About
+***************************************************/
+
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+/*  margin: 40px 0px;*/
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.image-container {
+  width: 100px;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+/*  filter: grayscale(20%) blur(0px) brightness(110%) contrast(100%) sepia(15%);*/
+/*  filter: hue-rotate(300deg) saturate(0.9);*/
+  border-radius: 70%;
+}
+
+.description {
+  width: 60%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+#about .title {
+  font-size: 1.2rem;
+  font-stretch: condensed;
+  font-weight: 600;
+  margin: 0px 10px 0px 0;
+  white-space: nowrap;
+/*  background-image: linear-gradient(to right, #1e90ff, #00ced1);*/
+  background-image: conic-gradient(#553c9a, #ee4b2b, #00c2cb, #553c9a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#about .subtitle {
+  font-size: 0.9rem;
+  margin: 0 0 5px 0;
+  font-weight: 300;
+  color: #777;
+}
+
+
+
+
+/***************  Profile ********************/
+#profile {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#profile li {
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+
+#profile a {
+  color: #1E90FF;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+#profile a:hover {
+  border-bottom-color: #1E90FF;
+}
+
+#cv {
+  margin-top: 10px;
+  font-weight: 300;
+  color: #777;
+}
+
+
+/***************  Research Interests ********************/
+/*
+.interest {
+  width: 50%;
+  padding-left: 20px;
+  margin-top: 0px;
+}
+
+.interest ul{
+  display: block;
+  list-style: disc;
+  margin-top: 10px;
+  margin-left: 15px;
+  padding-left: 10px;
+  list-style-position: inside;
+}
+
+.interest ul li{
+  font-size: 0.8rem;
+  margin-top: 10px;
+  margin-left: 15px;
+  line-height: 1.0;
+  list-style-position: inside;
+}
+
+
+.interest h2 {
+  color: #555;
+  font-size: 1.0rem;
+  font-style: normal;
+  font-weight: 100;
+  margin: 0 0 10px 0;
+}
+*/
+
+/* *****************   Responsive  ***************  */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  #about { flex-direction: column; align-items: center;}
+  .image-container { width: 40%; margin-bottom: 20px;}
+  .description {width: 90%; padding: 0;}
+  #about h1 {font-size: 1.2rem; text-align: center}
+  
+#about .title {text-align: center; }
+  #about .subtitle { font-size: 0.8rem; text-align: center}
+  #profile li { margin-right: 10px; font-size: 0.8rem; text-align: center; align-items: center;}
+  #cv {text-align: center; margin-top: 10px;}
+  .interest{ width: 100%; padding-left: 0px; padding-top: 15px; text-align: left; display: none;}  
+  .interest ul { margin: 0; padding: 0 0 0 20px; text-align: left; display: none;}
+  .interest ul li {font-size: 0.8rem; display: none;}
+  .interest h2 { font-size: 1.0rem; display: none;}
+  
+}
+
+
+
+/***************************************************
+  Bio
+***************************************************/
+
+#bio h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.5rem;*/
+}
+
+#bio h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.2rem;*/
+}
+
+
+#bio p {
+  margin: 0;
+/*  font-size: 0.8rem;*/
+  line-height: 1.5;
+}
+
+#bio a {
+  color: #1E90FF;
+}
+
+
+/***************************************************
+  Research Interest
+***************************************************/
+
+
+
+.interest ul{
+  margin-top: 10px;
+  margin-left: 15px;
+  padding-left: 10px;
+}
+
+.interest ul li{
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+
+
+
+
+/***************************************************
+  Selected Publications
+***************************************************/
+.sel_publications ol {
+  padding-left: 20px;
+  list-style-position: outside;
+  text-align: left;
+  order: reversed;
+}
+
+/*
+.sel_publications li {
+  margin: 15px 0px;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+*/
+
+.sel_pub li {
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.pub_title {
+color: #3e3c3c  ;  /* #1E90FF a01e2a */
+    font-weight: 600;
+/*  margin: 0;*/
+}
+
+
+/***************************************************
+  Awards
+***************************************************/
+.awards ol {
+  padding-left: 20px;
+  list-style-position: outside;
+  text-align: left;
+  order: reversed;
+}
+
+.awards li {
+  margin: 15px 0px;
+/*  font-size: 0.8rem;*/
+  line-height: 1.4;
+}
+
+/***************************************************
+  News
+***************************************************/
+
+.news-item {
+  width: calc(100% - 20px);
+  margin-left: 35px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.news-date {
+  margin-top: 10px;
+  padding-right: 10px;
+  color: #999;
+  font-weight: 300;
+}
+
+.news-title {
+  color: #1E90FF;
+/*  font-weight: 600;*/
+/*  margin: 0;*/
+}
+
+
+
+/***************************************************
+  Publications
+***************************************************/
+
+/*
+.publications{margin-top: 15px;}
+.publications h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
+.publications h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-underline-position: below;
+}
+
+.publications ol {
+  padding-left: 20px;
+  list-style-position: outside;
+  text-align: left;
+  order: reversed;
+}
+
+.publications li {
+  margin: 15px 0px;
+  line-height: 1.4;
+}
+
+.publications .paper-title {
+    font-weight: normal;
+}
+
+.publications .link {
+  margin-left: 10px;
+}
+
+.publications a {
+  color: #1E90FF;
+  font-weight: 300;
+}
+
+
+@media (max-width: 768px) {
+.publications .title {font-size: 0.8rem}
+}
+*/
+
+/***************************************************
+  Research
+***************************************************/
+.research-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*
+
+.research-item img {
+  width: 200px;
+  margin-right: 30px;
+  margin-top: 0px;
+  filter: grayscale(20%) blur(0px) brightness(100%) contrast(100%) sepia(5%);
+}
+*/
+
+.research-description {
+  flex: 1;
+}
+
+.research-description h3 {
+/*  font-size: 20px;*/
+  font-weight: 100;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.research-description p {
+/*  font-size: 0.9rem;*/
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.research-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.research-images img {
+  width: 200px;
+  height: 130px;
+  margin-right: 50px;
+  margin-top: 0px;
+  filter: grayscale(20%) blur(0px) brightness(100%) contrast(100%) sepia(5%);
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* add this line */
+}
+
+figcaption {
+/*  text-align: center;*/
+font-style: italic;
+color: #1E90FF;
+margin-top: 10px;
+display: block;
+max-width: 200px;
+text-align: center;
+}
+
+/* *****************   Responsive  ***************  */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+.research-item { flex-direction: column; align-items: center;}
+.research-description {flex: 1;}
+.research-description h3 {text-align: center; align-content: center; font-size: 0.8rem;}
+.research-description p {line-height: 1.5; margin-bottom: 0; font-size: 0.8rem;}
+.research-images {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; margin-top: 30px; margin-bottom: 20px;}
+figure {display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom:20px}
+}
+
+    
+/***************************************************
+  Services 
+***************************************************/
+
+.services h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.5rem;*/
+}
+
+
+.services h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.2rem;*/
+  text-underline-position: below;
+}
+
+.services ul {
+  padding-left: 20px;
+  list-style-position: inside;
+  text-align: left;
+}
+
+.services li {
+  margin: 0px 0px;
+/*  font-size: 0.8rem;*/
+  line-height: 1.4;
+}
+
+.services .title {
+    font-weight: normal;
+}
+
+.services .link {
+  margin-left: 10px;
+}
+
+.services a {
+  color: #1E90FF;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+.services li {margin: 0px 0px; font-size: 0.8rem;  line-height: 1.4;}
+}
+    
+/***************************************************
+  Blog 
+***************************************************/
+.container {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.video {
+  display: inline-block;
+  margin: 10px;
+  width: 150px;
+  height: 84px;
+  position: relative;
+}
+
+.video img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video:before,
+.video:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.video:before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.video:after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}
+
+.video:hover:before,
+.video:hover:after {
+  opacity: 1;
+}
+
+
+
+/*********** */
+.magazine-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.magazine {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.magazine img {
+/*
+  width: 100%;
+  height: auto;
+    */
+  width: 150px;
+  height: 84px;
+}
+
+.magazine-caption {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* *****************   Responsive  ***************  */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+}
+
+/***************************************************
+  Footer
+***************************************************/
+footer{
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* The typing effect */
+@keyframes typing{
+    from {width: 0}
+    to {width: 100%}
+}
+
+/* The typewriter cursor effect */
+/*
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+*/
+
+.email{
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    border-right: .15em solid orange; /* The typwriter cursor */
+    /* white-space: nowrap; /* Keeps the content on a single line */ */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3s steps(20, end) forwards;
+/*    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;*/
+}
+
+

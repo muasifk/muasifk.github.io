@@ -1,0 +1,77 @@
+
+    
+/***************************************************
+  Blog 
+***************************************************/
+
+
+
+
+/**  ********************  Teaching   *****************  **/
+.teaching{margin-top: 15px;}
+
+.teaching h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.5rem;*/
+}
+
+
+.teaching a {
+/*    color: #3e3c3c;*/
+    font-weight: 300;
+    text-decoration: none;
+    margin: auto;
+}
+
+.teaching a:hover {
+/*    color: deepskyblue; */
+/*    font-weight: 400;*/
+    border-bottom: 2px solid;
+/*    border-bottom-color: deepskyblue;  #1E90FF;   */
+}
+
+
+.teaching h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.5rem;*/
+}
+
+
+.teaching h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.2rem;*/
+  text-underline-position: below;
+}
+
+
+.teaching ul {
+  padding-left: 20px;
+  list-style-position: outside;
+  text-align: left;
+}
+
+.teaching li {
+  margin: 0px 0px;
+  line-height: 1.4;
+}
+
+.teaching .title {
+    font-weight: normal;
+}
+
+.teaching .link {
+  margin-left: 10px;
+}
+
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+.teaching li {margin: 0px 0px; font-size: 0.9rem;  line-height: 1.4;}
+}
+ 
+

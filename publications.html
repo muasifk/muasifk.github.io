@@ -1,85 +1,44 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MA Khan - Personal Website</title>
-    
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;400i&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
-  <link rel="stylesheet" href="style-common.css">
-  <link rel="stylesheet" href="style-pub.css">
-    
-  
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Research Scientist in AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
     <nav>
-      <ul>
-        <li><a href="index.html">About</a></li>
-        <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html" class="active">Publications</a></li>
-        <li><a href="services.html">Services</a></li>
-<!--        <li><a href="blog.html">Blog</a></li>-->
-          
-        <li> <a href="#">Blog</a> 
-    <ul class="submenu"> 
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="photos.html">Photo Gallery</a></li>
-    </ul> 
-  </li> 
-          
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-      
-      
-
-      
-
-
-<!-- *************************************************************
-     Selected Publicatins
-************************************************************* -->
-<div class="category">
-<ul>
-<li> <a href="#jrnl"> Journal Papers </a> </li>    
-<li> <a href="#conf"> Conference Papers </a> </li>
-<li> <a href="#book"> Book Chapters </a> </li>
-<li> <a href="#talk"> Misc </a> </li>
-</ul>
-
-</div>      
-      
-<section class="publications">
-<!--      <h1>Publications</h1>-->
+        <div class="header-left">
+            <span class="name-header">Muhammad Asif Khan</span>
+        </div>
         
-<!--
-<p>  Note:- The list may not be updated. Please visit my <a href="https://scholar.google.com/citations?user=BgUrPm8AAAAJ&hl=en">Google Scholar</a> profile for an up to date list of publications.</p>
-<br> <hr>
--->
- 
-<!-- **************************************************************
-    Journal Papers 
-*****************************************************************-->
-<div id="jrnl"> </div>
-<h1> Journal Papers </h1>
-
-            
-<div class="publications">
-  <ol reversed>  
-<!--  <ol class="custom_jol">-->
-      
+        <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        </div>
+        
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="">Publications</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="misc.html">Misc</a></li>
+        </ul>
+    </nav>
     
-    <li> 
+<main>
+    
+    <div class="container">
+    <section id="publications" class="publications">
+    <h2>Journal Papers</h2>
+    <ol class="journal-list">
+        <li> 
         M. A. Khan, H. Menouar and R. Hamila, <a href="">Accelerating Learning with Fixed Time Budget</a>, Neural Computing and Applications, 2024 [submitted].  
     </li>
     
@@ -169,22 +128,17 @@
     <li>
         K. Shaaban, M. A. Khan, and R. Hamila, <a href="https://core.ac.uk/download/pdf/82396069.pdf">"Literature Review of Advancements in Adaptive Ramp Metering”</a>, Procedia Computer Science 83 (2016): 203-211.
     </li>
-
-  </ol>
-</div>
-
-
- <!-- **************************************************************
-    Conference Papers
-*****************************************************************-->       
-<!--<h1 id="conf"> Conference Papers </h1>-->
-<div id="conf"> </div>
-<h1> Conference Papers </h1>
-    
-<div class="publications">
-  <ol reversed> 
-    
-    <li> 
+    </ol>
+        
+    </section>
+    </div>
+        
+        
+    <div class="container">
+    <section id="publications" class="publications">
+    <h2>Conference Proceedings</h2>
+    <ol class="conf-list">
+        <li> 
     M. A. Khan, H. Menouar, A. Nassar, and M. Abdallah, <a href="">"Visual Deception: Demonstrating Spoofing Attacks on Autonomous Vehicle Cameras"</a>, in International Conference on Future Technologies for Smart Society (ICFTSS) [accepted]  
     </li>
       
@@ -279,92 +233,51 @@
     </li>
          
      </ol>
-</div>
-
-    
-<!-- **************************************************************
-    Books
-*****************************************************************-->
-<!--<h1 id="book"> Books and Chapters </h1>-->
-<div id="book"> </div>
-<h1> Books</h1>
-            
-<div class="publications">
-  <ol reversed> 
+    </section>
+    </div>
+        
       
-    <li>
+
+    <div class="container">
+    <section id="publications" class="publications">
+    <h2>Books</h2>
+    <ol class="book-list">
+        <li>
         N. Saeed and M. A. Khan, <a href="">"Localization in Wireless Networks: Technologies and Applications" </a> Wiley-IEEE, 2024 [In progress]
     </li> 
-    
- 
     </ol>
+     </section>
+    </div>   
+        
     
-<!-- **************************************************************
-    Chapters
-*****************************************************************-->
-<!--<h1 id="book"> Books and Chapters </h1>-->
-<div id="book"> </div>
-<h1> Books Chapters </h1>
-            
-<div class="publications">
-  <ol reversed> 
-      
-    <li>
+    <div class="container">
+    <section id="publications" class="publications">    
+    <h2>Book Chapters</h2>
+    <ol class="book-list">
+        <li>
         M. A. Khan, and M. A. Ahmadon, <a href="https://publisher.uthm.edu.my/bookseries/index.php/eiccs/article/download/48/58">"Mobile Edge Computing for the Next Generation Massive Internet of Things" </a> in Evolution of Information, Communication and Computing System, 2023
     </li> 
     
     <li>
         M. A. Khan, M. A. Ahmadon, N. A. A. Rauf, A. M. Zaid, A. K. Mahamad, S. Saon, N. S. A. M. Taujuddin, and A. Jamil, <a href="https://publisher.uthm.edu.my/bookseries/index.php/eiccs/article/download/56/60"> “Implementation and simulation of udp client server environment using contiki cooja simulator.”</a> 2023.
     </li> 
-      
     </ol>
+        
+    </section>
+    </div>
+        
+</main>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
     
-
-<!-- **************************************************************
-    Demos and Talks
-*****************************************************************-->
-<!--<h1 id="talk"> Demos and Talks </h1>-->
-<div id="misc"> </div>
-<h1> Misc </h1>
-            
-<div class="publications">
-  <ol reversed>
-      <li> <a href=""> Career Ladder </a>, Facilities Management Journal, July 2020 Issue. </li>
-      <li> <a href=""> ABC of AI </a>, in Facilitate, the official IWFM magazine, Mar 2021 Issue </li>
-</ol>
-</div>
-
-</section>
-</section>     
-<br> <hr> 
-<!-- ********************** END OF THE PAGE ************************* -->    
-
-
-  <!-- Footer Section -->
-
-        <div class="footer-content">
-            <!-- Copyright Notice -->
-            <p>&copy; 2023 Muhammad Asif Khan</p>
-
-            <!-- Contact Email with Typing Effect -->
-<!--            <p>Email: <span class="email">asifk AT ieee DOT org</span></p>-->
-
-            <!-- Social Media Icons -->
-<!--            Follow me:-->
-            <ul class="social-icons">
-                <li><a href="https://twitter.com/muasifk" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/muasifk/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/muasifk/" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.researchgate.net/profile/Muhammad-Asif-Khan-3" target="_blank"><i class="fab fa-researchgate"></i></a></li>
-                <li><a href="https://scholar.google.com/citations?user=BgUrPm8AAAAJ&hl=en" target="_blank"><i class="fab fa-google-scholar"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCKEgO00pq57nSSSMmRZJiQg" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="https://orcid.org/0000-0003-2925-8841" target="_blank"><i class="fab fa-orcid"></i></a></li>
-                <li><a href="https://www.webofscience.com/wos/author/record/G-2629-2013" target="_blank"> <i class="ai ai-clarivate ai-1x"></i></a></li>
-                
-            </ul>
-        </div>
+    <script>
+        function toggleMenu() {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('active'); // Toggle the 'active' class
+        }
+    </script>
     
-    
- </main>   
 </body>
 </html>

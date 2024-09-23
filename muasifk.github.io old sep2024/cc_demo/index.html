@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+<!--    <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<!--    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>-->
+<!--    <script src="https://unpkg.com/tfjs-onnx"></script>-->
+    
+    <title>Demo Page</title>
+</head>
+<body>
+    <header>
+        <h1>Crowd Density Estimation [Demo]</h1>
+    </header>
+    
+    <main>
+    
+    <div class="intro">
+    <b> Disclaimer!</b> <br> <br> 
+        This is a only a demonstration of in-browser implementation of crowd counting using density estimation method.
+        The demo imports pretrained model from the server (huggingface) and run the inference locally in the browser using Javascript and Web-ORT. 
+        The models are trained on limited datasets and may not be accurate enough on all scenes. Expect poor results on:
+        <ul>
+        <li> Low resolution images. </li>
+        <li> Extremely dense scenes. </li>
+        <li> Image distortions. </li>
+        <li> Images with severe occlusions. </li>
+        </ul>
+        
+        Be patient when the model is downloading and during inference when you click the count button!
+    </div>
+        
+        
+    <div class="container">
+        <div class="left-column">
+            <div class="button-container">
+                <button id="loadModelButton">Load Model</button>
+                <button id="loadImageButton">Load Image</button>
+                <button id="predictButton">Count People</button>
+            </div>
+            
+            <div>
+            Estimated count: <p id="count"> </p>.
+            </div>
+        </div>
+        
+        
+        <div class="right-column">
+            <div>
+                <!-- Canvas for image shapes -->
+                <canvas id="imageCanvas"></canvas>
+                <canvas id="processedCanvas"></canvas>
+                <!-- div to display images -->
+                <div id='img'> </div>
+                <div id='dmap'> </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    
+    
+<footer>
+Visit my homepage: <a href="https://muasifk.github.io/"> https://muasifk.github.io/ </a>
+</footer>
+    
+    <!-- Add your JavaScript code here to handle button clicks and image processing -->
+<script src="script.js"></script>
+</body>
+</html>

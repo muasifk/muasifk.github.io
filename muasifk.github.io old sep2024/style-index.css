@@ -1,0 +1,278 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+
+
+/***************************************************
+  About
+***************************************************/
+
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+/*  margin: 40px 0px;*/
+  padding: 20px;
+  border-bottom: 2px solid #ccc;
+/*  border-radius: 5%;*/
+}
+
+
+.image-container {
+  width: auto;
+  max-width: 150px;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.description {
+  width: 80%;
+  padding: 0 20px;
+  margin-top: 10px;
+  line-height: 1.6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+#about .title {
+  font-size: 1.4rem;
+  font-stretch: condensed;
+  font-weight: 300;
+  margin: 0px 10px 0px 0;
+/*  text-transform: full-width;*/
+  color: var(--c_hdr1)
+  
+}
+
+#about .subtitle {
+  font-size: 0.9rem;
+  margin: 0 0 0 0;
+  font-weight: 300;
+  color: var(--c_txt);
+}
+
+
+
+
+/***************  Profile ********************/
+#profile {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#profile li {
+  margin-right: 10px;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+#profile a {
+/*  color: deepskyblue;*/
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+#profile a:hover {
+  border-bottom-color: deepskyblue;
+}
+
+#cv {
+  margin-top: 5px;
+  font-weight: 300;
+  color: var(--c_txt);
+}
+
+#cv a{
+    color: var(--c_hyp);
+}
+
+
+/***************  Research Interests ********************/
+.interest {
+}
+
+.interest ul{
+  padding-left: 15px;
+  list-style-position: outside;
+  text-align: left;
+}
+
+.interest ul li{
+  margin: 10px 10px;
+  line-height: 1.2;
+}
+
+
+
+/* *****************   Responsive  ***************  */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  #about { flex-direction: column; align-items: center;}
+  .image-container { width: 40%; margin-bottom: 20px;}
+  .description {width: 90%; padding: 0;}
+  #about h1 {font-size: 1.2rem; text-align: center}
+  
+#about .title {font-size: 1.2rem; text-align: center; }
+  #about .subtitle { font-size: 0.9rem; text-align: center}
+  #profile li { margin-right: 10px; font-size: 0.8rem; text-align: center; align-items: center;}
+  #cv {text-align: center; margin-top: 10px;}
+  .interest{ width: 100%; padding-left: 0px; padding-top: 15px; text-align: left; display: none;}  
+  .interest ul { margin: 0; padding: 0 0 0 20px; text-align: left; display: none;}
+  .interest ul li {font-size: 0.8rem; display: none;}
+  .interest h2 { font-size: 1.0rem; display: none;}
+  
+}
+
+
+
+/***************************************************
+  Bio
+***************************************************/
+
+#bio h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.5rem;*/
+
+}
+
+#bio h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+/*  font-size: 1.2rem;*/
+}
+
+
+#bio p {
+  margin: 0;
+/*  font-size: 0.8rem;*/
+  line-height: 1.5;
+/*  color: var(--c_txt);*/
+}
+
+#bio a {
+/*  color: var(--c_txt);*/
+}
+
+
+/***************************************************
+  Research Interest
+***************************************************/
+
+
+
+.interest ul{
+  margin-top: 10px;
+  margin-left: 15px;
+  padding-left: 10px;
+}
+
+.interest ul li{
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+
+.publications ol {
+  padding-left: 15px;
+  list-style-position: outside;
+  text-align: left;
+  order: reversed;
+}
+
+.publications li {
+  margin: 10px 20px;
+  line-height: 1.4;
+/*  color: var(--c_txt);*/
+}
+
+
+.publications a {
+/*    color: var(--c_hyp);*/
+/*    font-weight: 300;*/
+    text-decoration: none;
+}
+
+.publications a:hover {
+/*    color: #1E90FF; #1E90FF;*/
+/*    font-weight: 400;*/
+    border-bottom: 2px solid;
+    border-bottom-color: #1E90FF; /* #1E90FF;   */
+}
+
+
+
+
+/***************************************************
+  News
+***************************************************/
+
+.news h1{
+/*    color:aliceblue;*/
+}
+.news {
+  margin: 0px auto;
+  margin-top: 0px;
+  max-width: 1000px;
+/*  color: -var(--c_mn_bg);*/
+  padding: 0px; /* Add some padding for spacing */
+/*  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);  Add a subtle shadow */
+}
+
+.news_item {
+/*  width: calc(100% - 20px);*/
+/*
+  margin-left: 30px;
+  margin-bottom: 15px;
+*/
+  padding: 0px;
+/*  border-radius: 8px;*/
+  overflow: hidden;
+/*  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);*/
+*/
+}
+
+.news_date {
+  margin-top: 5px;
+  padding-right: 10px;
+  color: var(--c_hdr1);
+  font-weight: 400;
+}
+
+.news_title {
+/*    font-family: monospace;*/
+/*    font-size: 0.85rem;*/
+/*  color: #1E90FF;*/
+/*  font-weight: 600;*/
+/*  margin: 0;*/
+}
+
+
+
+
+/* *****************   Responsive  ***************  */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+.news_title {
+/*    font-size: 0.8rem;*/
+}
+
+
+
