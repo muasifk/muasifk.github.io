@@ -37,6 +37,35 @@ main {
 }
 
 
+.news-container {
+    max-width: 1000px;
+    width: 100%;
+    background: #ffffff; /* Maintain clean background */
+    padding: 2em 4em 1em 4em;
+    position: relative; /* Enable positioning for overlapping elements */
+    overflow: hidden; /* Ensure elements don’t spill out */
+    margin: 2em 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow for a floating effect */
+}
+
+.news-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 150px;
+    height: 150px;
+    background: #ff6f61; /* Add a soft background shape */
+    border-radius: 50%; /* Circular shape */
+    z-index: 0;
+    opacity: 0.5; /* Light opacity */
+}
+
+
+
+
+
+
 h1 {
 /*    text-align: center;*/
 }
