@@ -78,6 +78,10 @@ strong {
 }
   
 
+ul li {
+    margin-bottom: 12px; /* Adjust the value to set the spacing */
+}
+
 
 nav {
     background: #2c3e50; /* Slightly lighter dark blue */
