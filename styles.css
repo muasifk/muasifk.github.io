@@ -33,7 +33,7 @@ main {
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     margin: 0.5em 0em 0em 0em; /* Margin above and below each container */
-    padding: 2em 2em 1em 2em; /* Padding inside each container */
+    padding: 2em 4em 1em 4em; /* Padding inside each container */
 }
 
 
