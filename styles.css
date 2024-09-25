@@ -62,11 +62,25 @@ main {
 }
 
 .news-container h2,
-.news-container p,
 .news-container a { /* Target all text elements */
     position: relative; /* Set position to relative */
     z-index: 1; /* Higher z-index to bring text in front */
 }
+
+.news-container p {
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.5; /* Line height for readability */
+    margin: 0.5em 0; /* Space above and below each news item */
+    color: #333; /* Text color */
+}
+
+.news-date {
+    z-index: 1;
+    font-weight: bold; /* Make the date bold */
+    color: #007BFF; /* Optional: Change color of the date */
+    margin-right: 8px; /* Space between date and news text */
+}
+
 
 
 /* <h2 class="wp-block-heading alignwide has-huge-font-size" style="font-style:normal;font-weight:200;text-transform:capitalize">Lisa Faessler</h2>*/
@@ -182,12 +196,17 @@ nav a:hover {
     margin-bottom: 2em; /* Space below the header */
 }
 
+
 .profile-img {
-    margin-right: 50px; /* Space between image and text */
+    margin-right: 50px;
     border-radius: 50%;
     width: 180px;
     height: 180px;
 }
+
+
+
+
 
 .bio-info {
     flex: 1; /* Allow text to take remaining space */
@@ -433,6 +452,9 @@ ol.book-list a{
     object-fit: cover; /* Ensure image fits nicely */
     border-radius: 5px; /* Optional: slight rounding of image corners */
 }
+
+
+
 
 .research-item h3 {
     font-size: 1.2em;
