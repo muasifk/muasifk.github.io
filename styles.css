@@ -132,12 +132,12 @@ strong {
   
 
 ul li {
-    margin-bottom: 12px; /* Adjust the value to set the spacing */
+    margin-bottom: 6px; /* Adjust the value to set the spacing */
 }
 
 
 nav {
-    background: #2c3e50; /* Slightly lighter dark blue */
+    background: #2c3e50; 
     padding: 1em 2em; /* More horizontal padding for breathing space */
     position: fixed;
     top: 0;
@@ -146,7 +146,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   }
 
 .header-left {
@@ -173,6 +174,7 @@ nav ul {
 nav a {
     font-size: 1.1em;
     color: #ffffff;
+/*    color:black;*/
     text-decoration: none;
 /*    font-weight: bold;*/
 }
