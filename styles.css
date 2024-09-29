@@ -260,7 +260,7 @@ nav a:hover {
 }
 
 .social-icons a:hover {
-    color: #1abc9c; /* Change to a new hover color */
+    color: #0056b3; /* #1abc9c; /* Change to a new hover color */
     border-bottom: none;
     font-size: 21px;
 }
