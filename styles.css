@@ -44,7 +44,8 @@ main {
     padding: 2em 4em 1em 4em;
     position: relative; /* Enable positioning for overlapping elements */
     overflow: hidden; /* Ensure elements don’t spill out */
-    margin: 2em 0;
+/*    margin: 2em 0;*/
+    margin: 0.5em 0em 0em 0em; /* Margin above and below each container */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow for a floating effect */
 }
 
@@ -473,6 +474,71 @@ ol.book-list a{
 .research-item-text {
     flex: 1; /* Allow text to take remaining space */
 }
+
+
+
+
+/* ================================================================  */
+/*    Misc                                                   */
+/* ================================================================  */
+
+.videos {
+    display: flex;
+/*    flex-direction: wrap;*/
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 2em 0;
+/*    justify-content: center; */
+}
+
+.video-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between image and text */
+    text-align: center; /* Center video titles */
+    width: 220px; /* Fixed width for each video item */
+}
+
+.video-item iframe {
+    max-width: 100%; /* Make the iframe responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: slight rounding of iframe corners */
+}
+
+
+
+.memories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between research items */
+    padding: 2em 0;
+    justify-content: center; 
+}
+
+.photo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between image and text */
+}
+
+.photo-item img {
+    width: 200px; /* Fixed width for images */
+    height: 150px; /* Maintain aspect ratio */
+    object-fit: cover; /* Try cover OR  contain */
+    border-radius: 5px; /* Optional: slight rounding of image corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+.photo-item p {
+        font-size: 1em; /* Adjust text size */
+        text-align: center; /* Center-align text */
+        margin: 0; /* Remove default margin */
+        width: 200px;
+    }
 
 
 
