@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif; /* Source Sans Pro  Montserrat  Roboto  Poppins  Raleway */
+    font-family: 'Source Sans Pro', sans-serif; /* Arial,  Source Sans Pro  Montserrat  Roboto  Poppins  Raleway */
     margin: 0;
     padding: 0;
     background-color: #f5f5f5; /* Soft background color */
@@ -107,15 +107,21 @@ h3 {
 }
 
 a {
-    color: #007bff; /* A more vibrant blue for default links */
+    color: #007acc; /* A more vibrant blue for default links */
     text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for color and shadow */
+/*    transition: color 0.3s ease, text-shadow 0.3s ease;  */
+    font-variant-caps:titling-caps;
+    text-decoration: underline; 
+    text-decoration-thickness: 1px; 
+    text-underline-offset: 3px; 
+    transition: text-decoration-style 0.3s ease, color 0.3s ease;
 }
 
 a:hover {
-    color: #0056b3; /* Darker blue on hover */
-    text-decoration: underline; /* Underline on hover */
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    text-decoration-thickness: 2px; 
+/*    color: #0056b3; */
+/*    text-decoration: underline;  */
+/*    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); */
 }
 
 a:visited {
@@ -123,7 +129,7 @@ a:visited {
 }
 
 a:active {
-    color: #e74c3c;  Color for active links (when clicked) 
+    color: #e74c3c;   
 }
 
 
@@ -138,7 +144,7 @@ ul li {
 
 
 nav {
-    background: #2c3e50; 
+    background: #1c1f26; /* #2c3e50;  */
     padding: 1em 2em; /* More horizontal padding for breathing space */
     position: fixed;
     top: 0;
@@ -174,19 +180,23 @@ nav ul {
 
 nav a {
     font-size: 1.1em;
-    color: #ffffff;
+    color: #ecf0f1;
 /*    color:black;*/
-    text-decoration: none;
-/*    font-weight: bold;*/
+    text-decoration: none; /* Default solid underline */
+    border-bottom: 2px solid currentColor;
+    transition: background-color 0.3s, color 0.3s;    
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom-style: dashed;
     color: #ffffff;
-    text-decoration: underline; /* Underline on hover */
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
 }
 
+nav a.active {
+    border-bottom-style: dashed; /* Keeps dashed underline on active link */
+}
 
 .menu-toggle {
     display: none; /* Hide by default */
@@ -348,7 +358,7 @@ ol.journal-list {
     counter-reset: journal-counter; /* Initialize a custom counter */
     order:  reversed;
     text-indent: -40px; /* Move the first line back */
-    padding-left: 40px;  /* Indent the entire block of text */
+    padding-left: 60px;  /* Indent the entire block of text */
 }
 
 ol.journal-list li {
@@ -369,6 +379,14 @@ ol.journal-list li::before {
 
 ol.journal-list a{
     font-weight: 400;
+    text-decoration: underline; 
+    text-decoration-thickness: 1px; 
+    text-underline-offset: 3px; 
+    transition: text-decoration-style 0.3s ease, color 0.3s ease;
+}
+
+ol.journal-list a:hover{
+    text-decoration-thickness: 2px; 
 }
 
 
@@ -379,7 +397,7 @@ ol.conf-list {
     counter-reset: conf-counter; /* Initialize a custom counter */
     order:  reversed;
     text-indent: -40px; /* Move the first line back */
-    padding-left: 40px;  /* Indent the entire block of text */
+    padding-left: 60px;  /* Indent the entire block of text */
 }
 
 ol.conf-list li {
@@ -400,6 +418,14 @@ ol.conf-list li::before {
 ol.conf-list a{
     font-weight: 400;
     font-variant-caps:titling-caps;
+    text-decoration: underline; 
+    text-decoration-thickness: 1px; 
+    text-underline-offset: 3px; 
+    transition: text-decoration-style 0.3s ease, color 0.3s ease;
+}
+
+ol.conf-list a:hover{
+    text-decoration-thickness: 2px; 
 }
 
 
@@ -408,7 +434,7 @@ ol.book-list {
     counter-reset: book-counter; /* Initialize a custom counter */
     order:  reversed;
     text-indent: -40px; /* Move the first line back */
-    padding-left: 40px;  /* Indent the entire block of text */
+    padding-left: 60px;  /* Indent the entire block of text */
 }
 
 ol.book-list li {
@@ -429,6 +455,14 @@ ol.book-list li::before {
 ol.book-list a{
     font-weight: 400;
     font-variant-caps:titling-caps;
+    text-decoration: underline; 
+    text-decoration-thickness: 1px; 
+    text-underline-offset: 3px; 
+    transition: text-decoration-style 0.3s ease, color 0.3s ease;
+}
+
+ol.book-list a:hover{
+    text-decoration-thickness: 2px; 
 }
 
 
@@ -498,12 +532,25 @@ ol.book-list a{
     gap: 10px; /* Space between image and text */
     text-align: center; /* Center video titles */
     width: 220px; /* Fixed width for each video item */
+    padding: 10px; /* Adds some breathing space around the content */
+/*    background-color: #f9f9f9; */
+    border-radius: 8px; /* Smooth rounding of corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+.video-item:hover {
+    transform: scale(1.02); /* Slight scaling for hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
 }
 
 .video-item iframe {
     max-width: 100%; /* Make the iframe responsive */
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px; /* Optional: slight rounding of iframe corners */
+/*    aspect-ratio: 16 / 9;  */
+    border: 1px solid #e0e0e0; /* Optional: border for better definition */
+    transition: border-color 0.2s; /* Smooth transition for hover effect */
 }
 
 
