@@ -189,13 +189,14 @@ nav a {
 
 nav a:hover {
     text-decoration: none;
-    border-bottom-style: dashed;
+    border-bottom: 3px dotted currentColor;
+/*    border-bottom-style: dashed;*/
     color: #ffffff;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
 }
 
 nav a.active {
-    border-bottom-style: dashed; /* Keeps dashed underline on active link */
+    border-bottom: 3px dotted currentColor;
 }
 
 .menu-toggle {
@@ -364,7 +365,7 @@ ol.journal-list {
 ol.journal-list li {
     counter-increment: journal-counter; /* Increment the counter */
     margin-bottom: 15px; /* Increased space between list items */
-    line-height: 1.0; /* Improved readability */
+    line-height: 1.3; /* Improved readability */
 /*    padding-left: 20px;  Padding to create space for the counter */
     font-size: 1.0em; /* Slightly larger font for better visibility */
     color: #333;  
@@ -403,7 +404,7 @@ ol.conf-list {
 ol.conf-list li {
     counter-increment: conf-counter; /* Increment the counter */
     margin-bottom: 15px; /* Space between list items */
-    line-height: 1.0; /* For readability */
+    line-height: 1.3; /* For readability */
     font-size: 1.0em; /* Slightly larger font for better visibility */
     color: #333;  
 }
@@ -440,7 +441,7 @@ ol.book-list {
 ol.book-list li {
     counter-increment: book-counter; /* Increment the counter */
     margin-bottom: 15px; /* Space between list items */
-    line-height: 1.0; /* For readability */
+    line-height: 1.3; /* For readability */
     font-size: 1.0em; /* Slightly larger font for better visibility */
     color: #333;  
 }
