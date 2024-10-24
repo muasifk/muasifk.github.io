@@ -535,9 +535,11 @@ ol.book-list a:hover{
     width: 220px; /* Fixed width for each video item */
     padding: 10px; /* Adds some breathing space around the content */
 /*    background-color: #f9f9f9; */
-    border-radius: 8px; /* Smooth rounding of corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+/*
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s, box-shadow 0.2s; 
+*/
 }
 
 .video-item:hover {
@@ -550,8 +552,10 @@ ol.book-list a:hover{
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px; /* Optional: slight rounding of iframe corners */
 /*    aspect-ratio: 16 / 9;  */
-    border: 1px solid #e0e0e0; /* Optional: border for better definition */
-    transition: border-color 0.2s; /* Smooth transition for hover effect */
+/*
+    border: 1px solid #e0e0e0; 
+    transition: border-color 0.2s; 
+*/
 }
 
 
