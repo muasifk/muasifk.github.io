@@ -132,6 +132,19 @@ a:active {
     color: #e74c3c;   
 }
 
+/*
+a::after {
+      content: "\f08e"; 
+      font-family: "FontAwesome";
+      font-size: 16px;
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+  
+a[target="_blank"]::after {
+      color: #007bff; 
+    }
+*/
 
 strong {
     font-weight: bold; /* Makes text bold */
@@ -191,12 +204,15 @@ nav a:hover {
     text-decoration: none;
     border-bottom: 3px dotted currentColor;
 /*    border-bottom-style: dashed;*/
-    color: #ffffff;
+/*    color: #ffffff;*/
+    color:black;
+    background-color: white;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
 }
 
 nav a.active {
     border-bottom: 3px dotted currentColor;
+    
 }
 
 .menu-toggle {
@@ -211,14 +227,29 @@ nav a.active {
 }
 
 
+/*
 .profile-img {
     margin-right: 50px;
     border-radius: 50%;
     width: 180px;
     height: 180px;
 }
+*/
 
+.profile-img {
+    margin-right: 50px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    background-image: url('img/khan.PNG');
+    background-size: cover;
+/*    background-position: center;*/
+    transition: background-image 0.2s ease; /* Smooth transition */
+}
 
+.profile-img:hover {
+    background-image: url('img/khan2.jpg');
+}
 
 
 
@@ -315,21 +346,26 @@ nav a.active {
   }
 
 .interest-item {
+    display: flex;           /* Enable flexbox */
+    flex-direction: column;  /* Stack content vertically */
+    align-items: center;     /* Center-align horizontally */
+    justify-content: center; /* Center-align vertically */
     padding: 10px;
-/*    background-color: #f9f9f9;*/
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease;
+    text-align: center; 
   }
 
   .interest-item:hover {
-    transform: translateY(-5px); /* Lift on hover */
+    transform: translateY(-5px); 
   }
 
   .interest-item img {
     width: 120px;
     height: 120px;
-    border-radius: 50% /* 8px; */
+    border-radius: 50%;
+    margin-bottom: 10px;
   }
 
   .interest-item p {
@@ -474,36 +510,37 @@ ol.book-list a:hover{
 .research-items {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Space between research items */
+    gap: 20px; 
     padding: 2em 0;
 }
 
 .research-item {
     display: flex;
     align-items: center;
-    gap: 20px; /* Space between image and text */
+    gap: 20px; 
 }
 
 .research-item img {
-    width: 200px; /* Fixed width for images */
-    height: 150px; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure image fits nicely */
-    border-radius: 5px; /* Optional: slight rounding of image corners */
+    width: 200px; 
+    height: 150px;
+/*    border-right: 1px solid;*/
+/*    padding-right: 1em;*/
+/*    object-fit: cover; */
+/*    border-radius: 5px;  */
 }
 
 
-
-
 .research-item h3 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 10px;
-    color: #2c3e50; /* Dark color for heading */
+/*    margin-top: 0em;*/
+/*    color: #2c3e50; */
 }
 
 .research-item p {
     font-size: 1em;
     line-height: 1.6;
-    color: #555; /* Gray color for text */
+/*    color: #555; */
 }
 
 .research-item-text {
@@ -594,9 +631,20 @@ ol.book-list a:hover{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /*************************************************
 
-Mobile Friendly
+Mobile Friendly   Mobile Friendly   Mobile Friendly
 
 *************************************************/
 
@@ -609,14 +657,17 @@ Mobile Friendly
     nav ul {
         display: none; /* Hide nav list by default */
         flex-direction: column; /* Stack items vertically */
-        width: 60%; /* Full width */
-        background: #2c3e50; /* Background color for dropdown */
+        width: 100%; /* Full width */
+        background: #1c1f26; 
         padding: 2em 1em; /* Padding for dropdown */
+        padding-left: 2em;
         margin: 0em;
         position: absolute;
         top: 100%; /* Position below the nav */
-/*        left: 0;  Align with the left of nav */
-        z-index: 100; /* Ensure it appears above other content */
+        z-index: 100;
+        background: rgba(28, 31, 38, 0.8);
+        backdrop-filter: blur(8px);
+        
     }
     
     /* Show the menu when it's active */
@@ -734,7 +785,7 @@ Mobile Friendly
     }
 
     .research-item img {
-        width: 100%; /* Ensure images scale properly */
+        width: 90%; /* Ensure images scale properly */
         height: auto;
         align-content: center;
     }
