@@ -1,0 +1,875 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif; /* Arial,  Source Sans Pro  Montserrat  Roboto  Poppins  Raleway */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Soft background color */
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Stack containers vertically */
+    align-items: center; /* Center the containers horizontally */
+    margin-top: 5em;
+/*
+    max-width: 800px;
+    margin: 5em auto; 
+    padding: 2em;
+    background: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+*/
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%; /* Full width of the container */
+    background: #ffffff; /* White background for each section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 0.5em 0em 0em 0em; /* Margin above and below each container */
+    padding: 2em 5em 1em 5em; /* Padding inside each container */
+}
+
+
+.service-container{
+    max-width: 1000px;
+    width: 100%; /* Full width of the container */
+    background: #f9f9f9; /* White background for each section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 0.5em 0em 0em 0em; /* Margin above and below each container */
+/*    padding: 2em 5em 1em 5em; */
+    padding: 2em 4em;
+    font-size: 0.9em;
+}
+
+.service-container h2 {
+    text-align: center;
+    padding-bottom: 1em;
+}
+.service-container ul {
+    column-count: 2; /* Split into 2 columns */
+    column-gap: 2em; /* Space between columns */
+    list-style-position: outside; /* Align bullet points with text */
+}
+
+.service-container li {
+    margin-bottom: 0.5em; /* Space between list items */
+}
+
+.news-container {
+    max-width: 1000px;
+    width: 100%;
+    background: #ffffff; /* Maintain clean background */
+    padding: 2em 4em 1em 4em;
+    position: relative; /* Enable positioning for overlapping elements */
+    overflow: hidden; /* Ensure elements don’t spill out */
+/*    margin: 2em 0;*/
+    margin: 0.5em 0em 0em 0em; /* Margin above and below each container */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow for a floating effect */
+}
+
+.news-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 150px;
+    height: 150px;
+    background: #ff6f61; /* Add a soft background shape */
+    border-radius: 50%; /* Circular shape */
+    z-index: 0;
+    opacity: 0.5; /* Light opacity */
+}
+
+.news-container h2,
+.news-container a { /* Target all text elements */
+    position: relative; /* Set position to relative */
+    z-index: 1; /* Higher z-index to bring text in front */
+}
+
+.news-container p {
+/*    font-size: 16px; */
+    line-height: 1.5; /* Line height for readability */
+    margin: 0.5em 0; /* Space above and below each news item */
+    color: #333; /* Text color */
+}
+
+.news-date {
+    z-index: 1;
+    font-weight: bold; /* Make the date bold */
+    color: #007BFF; /* Optional: Change color of the date */
+    margin-right: 8px; /* Space between date and news text */
+}
+
+
+
+/* <h2 class="wp-block-heading alignwide has-huge-font-size" style="font-style:normal;font-weight:200;text-transform:capitalize">Lisa Faessler</h2>*/
+
+h1 {
+/*    text-align: center;*/
+    font-weight: 600;
+    font-size: 2em;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5em;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.6em;
+    
+}
+
+h3 {
+    color: #2c3e50; /* Dark text for headings */
+    margin: 0em;
+}
+
+a {
+    color: #333; /* #007acc; */
+    text-decoration: none; /* Remove underline */
+/*    transition: color 0.3s ease, text-shadow 0.3s ease;  */
+    font-variant-caps: titling-caps;
+    text-decoration: underline dotted; 
+    text-decoration-thickness: 1.1px; 
+    text-underline-offset: 3px; 
+/*    transition: text-decoration-style 0.3s ease, color 0.3s ease;*/
+}
+
+a:hover {
+    text-decoration-thickness: 1.5px; 
+    color: #007acc; 
+/*    color: darkblue;*/
+/*    text-decoration: underline;  */
+/*    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); */
+}
+
+a:visited {
+/*    color: #9b59b6;  Color for visited links */
+}
+
+a:active {
+    color: #e74c3c;   
+}
+
+/*
+a::after {
+      content: "\f08e"; 
+      font-family: "FontAwesome";
+      font-size: 16px;
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+  
+a[target="_blank"]::after {
+      color: #007bff; 
+    }
+*/
+
+strong {
+    font-weight: bold; /* Makes text bold */
+}
+  
+ul {
+     list-style-type: disc; 
+/*    padding-left: 1.5em;*/
+}
+
+ul li {
+    margin-bottom: 0.8em; /* Adjust the value to set the spacing */
+}
+
+
+nav {
+    background: #1c1f26; /* #2c3e50;  */
+    padding: 1em 2em; /* More horizontal padding for breathing space */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+.header-left {
+    margin-left: 20px; /* Space on the left side */
+}
+
+.name-header {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: lightgrey;
+    font-family: monospace;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 2em;
+    margin: 0 auto; /* Center the nav list */
+    padding: 0;
+    position: absolute; /* Use absolute positioning */
+    left: 50%; /* Move the list 50% from the left */
+    transform: translateX(-50%); /* Adjust by 50% to center it */
+}
+
+nav a {
+    font-size: 1.1em;
+    color: #ecf0f1;
+/*    color:black;*/
+    text-decoration: none; /* Default solid underline */
+    border-bottom: 2px solid currentColor;
+    transition: background-color 0.3s, color 0.3s;    
+}
+
+nav a:hover {
+    text-decoration: none;
+    border-bottom: 3px dotted currentColor;
+/*    border-bottom-style: dashed;*/
+/*    color: #ffffff;*/
+    color:black;
+    background-color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+nav a.active {
+    border-bottom: 3px dotted currentColor;
+    
+}
+
+.menu-toggle {
+    display: none; /* Hide by default */
+}
+
+
+.bio-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em; /* Space below the header */
+}
+
+
+/*
+.profile-img {
+    margin-right: 50px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+*/
+
+.profile-img {
+    margin-right: 50px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    background-image: url('img/khan.PNG');
+    background-size: cover;
+/*    background-position: center;*/
+    transition: background-image 0.2s ease; /* Smooth transition */
+}
+
+.profile-img:hover {
+    background-image: url('img/khan2.jpg');
+}
+
+
+
+.bio-info {
+    flex: 1; /* Allow text to take remaining space */
+}
+
+.bio-info h1 {
+    font-size: 2em;  
+    font-variant-caps:titling-caps;
+    margin: 0; /* Remove default margin */
+    font-family:'serif'; 
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+
+.bio-info h2 {
+    font-size: 1.3em; /* Font size for the title */
+    font-family:serif;
+    color: #555; 
+    margin: 0.5em 0; /* Margin for spacing above and below */
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.bio-info p {
+    font-size: 1em; /* Font size for the email */
+    margin: 0; /* Remove default margin */
+    color: #333; /* Color for the email text */
+}
+
+
+/* Social Media Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: var(--c_txt);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #0056b3; /* #1abc9c; /* Change to a new hover color */
+    border-bottom: none;
+    font-size: 21px;
+}
+
+
+
+.cv-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007BFF; /* Button color */
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+
+
+.bio, .news, .interests, .publications, .awards, .contact {
+    margin: 2em 0;
+}
+
+
+
+.research-interests {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Aligns items in the center horizontally */
+    margin-top: 30px;
+  }
+
+.interest-item {
+    display: flex;           /* Enable flexbox */
+    flex-direction: column;  /* Stack content vertically */
+    align-items: center;     /* Center-align horizontally */
+    justify-content: center; /* Center-align vertically */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+    text-align: center; 
+  }
+
+  .interest-item:hover {
+    transform: translateY(-5px); 
+  }
+
+  .interest-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .interest-item p {
+    width: 160px;
+    margin-top: 10px;
+    font-size: 1.0em;
+    color: #333;
+  }
+
+
+
+footer {
+    text-align: center;
+/*    margin: 2em 0;*/
+    margin: 4em 0; /* Increase top margin */
+    font-size: 0.9em;
+    color: #777;
+}
+
+
+/* ================================================================  */
+/*    Publications                                                   */
+/* ================================================================  */
+
+ol.journal-list {
+    list-style-type: none; /* Remove default numbering */
+    counter-reset: journal-counter; /* Initialize a custom counter */
+    order:  reversed;
+    text-indent: -40px; /* Move the first line back */
+    padding-left: 60px;  /* Indent the entire block of text */
+}
+
+ol.journal-list li {
+    counter-increment: journal-counter; /* Increment the counter */
+    margin-bottom: 1em; /* Increased space between list items */
+    line-height: 1.3; /* Improved readability */
+/*    padding-left: 20px;  Padding to create space for the counter */
+    font-size: 0.9em; /* Slightly larger font for better visibility */
+    color: #333;  
+}
+
+ol.journal-list li::before {
+    content: "J" counter(journal-counter); 
+    font-weight: bold;
+    margin-right: 10px;
+    color: #2c3e50;  
+}
+
+ol.journal-list a{
+    font-weight: 400;
+    text-decoration: underline dotted; 
+    text-decoration-thickness: 1px; 
+    text-underline-offset: 3px; 
+    transition: text-decoration-style 0.3s ease, color 0.3s ease;
+    
+}
+
+ol.journal-list a:hover{
+    text-decoration-thickness: 1.5px; 
+}
+
+
+
+
+ol.conf-list {
+    list-style-type: none; /* Remove default numbering */
+    counter-reset: conf-counter; /* Initialize a custom counter */
+    order:  reversed;
+    text-indent: -40px; /* Move the first line back */
+    padding-left: 60px;  /* Indent the entire block of text */
+}
+
+ol.conf-list li {
+    counter-increment: conf-counter; /* Increment the counter */
+    margin-bottom: 1em; /* Space between list items */
+    line-height: 1.3; /* For readability */
+    font-size: 0.9em; /* Slightly larger font for better visibility */
+    color: #333;  
+}
+
+ol.conf-list li::before {
+    content: "C" counter(conf-counter); /* Prefix 'J' followed by the counter */
+    font-weight: bold;
+    margin-right: 10px;
+    color: #2c3e50; /* Darker color for the numbering */
+}
+
+ol.conf-list a{
+    font-weight: 400;
+    font-variant-caps:titling-caps;
+    text-decoration: underline dotted; 
+    text-decoration-thickness: 1px; 
+    text-underline-offset: 3px; 
+    transition: text-decoration-style 0.3s ease, color 0.3s ease;
+}
+
+ol.conf-list a:hover{
+    text-decoration-thickness: 1.5px; 
+}
+
+
+ol.book-list {
+    list-style-type: none; /* Remove default numbering */
+    counter-reset: book-counter; /* Initialize a custom counter */
+    order:  reversed;
+    text-indent: -40px; /* Move the first line back */
+    padding-left: 60px;  /* Indent the entire block of text */
+}
+
+ol.book-list li {
+    counter-increment: book-counter; /* Increment the counter */
+    margin-bottom: 1em; /* Space between list items */
+    line-height: 1.3; /* For readability */
+    font-size: 0.9em; /* Slightly larger font for better visibility */
+    color: #333;  
+}
+
+ol.book-list li::before {
+    content: "B" counter(book-counter); /* Prefix 'J' followed by the counter */
+    font-weight: bold;
+    margin-right: 10px;
+    color: #2c3e50; /* Darker color for the numbering */
+}
+
+ol.book-list a{
+    font-weight: 400;
+    font-variant-caps:titling-caps;
+    text-decoration: underline dotted; 
+    text-decoration-thickness: 1px; 
+    text-underline-offset: 3px; 
+    transition: text-decoration-style 0.3s ease, color 0.3s ease;
+}
+
+ol.book-list a:hover{
+    text-decoration-thickness: 1.5px; 
+}
+
+
+/* ================================================================  */
+/*    Research                                                   */
+/* ================================================================  */
+
+.research-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    padding: 2em 0;
+}
+
+.research-item {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.research-item img {
+    width: 200px; 
+    height: 150px;
+/*    border-right: 1px solid;*/
+/*    padding-right: 1em;*/
+/*    object-fit: cover; */
+/*    border-radius: 5px;  */
+}
+
+
+.research-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+/*    margin-top: 0em;*/
+/*    color: #2c3e50; */
+}
+
+.research-item p {
+/*    font-size: 0.95em;*/
+    line-height: 1.6;
+/*    color: #555; */
+}
+
+.research-item-text {
+    flex: 1; /* Allow text to take remaining space */
+}
+
+
+
+
+/* ================================================================  */
+/*    Misc                                                   */
+/* ================================================================  */
+
+.videos {
+    display: flex;
+/*    flex-direction: wrap;*/
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 2em 0;
+/*    justify-content: center; */
+}
+
+.video-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between image and text */
+    text-align: center; /* Center video titles */
+    width: 220px; /* Fixed width for each video item */
+    padding: 10px; /* Adds some breathing space around the content */
+/*    background-color: #f9f9f9; */
+/*
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s, box-shadow 0.2s; 
+*/
+}
+
+.video-item:hover {
+    transform: scale(1.02); /* Slight scaling for hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+.video-item iframe {
+    max-width: 100%; /* Make the iframe responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: slight rounding of iframe corners */
+/*    aspect-ratio: 16 / 9;  */
+/*
+    border: 1px solid #e0e0e0; 
+    transition: border-color 0.2s; 
+*/
+}
+
+
+
+.memories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between research items */
+    padding: 2em 0;
+    justify-content: center; 
+}
+
+.photo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between image and text */
+}
+
+.photo-item img {
+    width: 200px; /* Fixed width for images */
+    height: 150px; /* Maintain aspect ratio */
+    object-fit: cover; /* Try cover OR  contain */
+    border-radius: 5px; /* Optional: slight rounding of image corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+.photo-item p {
+        font-size: 1em; /* Adjust text size */
+        text-align: center; /* Center-align text */
+        margin: 0; /* Remove default margin */
+        width: 200px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************
+
+Mobile Friendly   Mobile Friendly   Mobile Friendly
+
+*************************************************/
+
+@media (max-width: 768px) {
+    
+    nav {
+        position: fixed; /* Ensure nav is the reference for absolute positioning */
+    }
+    
+    nav ul {
+        display: none; /* Hide nav list by default */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width */
+        background: #1c1f26; 
+        padding: 2em 1em; /* Padding for dropdown */
+        padding-left: 2em;
+        margin: 0em;
+        position: absolute;
+        top: 100%; /* Position below the nav */
+        z-index: 100;
+        background: rgba(28, 31, 38, 0.8);
+        backdrop-filter: blur(8px);
+        
+    }
+    
+    /* Show the menu when it's active */
+    nav.active ul {
+        display: flex; /* Show nav list */
+    }
+
+
+    .menu-toggle {
+        display: flex;  
+        flex-direction: column; 
+        cursor: pointer; 
+        padding: 0.5em;
+        margin-right: 0px; 
+    }
+
+    .bar {
+        height: 3px;
+        width: 25px;
+        background: white; /* Bar color */
+        margin: 3px 0; /* Space between bars */
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .main {
+        margin-top: 5em; /* Adjust top margin for smaller screens */
+        padding: 1em; /* Add some padding for better spacing */
+        width: 100%; /* Ensure it takes full width */
+    }
+}
+
+@media (max-width: 768px) {
+    .bio-header {
+        flex-direction: column; /* Stack profile image and info vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .profile-img {
+        margin-right: 0; /* Remove margin between image and text */
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+
+    .bio-info h1 {
+        font-size: 1.5em; /* Reduce font size for name */
+    }
+
+    .bio-info h2 {
+        font-size: 1.3em; /* Reduce font size for title */
+        text-align: center;
+    }
+
+    .bio-info p {
+        font-size: 0.95em; /* Smaller font size for paragraphs */
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1em; /* Reduce padding on smaller screens */
+        margin: 0.5em 0; /* Adjust margins */
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 1em; /* Further reduce padding */
+    }
+}
+
+@media (max-width: 768px) {
+.service-container{
+    padding: 1em; 
+    font-size: 0.95em;
+}
+
+.service-container h2 {
+    text-align: left;
+/*    padding-bottom: 1em;*/
+}
+    
+.service-container ul {
+    column-count: 1; 
+/*    column-gap: 2em; */
+    list-style-position: outside; /* Align bullet points with text */
+}
+
+.service-container li {
+    margin-bottom: 0.1em; 
+}
+}
+
+
+
+@media (max-width: 768px) {
+    .research-interests {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .interest-item img {
+        width: 120px; /* Reduce image size */
+        height: 120px;
+    }
+
+    .interest-item p {
+        width: auto; /* Remove fixed width */
+        font-size: 1.1em; /* Reduce font size */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .research-items {
+        flex-direction: column; /* Stack items vertically */
+        gap: 15px; /* Adjust space between items */
+    }
+
+    .research-item {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;
+        text-align: center; /* Center align text */
+        
+    }
+
+    .research-item img {
+        width: 90%; /* Ensure images scale properly */
+        height: auto;
+        align-content: center;
+    }
+
+    .research-item-text {
+        align-content: center;
+        align-items: center;
+        text-align: center; /* Center text */
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .social-icons li {
+        margin-right: 5px; /* Reduce spacing between icons */
+    }
+
+    .social-icons a {
+        font-size: 18px; /* Slightly smaller icon size */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.8em; /* Smaller text in footer */
+        margin: 3em 0; /* Adjust margins */
+    }
+}
+
+
+
