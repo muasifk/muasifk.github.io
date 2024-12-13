@@ -79,23 +79,25 @@ main {
 
 h1 {font-weight: 600; font-size: 2em;}
 
-h2 {color: #2c3e50; margin-bottom: 0.5em; text-align: center; font-weight: 600; font-size: 1.8em;  }
+h2 {color: #2c3e50; margin-bottom: 0.5em; text-align: center; font-weight: 300; font-size: 1.8em;  }
 
-h3 {color: #2c3e50;  margin: 0em;}
+h3 {color: #2c3e50;  margin: 0em; font-weight: 600;}
 
-a {color: #007acc; 
-    text-decoration: none; 
-    font-variant-caps: titling-caps;
-    text-decoration: underline dotted; 
+a {color: #1772d0; /*#007acc;  */
+   text-decoration: none; 
+/*    font-variant-caps: titling-caps;*/
+/*    text-decoration: underline dotted; */
+/*
     text-decoration-thickness: 1.1px; 
     text-underline-offset: 3px; 
+*/
 
 }
 
 a:hover {
-    text-decoration-thickness: 1.5px; 
-    color: #007acc; 
-    font-weight: 600;
+/*    text-decoration-thickness: 1.5px; */
+    color: #f09228; 
+/*    font-weight: 600;*/
 }
 
 a:visited {
@@ -283,7 +285,7 @@ footer {
     margin-bottom: 0px;
     margin-top: 0px;
     font-weight: 200;
-/*    color: #2c3e50; */
+    color: darkgoldenrod;
 }
 
 .research-item p {
