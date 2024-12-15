@@ -51,12 +51,14 @@ main {
 .news-container {
     max-width: 1000px;
     width: 100%;
-    background: #ffffff; /* Maintain clean background */
+    background: #ffffff;
+    color:white;
+    background-color: #065895;
     padding: 2em 4em 1em 4em;
     position: relative; /* Enable positioning for overlapping elements */
     overflow: hidden; /* Ensure elements don’t spill out */
 /*    margin: 2em 0;*/
-    margin: 0.5em 0em 0em 0em; /* Margin above and below each container */
+    margin: 0em 0em 0.5em 0em; /* Margin above and below each container */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow for a floating effect */
 }
 
@@ -73,8 +75,10 @@ main {
     opacity: 0.5; /* Light opacity */
 }
 
+.news-container h2{color:aliceblue;}
 
-.news-date {color: #007BFF;}
+
+.news-date {color:aliceblue;}
 
 
 
@@ -305,7 +309,30 @@ Mobile Friendly   Mobile Friendly   Mobile Friendly
 *************************************************/
 
 @media (max-width: 768px) {
-    .caption {
+    
+.profile-banner {
+    position: relative; /* Enables positioning for child elements */
+    width: 100%;
+    height: auto;
+    }
+
+.profile-banner img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 20% 80%; 
+    filter: grsayscale(0%) sepia(50%) brightness(90%) contrast(10%) saturate(1.0);  
+    }
+
+.profile-banner img:hover {
+    filter: grayscale(0%) sepia(0%) contrast(100%) saturate(1); /* Reverts to normal */
+    transform: scale(1.0); 
+    }
+    
+    
+.caption {
     position:absolute;
     bottom: 85%; 
     left: 40%;
@@ -342,18 +369,6 @@ Mobile Friendly   Mobile Friendly   Mobile Friendly
     
     
 
-.profile-img {
-    display: none;
-    margin-right: 0px;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-}
-
-    .profile-img {
-        margin-right: 0; /* Remove margin between image and text */
-        margin-bottom: 20px; /* Add space between image and text */
-    }
 
     .bio-info h1 {
         font-size: 1.5em; /* Reduce font size for name */
@@ -388,19 +403,8 @@ Mobile Friendly   Mobile Friendly   Mobile Friendly
     }
 }
 
-@media (max-width: 768px) {
-.service-container{
-    padding: 1em; 
-    font-size: 0.95em;
-}
 
-.service-container h2 {
-    text-align: left;
-/*    padding-bottom: 1em;*/
-}
     
-
-
 @media (max-width: 768px) {
     .research-items {
         flex-direction: column; /* Stack items vertically */
@@ -411,6 +415,7 @@ Mobile Friendly   Mobile Friendly   Mobile Friendly
         flex-direction: column; /* Stack image and text vertically */
         align-items: center;
         text-align: center; /* Center align text */
+        margin-bottom: 2em;
         
     }
 
