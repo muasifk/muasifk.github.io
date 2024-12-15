@@ -15,7 +15,7 @@ main {
     display: flex;
     flex-direction: column; /* Stack containers vertically */
     align-items: center; /* Center the containers horizontally */
-    margin-top: 5em;
+    margin-top: 0em;
 /*
     max-width: 800px;
     margin: 5em auto; 
@@ -30,17 +30,18 @@ main {
     max-width: 1000px;
     width: 100%; /* Full width of the container */
     background: #ffffff; /* White background for each section */
-    border-radius: 8px; /* Rounded corners */
+/*    border-radius: 8px; s*/
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     margin: 0em 0em 0.5em 0em; /* Margin above and below each container */
     padding: 2em 4em 1em 4em; /* Padding inside each container */
+    padding-top: 0;
 }
 
 .container2 {
     max-width: 1000px;
     width: 100%; /* Full width of the container */
     background: #ffffff; /* White background for each section */
-    border-radius: 8px; /* Rounded corners */
+/*    border-radius: 8px; */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     margin: 0em 0em 0.5em 0em; /* Margin above and below each container */
     padding: 2em 2em 1em 2em; /* Padding inside each container */
@@ -83,57 +84,27 @@ h2 {color: #2c3e50; margin-bottom: 0.5em; text-align: center; font-weight: 300; 
 
 h3 {color: #2c3e50;  margin: 0em; font-weight: 600;}
 
-a {color: #1772d0; /*#007acc;  */
-   text-decoration: none; 
-/*    font-variant-caps: titling-caps;*/
-/*    text-decoration: underline dotted; */
-/*
-    text-decoration-thickness: 1.1px; 
-    text-underline-offset: 3px; 
-*/
+a {color: #1772d0; text-decoration: none; }
 
-}
+a:hover {color: #f09228; }
 
-a:hover {
-/*    text-decoration-thickness: 1.5px; */
-    color: #f09228; 
-/*    font-weight: 600;*/
-}
+a:visited {}
 
-a:visited {
-}
-
-a:active {
-    color: #e74c3c;   
-}
+a:active {color: #e74c3c; }
 
 
-strong {
-    font-weight: 300; /* Makes text bold */
-    color: darkgoldenrod;
-}
+strong {font-weight: 300; color: darkgoldenrod;}
   
-ul {
-     list-style-type: disc; 
-}
+ul {list-style-type: disc; }
 
-ul li {
-}
-
+ul li {}
 
 p{font-weight: 200; margin-bottom: 5px;}
 
+.bio {align-items: center; margin-bottom: 2em; }
 
 
-
-.bio-header {
-/*    display: flex;*/
-    align-items: center;
-    margin-bottom: 2em;  
-}
-
-
-.bio-header h1 {
+.bio h1 {
     text-align: center;
     font-size: 1.5em;  
     font-variant-caps:titling-caps;
@@ -145,7 +116,7 @@ p{font-weight: 200; margin-bottom: 5px;}
 
 }
 
-.bio-header h2 {
+.bio h2 {
     font-size: 1.1em; 
     font-family:serif;
     color: #555; 
@@ -155,23 +126,11 @@ p{font-weight: 200; margin-bottom: 5px;}
 }
 
 .bio-header p {
-    font-size: 1em; /* Font size for the email */
-    margin: 0; /* Remove default margin */
-    color: #333; /* Color for the email text */
+    font-size: 1em; 
+    margin: 0; 
+    color: #333; 
     text-align: center;
     letter-spacing: 5px;
-}
-
-.bio-info {
-    display: flex;
-    max-width: 100%;
-}
-
-.profile-img {
-    margin-right: 0px;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
 }
 
 
@@ -188,9 +147,8 @@ p{font-weight: 200; margin-bottom: 5px;}
     max-width: 1200px;
     height: 250px;
     object-fit: cover;
-    object-position: 20% 50%; 
-    color:dimgrey;
-    filter: grayscale(10%) sepia(50%) contrast(100%) saturate(1.0);  
+    object-position: 20% 60%; 
+    filter: grsayscale(0%) sepia(50%) brightness(90%) contrast(10%) saturate(1.0);  
 }
 
 .profile-banner img:hover {
@@ -215,6 +173,8 @@ p{font-weight: 200; margin-bottom: 5px;}
 
 /* Social Media Icons */
 .social-icons {
+    color: dimgrey;
+    text-align: center;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -227,15 +187,15 @@ p{font-weight: 200; margin-bottom: 5px;}
 }
 
 .social-icons a {
-    color: var(--c_txt);
     text-decoration: none;
     font-size: 20px;
+    color: gray; 
 }
 
 .social-icons a:hover {
-    color: #0056b3; /* #1abc9c; /* Change to a new hover color */
     border-bottom: none;
     font-size: 21px;
+    color: #f09228;
 }
 
 
