@@ -176,6 +176,41 @@ p{font-weight: 200; margin-bottom: 5px;}
 
 
 
+.profile-banner {
+    position: relative; /* Enables positioning for child elements */
+    width: 100%;
+    height: auto;
+}
+
+.profile-banner img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 20% 50%; 
+    color:dimgrey;
+    filter: grayscale(10%) sepia(50%) contrast(100%) saturate(1.0);  
+}
+
+.profile-banner img:hover {
+    filter: grayscale(0%) sepia(0%) contrast(100%) saturate(1); /* Reverts to normal */
+    transform: scale(1.0); 
+}
+
+
+.caption {
+    position:absolute;
+    bottom: 85%; 
+    left: 70%;
+    transform: translateX(0%); 
+    background: rgba(0, 0, 0, 0.6); 
+    color:bisque;
+    padding: 5px 10px; 
+    font-size: 0.9em; 
+    font-weight: normal; 
+    text-align: center; 
+}
 
 
 /* Social Media Icons */
@@ -281,11 +316,12 @@ footer {
 
 
 .research-item h3 {
-/*    font-size: 1.3em;*/
+    font-size: 1.2em;
     margin-bottom: 0px;
     margin-top: 0px;
     font-weight: 200;
-    color: darkgoldenrod;
+/*    text-decoration: underline;*/
+/*    color:darkslateblue;*/
 }
 
 .research-item p {
@@ -309,6 +345,15 @@ Mobile Friendly   Mobile Friendly   Mobile Friendly
 *************************************************/
 
 @media (max-width: 768px) {
+    .caption {
+    position:absolute;
+    bottom: 85%; 
+    left: 40%;
+    transform: translateX(0%); 
+    
+}
+
+}
     
  
 @media (max-width: 768px) {
