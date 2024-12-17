@@ -9,8 +9,8 @@ body {
     padding: 0;
     background-color: #f5f5f5; /* Soft background color */
     color: #333;
-    font-weight: 300;
-    font-size: 0.9em;
+    font-weight: 200;
+    font-size: 0.95em;
     line-height: 1.5;
     
 }
@@ -32,8 +32,7 @@ a:active {color: #e74c3c; }
 ul {list-style-type: disc; }
 ul li {}
 p{font-weight: 300; margin-bottom: 5px;}
-
-strong {font-weight: 500; } /* color: darkgoldenrod; */
+strong {font-weight: 400; } /* color: darkgoldenrod; */
 
 
 .container1 {
