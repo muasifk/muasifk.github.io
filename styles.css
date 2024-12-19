@@ -107,7 +107,7 @@ strong {font-weight: 400; } /* color: darkgoldenrod; */
     max-width: 1200px;
     height: 250px;
     object-fit: cover;
-    object-position: 20% 60%; 
+    object-position: 20% 40%; 
     filter: brightness(1.2) contrast(1.0) saturate(1.0) hue-rotate(10deg);  
 }
 
@@ -276,9 +276,9 @@ Mobile Friendly   Mobile Friendly   Mobile Friendly
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
-    height: 250px;
+    height: 150px;
     object-fit: cover;
-    object-position: 20% 80%; 
+    object-position: 20% 30%; 
     filter: grsayscale(0%) sepia(50%) brightness(90%) contrast(10%) saturate(1.0);  
     }
 
