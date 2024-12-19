@@ -298,8 +298,8 @@ Mobile Friendly   Mobile Friendly   Mobile Friendly
     position:absolute;
     bottom: 85%; 
     left: 40%;
-    transform: translateX(0%); 
-    
+    transform: translateX(0%);
+    display: none;
 }
 
 }
