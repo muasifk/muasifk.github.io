@@ -264,6 +264,16 @@ Mobile Friendly   Mobile Friendly   Mobile Friendly
 
 *************************************************/
 
+
+
+@media (max-width: 768px) {
+    .main {
+        margin-top: 5em; /* Adjust top margin for smaller screens */
+        padding: 1em; /* Add some padding for better spacing */
+        width: 100%; /* Ensure it takes full width */
+    }
+}
+
 @media (max-width: 768px) {
     
 .profile-banner {
@@ -276,17 +286,13 @@ Mobile Friendly   Mobile Friendly   Mobile Friendly
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
-    height: 150px;
+    height: 180px;
     object-fit: cover;
-    object-position: 20% 30%; 
+    object-position: 20% 10%; 
     filter: grsayscale(0%) sepia(50%) brightness(90%) contrast(10%) saturate(1.0);  
     }
 
-.profile-banner img:hover {
-    filter: grayscale(0%) sepia(0%) contrast(100%) saturate(1); /* Reverts to normal */
-    transform: scale(1.0); 
-    }
-    
+
     
 .caption {
     position:absolute;
@@ -296,15 +302,6 @@ Mobile Friendly   Mobile Friendly   Mobile Friendly
     
 }
 
-}
-    
- 
-@media (max-width: 768px) {
-    .main {
-        margin-top: 5em; /* Adjust top margin for smaller screens */
-        padding: 1em; /* Add some padding for better spacing */
-        width: 100%; /* Ensure it takes full width */
-    }
 }
 
 @media (max-width: 768px) {
