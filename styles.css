@@ -286,9 +286,9 @@ Mobile Friendly   Mobile Friendly   Mobile Friendly
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
-    height: 180px;
+    height: 120px;
     object-fit: cover;
-    object-position: 20% 10%; 
+    object-position: 40% 40%; 
     filter: grsayscale(0%) sepia(50%) brightness(90%) contrast(10%) saturate(1.0);  
     }
 
