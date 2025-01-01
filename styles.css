@@ -88,6 +88,7 @@ strong {font-weight: 400; text-shadow: 0 0 0.6px;} /* color: darkgoldenrod; */
 .news-container a:hover {color: #1772d0; }}
 
 
+
 .bio {align-items: center; margin-bottom: 2em; }
 .bio h1 { text-align: center; margin: 0;  letter-spacing: 1px; margin-bottom: 0.5em; }
 .bio h2 { font-size: 1.1em;  color: #555; margin: 0.5em 0;  text-align: center; letter-spacing: 1px;}
@@ -186,7 +187,7 @@ strong {font-weight: 400; text-shadow: 0 0 0.6px;} /* color: darkgoldenrod; */
 
 
 
-
+.news  p{margin: 0px; padding: 0px;}
 
 
 footer {
