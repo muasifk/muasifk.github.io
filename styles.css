@@ -136,7 +136,7 @@ strong {font-weight: 400; text-shadow: 0 0 0.6px;} /* color: darkgoldenrod; */
 
 /* Social Media Icons */
 .social-icons {
-    color: dimgrey;
+/*    color: dimgrey;*/
     text-align: center;
     list-style: none;
     padding: 0;
@@ -152,7 +152,7 @@ strong {font-weight: 400; text-shadow: 0 0 0.6px;} /* color: darkgoldenrod; */
 .social-icons a {
     text-decoration: none;
     font-size: 20px;
-    color: gray; 
+    color: #333; 
 }
 
 .social-icons a:hover {
