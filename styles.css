@@ -33,7 +33,7 @@ ul {list-style-type: disc; }
 ul li {}
 p{font-weight: 300; margin-bottom: 5px;}
 strong {font-weight: 400; text-shadow: 0 0 0.6px;} /* color: darkgoldenrod; */
-
+.highlight {background-color: #e3f2fd; margin-right: 5em;}
 
 .container1 {
     max-width: 1000px;
