@@ -34,7 +34,7 @@ ul li {}
 p{font-weight: 300; margin-bottom: 5px;}
 strong {font-weight: 400; text-shadow: 0 0 0.6px;} /* color: darkgoldenrod; */
 .highlight {background-color: None; margin-right: 0em;}
-
+important {font-weight: 400; text-shadow: 0 0 0.6px; color: firebrick;}
 .container1 {
     max-width: 1000px;
     width: 100%; 
@@ -189,6 +189,13 @@ strong {font-weight: 400; text-shadow: 0 0 0.6px;} /* color: darkgoldenrod; */
 
 .news  p{margin: 0px; padding: 0px;}
 
+.thumbnail {
+            width: 30px;  /* Small size for the thumbnail */
+            height: auto;
+            vertical-align: middle; /* Aligns with the text line */
+            cursor: pointer;
+        }
+
 
 footer {
     text-align: center;
@@ -197,6 +204,7 @@ footer {
     font-size: 0.9em;
     color: #777;
 }
+
 
 
 /* ================================================================  */
