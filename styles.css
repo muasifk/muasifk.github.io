@@ -276,20 +276,52 @@ footer {
     max-width: 1000px;
     width: 100%;
 /*    background-color: #065895;*/
-    background-color: #053355;
+/*    background-color: #053355;*/
+/*    background-color: white;*/
+    
+    /* Unique background */
+/*
+    background: 
+        linear-gradient(135deg, #e0f7fa 25%, #b2ebf2 100%),
+        repeating-linear-gradient(
+            45deg,
+            rgba(255,255,255,0.05),
+            rgba(255,255,255,0.05) 10px,
+            transparent 10px,
+            transparent 20px
+        );
+    background-blend-mode: overlay;
+*/
+    
+    background-color: #0e1a2b; /* deep navy blue */
+    background-image: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.02) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.02) 50%,
+        rgba(255, 255, 255, 0.02) 75%,
+        transparent 75%,
+        transparent
+    );
+    background-size: 10px 30px;
+    
+
+
+    
     padding: 2em 2em 1em 2em;
     margin: 0em 0em 0.5em 0em;
     display: flex;
-    gap: 1em;
+    gap: 2em;
     flex-wrap: wrap;
     justify-content: center;
-/*    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */    
+/*    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);     */
 }
 
 
 .video-container iframe {
-  width: 200px;
-  height: 150px;
+  width: 280px;
+  height: 200px;
   border: none;
 }
 
