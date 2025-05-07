@@ -190,7 +190,8 @@ important {font-weight: 400; text-shadow: 0 0 0.6px; color: firebrick;}
 
 
 .news  p{margin: 0px; padding: 0px;}
-.news li {list-style-type: '👉'; padding-inline-start: 1ch;}
+.news li {list-style-type: '👉'; padding-inline-start: 0.5ch;}
+
 
 .thumbnail {
             width: 30px;  /* Small size for the thumbnail */
