@@ -55,6 +55,7 @@ important {font-weight: 400; text-shadow: 0 0 0.6px; color: firebrick;}
 }
 
 
+/*
 .news-container {
     max-width: 1000px;
     width: 100%;
@@ -62,11 +63,10 @@ important {font-weight: 400; text-shadow: 0 0 0.6px; color: firebrick;}
     color:white;
     background-color: #065895;
     padding: 2em 4em 1em 4em;
-    position: relative; /* Enable positioning for overlapping elements */
-    overflow: hidden; /* Ensure elements don’t spill out */
-/*    margin: 2em 0;*/
-    margin: 0em 0em 0.5em 0em; /* Margin above and below each container */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow for a floating effect */
+    position: relative; 
+    overflow: hidden; 
+    margin: 0em 0em 0.5em 0em; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
 }
 
 .news-container::before {
@@ -76,16 +76,18 @@ important {font-weight: 400; text-shadow: 0 0 0.6px; color: firebrick;}
     left: -10px;
     width: 150px;
     height: 150px;
-    background: #ff6f61; /* Add a soft background shape */
-    border-radius: 50%; /* Circular shape */
+    background: #ff6f61; 
+    border-radius: 50%; 
     z-index: 0;
-    opacity: 0.5; /* Light opacity */
+    opacity: 0.5; 
 }
+*/
 
 .news-container h2{color:aliceblue;}
 .news-date {color:aliceblue;}
 .news-container a{color: #f09228; text-decoration: none; }
 .news-container a:hover {color: #1772d0; }}
+
 
 
 
@@ -188,6 +190,7 @@ important {font-weight: 400; text-shadow: 0 0 0.6px; color: firebrick;}
 
 
 .news  p{margin: 0px; padding: 0px;}
+.news li {list-style-type: '👉'; padding-inline-start: 1ch;}
 
 .thumbnail {
             width: 30px;  /* Small size for the thumbnail */
@@ -252,6 +255,7 @@ footer {
     font-weight: 400;
 
 }
+
 
 .research-item p {
 /*    font-size: 0.95em;*/
