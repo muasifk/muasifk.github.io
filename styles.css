@@ -110,7 +110,8 @@ important {font-weight: 400; text-shadow: 0 0 0.6px; color: firebrick;}
     max-width: 1200px;
     height: 250px;
     object-fit: cover;
-    object-position: 20% 40%; 
+    object-position: 50% 40%; 
+    transform: scale(1,1);
     filter: brightness(1.2) contrast(1.0) saturate(1.0) hue-rotate(10deg);  
 }
 
