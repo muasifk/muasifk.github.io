@@ -159,12 +159,12 @@ important {font-weight: 400; text-shadow: 0 0 0.6px; color: firebrick;}
 .social-icons a {
     text-decoration: none;
     font-size: 22px;
-    color: #333; 
+/*    color: #333; */
 }
 
 .social-icons a:hover {
     border-bottom: none;
-    color: #f09228;
+/*    color: #f09228;*/
 }
 
 
