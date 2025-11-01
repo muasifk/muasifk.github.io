@@ -25,8 +25,12 @@ main {
 h1 {font-weight: 400; font-size: 2em; text-align: center; text-shadow: 0 0 0.5px; color: #333;}
 h2 {margin-bottom: 0.5em; text-align: center; font-weight: 400; font-size: 1.8em;  text-shadow: 0 0 0.5px; color: #333;}
 h3 {margin: 0em; font-weight: 400; text-shadow: 0 0 0.5px; color: #333;}
-a {color: #1772d0; text-decoration: none; font-weight: 500;}
-a:hover {color: #f09228; }
+a {color: #222; text-decoration: underline; font-weight: 300;}
+a:hover {color: #1772d0 ; font-weight: 400;} /*#f09228*/
+
+
+
+
 a:visited {}
 a:active {color: #e74c3c; }
 ul {list-style-type: disc; }
