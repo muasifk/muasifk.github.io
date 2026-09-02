@@ -1,727 +1,1423 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muhammad Asif Khan is a Computer Scientist in AI, focusing on wireless networks, mobile computing, computer vision, distributed machine learning, and autonomous vehicles.">
-    <!-- Structured Data for Person Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Muhammad Asif Khan",
-      "url": "https://muasifk.github.io/",
-      "image": [
-      "https://muasifk.github.io/img/khan.png", 
-      "https://muasifk.github.io/img/khan2.jpg", 
-      "https://muasifk.github.io/img/khan2.jpg",
-      "https://muasifk.github.io/img/drone_det.jpg", 
-      "https://muasifk.github.io/img/handover.jpg", 
-      "https://muasifk.github.io/photos/BigComp_2023.jpg",
-      "https://muasifk.github.io/photos/CCNC_2023b.jpg", 
-      "https://muasifk.github.io/photos/CompAuto_2022.jpg", 
-      "https://muasifk.github.io/photos/ISNCC_2023.jpg", 
-      ]
-      "jobTitle": "Computer Scientist",
-      "affiliation": [
-      { "@type": "Organization", "name": "Amazon" },
-      { "@type": "Organization", "name": "Louisiana State University" },
-      { "@type": "EducationalOrganization", "name": "Qatar University" },
-      { "@type": "Organization", "name": "Qatar Mobility Innovations Center (QMIC)" },
-      ],
-      "alumniOf": [
-      { "@type": "EducationalOrganization", "name": "Qatar University"},
-      { "@type": "EducationalOrganization", "name": "University of Engineering and Technology Taxila"},
-      { "@type": "EducationalOrganization", "name": "University of Engineering and Technology Peshawar"},
-      { "@type": "EducationalOrganization", "name": "University of Engineering and Technology Peshawar (Mardan Campus)"},
-      { "@type": "EducationalOrganization", "name": "Government Post Grdauate College Mardan"},
-      { "@type": "EducationalOrganization", "name": "Government High School No. 2 Bank Road Mardan"},
-      ],
-      "sameAs": [
-        "https://www.linkedin.com/in/muasifk/",
-        "https://scholar.google.com/citations?user=BgUrPm8AAAAJ&hl=en",
-        "https://twitter.com/muasifk",
-        "https://github.com/muasifk/",
-        "https://orcid.org/0000-0003-2925-8841",
-        "https://www.researchgate.net/profile/Muhammad-Asif-Khan-3",
-        "https://www.youtube.com/@asifk"
-      ],
-      "description": "Muhammad Asif Khan (SMIEEE) is a Computer Scientist. He received a Ph.D. degree in electrical engineering from Qatar University (2020), an M.Sc. degree in telecommunication engineering from the University of Engineering and Technology Taxila, Pakistan (2013), and a B.Sc. degree in telecommunication engineering from the University of Engineering and Technology Peshawar, Pakistan (2009). He was awarded the Postdoctoral Research Award (PDRA) from the Qatar National Research Fund (QNRF), for his research work as a Postdoctoral Research Fellow at Qatar University, Doha, Qatar. Dr. Khan is a senior member of IEEE, a member of IET and a Chartered Engineer (CEng) with the Engineering Council (UK). He served as an associate editor of IEEE Transactions on Consumer Electronics (TCE), IEEE Transactions on Technology and Society (TTS), and IEEE Future Directions Technology Policy and Ethics Newsletter. He serves on several IEEE committees including the TCCC, TCPAMI, MDA-TC, MMTC, IOT, and Sensors Council. He also served as a TPC member of numerous IEEE conferences including ICC, Globecom, CCNC, VTC, ICCE, BigData, Sensors, GEM, etc."
-    }
-    </script>
-    
-    <meta name="google-site-verification" content="W57u9rFdHKBWLoG09oHsWW70MqqzIYgtYMP98YH90ys" />
-    
-    <title>Muhammad Asif Khan &#8211 Applied AI Scientist</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Asif Khan - Applied AI Scientist at Amazon. Research in computer vision, edge AI, autonomous systems, and wireless networks.">
+  <title>Muhammad Asif Khan - Applied AI Scientist</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+
+  <style>
+/* ══════════════════════════════════════════════════
+   TOKENS
+══════════════════════════════════════════════════ */
+:root {
+  /* light */
+  --bg:          #fafaf8;
+  --bg2:         #f2f2ef;
+  --surface:     #ffffff;
+  --border:      #e2e2dc;
+  --text:        #18181b;
+  --text-2:      #52525b;
+  --text-3:      #a1a1aa;
+  --accent:      #2563eb;
+  --accent-dim:  #dbeafe;
+  --sidebar-bg:  #18181b;
+  --sidebar-text:#e4e4e7;
+  --sidebar-dim: #71717a;
+  --sidebar-bdr: #27272a;
+
+  --f-body:  'DM Sans', system-ui, sans-serif;
+  --f-serif: 'DM Serif Display', Georgia, serif;
+  --f-mono:  'DM Mono', 'Fira Code', monospace;
+
+  --sidebar-w: 270px;
+  --r: 6px;
+}
+
+html.dark {
+  --bg:          #111113;
+  --bg2:         #18181b;
+  --surface:     #1c1c1f;
+  --border:      #2e2e32;
+  --text:        #f4f4f5;
+  --text-2:      #a1a1aa;
+  --text-3:      #52525b;
+  --accent:      #60a5fa;
+  --accent-dim:  #1e3a5f;
+  --sidebar-bg:  #0c0c0e;
+  --sidebar-text:#d4d4d8;
+  --sidebar-dim: #52525b;
+  --sidebar-bdr: #222226;
+}
+
+/* ══════════════════════════════════════════════════
+   BASE
+══════════════════════════════════════════════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 15px; }
+
+body {
+  font-family: var(--f-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.2;
+  transition: background .25s, color .25s;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { font-weight: 500; }
+
+/* ══════════════════════════════════════════════════
+   LAYOUT: sidebar + main
+══════════════════════════════════════════════════ */
+.layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) 1fr;
+  min-height: 100vh;
+}
+
+/* ── SIDEBAR ──────────────────────────────────── */
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem 1.6rem 2rem;
+  border-right: 1px solid var(--sidebar-bdr);
+  transition: background .25s, border-color .25s;
+  scrollbar-width: none;
+}
+.sidebar::-webkit-scrollbar { display: none; }
+
+.sid-photo {
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid #3f3f46;
+  margin-bottom: 1.1rem;
+  display: block;
+}
+
+.sid-name {
+  font-family: var(--f-serif);
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.sid-role {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+
+.sid-loc {
+  font-size: 0.78rem;
+  color: var(--sidebar-dim);
+  margin-bottom: 1.5rem;
+}
+
+/* nav links */
+.sid-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  margin-bottom: 2rem;
+}
+
+.sid-nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.9rem;
+  color: #c4c4cb;
+  padding: 0.42rem 0.6rem;
+  border-radius: var(--r);
+  transition: color .15s, background .15s;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.sid-nav a .nav-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+  flex-shrink: 0;
+  opacity: 0.4;
+  transition: opacity .15s;
+}
+
+.sid-nav a:hover,
+.sid-nav a.active {
+  color: #e4e4e7;
+  background: rgba(255,255,255,0.05);
+}
+.sid-nav a:hover .nav-dot,
+.sid-nav a.active .nav-dot { opacity: 1; background: var(--accent); }
+
+/* social links */
+.sid-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--sidebar-bdr);
+}
+
+.sid-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.78rem;
+  color: var(--sidebar-dim);
+  text-decoration: none;
+  transition: color .15s;
+}
+.sid-links a:hover { color: var(--sidebar-text); text-decoration: none; }
+.sid-links a i { width: 14px; text-align: center; font-size: 0.82rem; }
+
+/* theme toggle inside sidebar */
+.sid-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--sidebar-bdr);
+}
+
+.toggle-track {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  background: #3f3f46;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background .2s;
+  flex-shrink: 0;
+  border: none;
+  outline: none;
+}
+.toggle-track::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #a1a1aa;
+  transition: transform .2s, background .2s;
+}
+html.dark .toggle-track { background: #2563eb; }
+html.dark .toggle-track::after { transform: translateX(16px); background: #fff; }
+
+.toggle-label {
+  font-size: 0.75rem;
+  color: var(--sidebar-dim);
+  user-select: none;
+}
+
+/* ── MAIN ─────────────────────────────────────── */
+.main {
+  padding: 3.5rem 3.5rem 5rem 3.5rem;
+  max-width: 780px;
+}
+
+/* ══════════════════════════════════════════════════
+   SECTION ANATOMY
+══════════════════════════════════════════════════ */
+.section { margin-bottom: 2.2rem; }
+
+.section-label {
+  font-family: var(--f-body);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--text);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* ══════════════════════════════════════════════════
+   BIO / HERO
+══════════════════════════════════════════════════ */
+#bio {
+  padding-top: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+.bio-headline {
+  font-family: var(--f-serif);
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.3px;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.bio-quote {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+#bio {
+  padding-top: 0.5rem;
+  margin-bottom: 2.2rem;
+}
+
+.bio-body p {
+  font-size: 0.95rem;
+  color: var(--text-2);
+  margin-bottom: 0.5rem;
+  max-width: 62ch;
+}
+
+.bio-body p a { color: var(--accent); }
+
+.bio-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+
+.pill {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+  background: var(--bg2);
+  color: var(--text-2);
+  border: 1px solid var(--border);
+  letter-spacing: 0.01em;
+  transition: background .15s, border-color .15s, color .15s;
+}
+.pill:hover { background: var(--accent-dim); border-color: var(--accent); color: var(--accent); }
+
+/* ══════════════════════════════════════════════════
+   NEWS — horizontal scroll strip
+══════════════════════════════════════════════════ */
+.news-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: baseline;
+  font-size: 0.88rem;
+  color: var(--text-2);
+  padding: 0.45rem 0;
+}
+.news-item:last-child { border-bottom: none; }
+
+.book-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.book-cover {
+  width: 64px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: block;
+  transition: transform .2s;
+}
+
+.book-cover:hover { transform: scale(1.04); }
+
+.news-badge {
+  font-family: var(--f-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.nb-book     { background: #fef9c3; color: #854d0e; }
+.nb-call     { background: #dbeafe; color: #1d4ed8; }
+.nb-award    { background: #dcfce7; color: #166534; }
+
+html.dark .nb-book  { background: #292102; color: #fde047; }
+html.dark .nb-call  { background: #0f2447; color: #93c5fd; }
+html.dark .nb-award { background: #052e16; color: #4ade80; }
+
+/* ══════════════════════════════════════════════════
+   AWARDS
+══════════════════════════════════════════════════ */
+.award-row {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 0.5rem;
+  align-items: start;
+  padding: 0.45rem 0;
+  font-size: 0.9rem;
+}
+.award-row:last-child { border-bottom: none; }
+
+.award-icon {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.award-title { font-weight: 500; color: var(--text); }
+.award-meta  { font-size: 0.82rem; color: var(--text-3); margin-top: 0.1rem; }
+
+/* ══════════════════════════════════════════════════
+   RESEARCH — accordion-style expandable items
+══════════════════════════════════════════════════ */
+.research-intro {
+  font-size: 0.88rem;
+  color: var(--text-2);
+  margin-bottom: 1.5rem;
+  max-width: 60ch;
+}
+
+.research-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.r-item {
+  border-top: 1px solid var(--border);
+}
+.r-item:last-child { border-bottom: 1px solid var(--border); }
+
+.r-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+.r-header::-webkit-details-marker { display: none; }
+
+.r-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+  transition: color .15s;
+}
+details[open] .r-title { color: var(--accent); }
+
+.r-chevron {
+  font-size: 0.7rem;
+  color: var(--text-3);
+  transition: transform .2s;
+}
+details[open] .r-chevron { transform: rotate(90deg); color: var(--accent); }
+
+.r-body {
+  padding: 0 0 1.1rem;
+  font-size: 0.88rem;
+  color: var(--text-2);
+  line-height: 1.75;
+  max-width: 62ch;
+  animation: fadeDown .2s ease;
+}
+
+.r-body a { color: var(--accent); }
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ══════════════════════════════════════════════════
+   PROJECTS — numbered list style
+══════════════════════════════════════════════════ */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.proj-item {
+  display: grid;
+  grid-template-columns: 2.8rem 1fr;
+  gap: 0;
+  padding: 0.55rem 0;
+  align-items: start;
+}
+
+.proj-num {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  color: var(--text-3);
+  padding-top: 0.22rem;
+  letter-spacing: 0.04em;
+}
+
+.proj-content {}
+
+.proj-title {
+  font-size: 0.93rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+}
+
+.proj-year {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--text-3);
+  margin-left: 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+.proj-desc {
+  font-size: 0.85rem;
+  color: var(--text-2);
+  margin-bottom: 0.35rem;
+  max-width: 60ch;
+}
+
+.tag-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.tag {
+  font-family: var(--f-mono);
+  font-size: 0.68rem;
+  color: var(--text-3);
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+}
+
+/* ══════════════════════════════════════════════════
+   PUBLICATIONS
+══════════════════════════════════════════════════ */
+.pub-meta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pub-count {
+  font-family: var(--f-mono);
+  font-size: 0.75rem;
+  color: var(--text-3);
+}
+
+.pub-link {
+  font-size: 0.8rem;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.pub-list {
+  list-style: none;
+  padding: 0;
+}
+
+.pub-item {
+  padding: 0.15rem 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 1.9rem;
+  align-items: start;
+}
+.pub-list .pub-item:first-child { border-top: none; }
+.pub-item:last-child { border-bottom: none; }
+
+.pub-year {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  color: var(--text-3);
+  padding-top: 0.28rem;
+  min-width: 2.8rem;
+  letter-spacing: 0.03em;
+}
+
+.pub-body {}
+
+.pub-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.35;
+  margin-bottom: 0.05rem;
+  display: block;
+}
+.pub-title a { color: inherit; }
+.pub-title a:hover { color: var(--accent); text-decoration: none; }
+
+.pub-authors {
+  font-size: 0.82rem;
+  color: var(--text-3);
+  margin-bottom: 0;
+}
+
+.pub-venue {
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pub-venue a {
+  font-style: normal;
+  font-size: 0.75rem;
+  color: var(--text-3);
+  border: 1px solid var(--border);
+  padding: 0 0.4rem;
+  border-radius: 3px;
+  transition: color .15s, border-color .15s;
+}
+.pub-venue a:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
+
+/* ══════════════════════════════════════════════════
+   TALKS
+══════════════════════════════════════════════════ */
+.talk-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.talk-item {
+  display: grid;
+  grid-template-columns: 68px 1fr;
+  gap: 0 0.5rem;
+  padding: 0.2rem 0;
+  align-items: start;
+  font-size: 0.88rem;
+}
+.talk-list .talk-item:first-child { border-top: none; }
+.talk-item:last-child { border-bottom: none; }
+
+.talk-badge {
+  font-family: var(--f-mono);
+  font-size: 0.63rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 0.2rem;
+}
+.tb-keynote  { background: #fef3c7; color: #92400e; }
+.tb-invited  { background: #dbeafe; color: #1e40af; }
+.tb-tutorial { background: #d1fae5; color: #065f46; }
+.tb-lecture  { background: #ede9fe; color: #5b21b6; }
+
+html.dark .tb-keynote  { background: #292102; color: #fde047; }
+html.dark .tb-invited  { background: #0f2447; color: #93c5fd; }
+html.dark .tb-tutorial { background: #052e16; color: #4ade80; }
+html.dark .tb-lecture  { background: #1e0e3f; color: #c4b5fd; }
+
+.talk-text { color: var(--text-2); line-height: 1.6; }
+.talk-text a { color: var(--accent); }
+
+/* ══════════════════════════════════════════════════
+   TEACHING
+══════════════════════════════════════════════════ */
+.teaching-group { margin-bottom: 1rem; }
+
+.tg-label {
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 0.4rem;
+}
+
+.tg-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tg-list li {
+  font-size: 0.88rem;
+  color: var(--text-2);
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--border);
+  line-height: 1.2;
+}
+.tg-list li strong { color: var(--text); }
+
+/* ══════════════════════════════════════════════════
+   SERVICE
+══════════════════════════════════════════════════ */
+.service-group { margin-bottom: 1rem; }
+
+.sg-label {
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 0.4rem;
+}
+
+.sg-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.sg-list li {
+  font-size: 0.87rem;
+  color: var(--text-2);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 0.5rem;
+  line-height: 1.05;
+}
+
+.sg-list li::before {
+  content: '▸';
+  color: var(--accent);
+  font-size: 0.65rem;
+  padding-top: 0.28rem;
+}
+
+/* ══════════════════════════════════════════════════
+   VIDEOS
+══════════════════════════════════════════════════ */
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.video-grid iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--r);
+  border: 1px solid var(--border);
+}
+
+/* ══════════════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════════════ */
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.78rem;
+  color: var(--text-3);
+  font-family: var(--f-mono);
+}
+
+/* ══════════════════════════════════════════════════
+   MOBILE
+══════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+    padding: 1.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .sid-photo { width: 100%; height: 100px; border-radius: 6px; margin-bottom: 0; }
+
+  .sid-name  { font-size: 1rem; }
+  .sid-role, .sid-loc { display: none; }
+
+  .sid-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    margin-bottom: 0;
+    flex: 1 0 100%;
+  }
+
+  .sid-nav a { font-size: 0.78rem; padding: 0.3rem 0.5rem; }
+  .sid-nav a .nav-dot { display: none; }
+
+  .sid-links { flex-direction: row; flex-wrap: wrap; border-top: none; padding-top: 0; margin-top: 0; }
+
+  .sid-toggle { margin-top: 0; border-top: none; padding-top: 0; }
+
+  .main { padding: 2rem 1.25rem 3rem; max-width: 100%; }
+
+  .bio-headline { font-size: 1.9rem; }
+
+  .video-grid { grid-template-columns: 1fr; }
+
+  .pub-item { grid-template-columns: 1fr; gap: 0.2rem; }
+  .pub-year { padding-top: 0; }
+
+  .talk-item { grid-template-columns: 1fr; gap: 0.35rem; }
+
+  .r-header { padding: 0.8rem 0; }
+}
+  </style>
 </head>
 <body>
-<!--
+
+<div class="layout">
+
+  <!-- ══════════ SIDEBAR ══════════ -->
+  <aside class="sidebar">
+
+    <img class="sid-photo" src="img/photos/khan.jpg" alt="Muhammad Asif Khan">
+
+    <div>
+      <div class="sid-name">Muhammad Asif Khan</div>
+      <div class="sid-role">Applied AI Scientist</div>
+      <div class="sid-loc">Amazon · Seattle, WA</div>
+    </div>
+
     <nav>
-        <div class="header-left">
-            <span class="name-header">Muhammad Asif Khan</span>
-        </div>
-        
-        <div class="menu-toggle" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        </div>
-        
-        <ul>
-            <li><a href="" class="active">About</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="misc.html">Misc</a></li>
-        </ul>
+      <ul class="sid-nav">
+        <li><a href="#bio"><span class="nav-dot"></span>About</a></li>
+        <li><a href="#news"><span class="nav-dot"></span>News</a></li>
+        <li><a href="#awards"><span class="nav-dot"></span>Awards</a></li>
+        <li><a href="#projects"><span class="nav-dot"></span>Projects</a></li>
+        <li><a href="#publications"><span class="nav-dot"></span>Publications</a></li>
+        <li><a href="#talks"><span class="nav-dot"></span>Talks</a></li>
+        <li><a href="#teaching"><span class="nav-dot"></span>Teaching</a></li>
+        <li><a href="#service"><span class="nav-dot"></span>Service</a></li>
+        <li><a href="#videos"><span class="nav-dot"></span>Videos</a></li>
+      </ul>
     </nav>
--->
-    
-    <main>
-        
-        
-        
-        <div class="container1">
-        <div class="profile-banner">
-        <img src="img/photos/NZ_2023.jpg" alt="profile-banner">
-<!--        <img src="img/ban3.png" alt="profile-banner">-->
-<!--        <div class="caption"> Rotorua (North Island), New Zealand </div>-->
-<!--        <img src="img/photos/website%20banner.jpeg" alt="profile-banner">-->
-        </div>
 
-         
-        <section id="bio" class="bio">
+    <ul class="sid-links">
+      <li><a href="files/Resume_Khan2.pdf" target="_blank"><i class="fa fa-file-alt"></i> Curriculum Vitae</a></li>
+      <li><a href="https://scholar.google.com/citations?user=BgUrPm8AAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i> Google Scholar</a></li>
+      <li><a href="https://www.linkedin.com/in/muasifk/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      <li><a href="https://github.com/muasifk/" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+      <li><a href="https://twitter.com/muasifk" target="_blank"><i class="fab fa-x-twitter"></i> X / Twitter</a></li>
+      <li><a href="https://www.researchgate.net/profile/Muhammad-Asif-Khan-3" target="_blank"><i class="fab fa-researchgate"></i> ResearchGate</a></li>
+      <li><a href="https://orcid.org/0000-0003-2925-8841" target="_blank"><i class="fab fa-orcid"></i> ORCID</a></li>
+      <li><a href="https://www.youtube.com/@asifk" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+      <li><a href="https://www.webofscience.com/wos/author/record/G-2629-2013" target="_blank"><i class="ai ai-clarivate"></i> Web of Science</a></li>
+      <li><a href="mailto:asifk@ieee.org"><i class="fa fa-envelope"></i> asifk@ieee.org</a></li>
+    </ul>
 
-            <h1>Muhammad Asif Khan</h1>
-            <h2>Applied AI Scientist</h2>         
-            <p style="letter-spacing: 2px; text-align: center; margin-top: 0;">asifk@ieee.org</p>
-<!--            </div>-->
-            
+    <div class="sid-toggle">
+      <button class="toggle-track" id="themeToggle" aria-label="Toggle dark mode"></button>
+      <span class="toggle-label" id="toggleLabel">Light mode</span>
+    </div>
 
+  </aside>
 
+  <!-- ══════════ MAIN ══════════ -->
+  <main class="main">
+
+    <!-- ── About ── -->
+    <section id="bio" class="section">
+      <h1 class="bio-headline">Hi, I'm Asif.</h1>
+      <p class="bio-quote">&ldquo;Make science simple.&rdquo;</p>
+
+      <div class="bio-body">
         <p>
-            I am a <b>Senior Applied Scientist</b> at <a href="https://www.amazon.com" target="_blank">Amazon</a>, Seattle, WA (USA).
-            Before joining Amazon, I was working as a Sr. Research Associate at <a href="https://www.lsu.edu" target="_blank">Louisiana State University</a>, Baton Rouge, LA, and as a Research Scientist at <a href="https://www.qmic.com" target="_blank">Qatar Mobility Innovations Center (QMIC)</a>, Doha, Qatar. I received a Ph.D. degree in electrical engineering from Qatar University (2020), an M.Sc. degree in telecommunication engineering from the University of Engineering and Technology Taxila, Pakistan (2013), and a B.Sc. degree in telecommunication engineering from the University of Engineering and Technology Peshawar, Pakistan (2009). <br>
-            I am the recipient of the <strong>Postdoctoral Research Award (PDRA)</strong> from the <a href="https://qrdi.org.qa/en-us/Scientific-Research" target="_blank">Qatar National Research Fund (QNRF)</a> in 2022. I have published over 50 peer reviewed articles and book chapters. I am a senior member of IEEE, a member of IET, and a Chartered Engineer (CEng) with the Engineering Council (UK). <br>
-            I am an <strong>Associate Editor</strong> of IEEE Transactions on Neural Networks and Learning Systems (TNNLS), IEEE Transactions on Consumer Electronics (TCE), IEEE Transactions on Technology and Society (TTS), IEEE Signal Processing Letters (SPL), and IEEE Future Directions Technology Policy and Ethics Newsletter.
-            </p>
-            
-            
-        <ul class="social-icons">
-                <li><a href="files/cv_khan.pdf" target="_blank"> CV </a> / </li>
-                <li><a href="https://twitter.com/muasifk" target="_blank"><i class="fab fa-x-twitter fa-xs" ></i></a> / </li>
-                <li><a href="https://www.linkedin.com/in/muasifk/" target="_blank"><i class="fab fa-linkedin fa-xs"></i></a> / </li>
-                <li><a href="https://github.com/muasifk/" target="_blank"><i class="fab fa-github fa-xs"></i></a> / </li>
-                <li><a href="https://www.researchgate.net/profile/Muhammad-Asif-Khan-3" target="_blank"><i class="fab fa-researchgate fa-xs"></i></a> / </li>
-                <li><a href="https://scholar.google.com/citations?user=BgUrPm8AAAAJ&hl=en" target="_blank"><i class="fab fa-google-scholar fa-xs"></i> </a> / </li>
-                <li><a href="https://www.youtube.com/channel/UCKEgO00pq57nSSSMmRZJiQg" target="_blank"><i class="fab fa-youtube fa-xs"></i></a> / </li>
-                <li><a href="https://orcid.org/0000-0003-2925-8841" target="_blank"><i class="fab fa-orcid fa-xs"></i></a> / </li>
-                <li><a href="https://www.webofscience.com/wos/author/record/G-2629-2013" target="_blank"> <i class="ai ai-clarivate fa-xs"></i></a></li>
-            </ul>
-                
-    
-        </section>         
-        </div>
-        
-
-        
-<!-- ++++++++++++++++++++++  News and Updates  +++++++++++++++++++++++++++++++      -->
-        
-        <div class="container2">
-        <section id="news" class="news">
-            <h1>News and Updates &#128227; </h1>
-            <ul class="custom-list">
-            
-                <li> [<important>Announcement</important>]:
-                Our textbook <a href="https://www.wiley.com/en-us/shop/general-introductory-electrical-electronics-engineering/localization-in-wireless-networks-technologies-and-applications-p-9781394307968#download-product-flyer">"Localization in Wireless Networks: Technologies and Applications"</a>, has been published by IEEE and Wiley and is now available online.
-                </li>
-                <br> 
-                
-                
-                
-                <li> [<important>Call for reviewers</important>]:
-                    
-                    Interested to review for
-                    IEEE Transactions and Neural Networks and Learning Systems (TTNLS),
-                    IEEE Transactions on Consumer Electronis (TCE), and
-                    IEEE Signal Processing Letters (SPL),
-                    
-<!--
-                    <a class=highlight href="https://cis.ieee.org/publications/t-neural-networks-and-learning-systems" target="_blank">IEEE Transactions and Neural Networks and Learning Systems (TTNLS)</a>, 
-                    <a class=highlight href="https://ctsoc.ieee.org/publications/ieee-transactions-on-consumer-electronics.html", target="_blank"> IEEE Transactions on Consumer Electronis (TCE)</a>,
-                    <a class=highlight href="https://signalprocessingsociety.org/publications-resources/ieee-signal-processing-letters" target="_blank">IEEE Signal Processing Letters (SPL)</a>?
--->
-                    Do you hold a Ph.D. degree / relevant industrial experience? 
-<!--                    Drop me an email with your CV and review interests. </li>-->
-                    
-                    Fill the form to submit your details here: <a href="https://forms.gle/ZWYoQTW1MMA9AYKt7" target="_blank">Click here</a>.
-                <br>
-                
-<!--                <li> [<important>Call for reviewers</important>]: Interested to review for <a href="https://ctsoc.ieee.org/publications/ieee-transactions-on-consumer-electronics.html", target="_blank"> IEEE Transactions on Consumer Electronis (TCE)</a>, and holds a Ph.D. degree / relevant industrial experience? Drop me an email with your CV and research interests. </li>-->
-            
-            </ul>
-        </section>
-        </div>
-        
-        
-        
-        
-        
- <!-- ++++++++++++++++++++++  Awards and Grants  +++++++++++++++++++++++++++++++      -->
-        
-        <div class="container2">
-        <section id="awards" class="awards">
-            <h1>Awards and Grants</h1>
-            <ul class="custom-list">
-            <li><strong>Best Presenter &#9733;</strong> at IEEE ICFTSS, Aug 2024, Kuala lumpur, Malaysia </li>
-            <li><strong>Post-Doctoral Research Awards (PDRA) &#128176;</strong> by <a href="https://qrdi.org.qa/en-us/Scientific-Research" target="_blank">Qatar National Research Fund (QNRF)</a> - 2022 (~200,000 USD)</li>
-            <li><strong>Graduate Assistant scholarship &#128176;</strong> by Office of Research and Graduate Studies at Qatar University - 2014 (~40,000 USD)</li>
-            </ul>
-        </section>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-<!-- ++++++++++++++++++++++  Research Highlights  +++++++++++++++++++++++++++++++      -->
-  
-    <div class="container2">
-    <section id="research" class="research">
-    <h1>Research Highlights</h1>
-    
-    My future research interests include: <strong>TinyML, neuromorphic computing, self-supervised learning</strong>.
-    Reach out if you're interested in collaboration.
-        
-    
-    <br> <br> <br>
-    <div class="research-item">
-    <img src="img/cav2.gif" alt="Research Image">
-    <div class="research-item-text">
-        <h3>Connected and Autonomous Vehicles (CAVs) </h3>
-        <p> My research on autonomous vehicles (AVs) focuses on perception (camera + LiDAR), 
-            sensor attacks, security of in-vehicle network (IVN) including intrusion 
-            detection system (IDS), and issues such as adaptive resource allocation. </p>
-    </div>
-    </div>
-    <br>
-        
-        
-    <div class="research-item">
-    <img src="img/poc.gif" alt="Research Image">
-    <div class="research-item-text">
-        <h3>Lightweight crowd models for Edge</h3>
-        <p> I explored various directions including model architectures, learning methods, on-device inference,
-            enhanced learning (using curriculum learning), multi-modal networks (RGB+TIR), and GANs to improve
-            the performance of crowd models.
-            Yu are seeing a snapshot of our crowd counting PoC deployed in a metro station (in Qatar) 
-            using two PTZ cameras and a single NVIDIA's Jetson Nano device, providing 
-            real-time counting through web interface to out client.</p>
-    </div>
-    </div>
-    <br>
-<!--         <hr style="border: 3px; solid #ccc;">-->
-    
-        
-        
-  
-    <div class="research-item">
-    <img src="img/haris.gif" alt="Research Image">
-    <div class="research-item-text">
-        <h3>Haris: Stereo-vision based Depth and Size estimation</h3>
-        <p> Haris, the autonomous robot uses stereo-vision to estimate depth and size of 
-            obstacles from the detected bounding boxes to navigate and avoid collisions. 
-            This overcomes the limitations of LiDAR based sensing for non-reflective objects 
-            such as fire, smoke, etc and detect objects like sign boards. <br>
-        This is the Master thesis work of <a href="https://www.linkedin.com/in/laythhamad/" target="_blank"> Layth Hamad <i class="fa fa-external-link"></i> </a>. 
-            Read the [<a href="https://ieeexplore.ieee.org/abstract/document/10440432">paper</a>] in IEEE Sensors Letters.
+          I am a <strong>Senior Applied Scientist</strong> at
+          <a href="https://www.amazon.com" target="_blank">Amazon</a>, Seattle, WA.
+          Before Amazon. Before joining Amazon, I was a Sr. Research Associate at
+          <a href="https://www.lsu.edu" target="_blank">Louisiana State University</a>
+          and a Research Scientist at
+          <a href="https://www.qmic.com" target="_blank">Qatar Mobility Innovations Center (QMIC)</a>.
+          I hold a Ph.D. in electrical engineering from Qatar University (2020),
+          an M.Sc. from UET Taxila (2013), and a B.Sc. from UET Peshawar (2009).
+          I am the recipient of the <strong>Postdoctoral Research Award (PDRA)</strong> from the
+          <a href="https://qrdi.org.qa/en-us/Scientific-Research" target="_blank">Qatar National Research Fund</a> (2022).
+          Over 60 peer-reviewed publications. <strong>Senior Member of IEEE</strong> and a <strong>CEng at IET</strong>.
+          I am serving as Associate Editor of IEEE TNNLS, IEEE TCE, IEEE TTS, and IEEE SPL.
         </p>
-<!--        <hr style="border: 1px solid #ccc; margin: 20px 0;">-->
-    </div>
-    </div>
-    <br>
-    
-    
+      </div>
 
-
-  
-    <div class="research-item">
-    <img src="img/drone_det1.jpg" alt="Research Image">
-    <div class="research-item-text">
-        <h3>Drone Detection Techniques and Unauthorized Drone Detection</h3>
-        <p>
-            We <a href="https://arxiv.org/pdf/2212.01436">evaluated</a> drone detection methods 
-            (i.e., acoustic detection, radio frequency (RF) detection, and visual detection) 
-            and proposed a <a href="https://arxiv.org/pdf/2212.01436">new novel encryption-based
-            scheme</a> to detect unauthorized drones in the air.
-            For acoustic detection, we used a ReSpeaker 4-mic array and RaspberryPi processor
-            with Open EmbeddeD Audition System (ODAS) GUI. For RF detection, we used 
-            E312 USRP (by Ettusresearch™) with a 2x2 MIMO transceiver. For visual detection, 
-            we used a PTZ camera WizSense series (model# SD6CE445XA-HNR), and Jetson Xavier device.
-            Read our <a href="https://ieeexplore.ieee.org/document/9765451"> survey article </a> in IEEE Sensors journal.            
-        </p>
-<!--        <hr style="border: 1px solid #ccc; margin: 20px 0;">-->
-    </div> 
-    </div>
-    <br>
-    
-
-   
-  
-<!--    <ssection class="research-items">-->
-    <div class="research-item">
-    <img src="img/CODE2.gif" alt="Research Image">
-    <div class="research-item-text">
-        <h3>Edge Computing for Massive Internet of Things (IoT) Networks</h3>
-        <p> What if the edge resources are insufficient "thundering herd problem" We propose 
-            a solution <a href="https://ieeexplore.ieee.org/document/9968084/">CODE</a> 
-            to alleviate edge congestion in the event of unplanned traffic spikes.</p>
-        <p> Distributed inference on local device and edge server while meeting the delay 
-            deadlines can be beneficial, but how to split a deep learning model? 
-            Read our [<a href="https://ieeexplore.ieee.org/document/9870035">article</a>].</p>
-    </div>
-    </div>
-    <br>
+      <div class="bio-pills">
+        <span class="pill">Computer Vision</span>
+        <span class="pill">Edge AI / TinyML</span>
+        <span class="pill">Autonomous Vehicles</span>
+        <span class="pill">Wireless Networks</span>
+        <span class="pill">Federated Learning</span>
+        <span class="pill">IoT Security</span>
+        <span class="pill">Crowd Analysis</span>
+        <span class="pill">LLMs</span>
+      </div>
     </section>
-    </div>
 
-        
-        
-        
-    
-        
-        
-        
-    <!-- ++++++++++++++++++++++ Teaching  +++++++++++++++++++++++++++++++      -->    
-    <div class="container2">
-        <section id="teaching" class="teaching">
-        <h1>Teaching</h1>
-            <h3>Courses Taught</h3>
-            <ul>
-              <li> STAT-819 Advance Machine Learning (3 Cr. Hrs) - <a href="https://awkum.edu.pk/" target="_blank"> 
-                  AWKUM <i class="fa fa-external-link"></i></a>, Mardan, Pakistan </li>    
-              <li> STAT-836 Advanced Techniques and Logical Reasoning (3 Cr. Hrs) - <a href="https://awkum.edu.pk/" target="_blank"> 
-                  AWKUM <i class="fa fa-external-link"></i></a>, Mardan, Pakistan</li>    
-            </ul>
-            
-            <h3> Thesis (Co-) Supervised </h3>
-            <ul>
-            <li> <strong>Curriculum Learning for Monocular Depth Estimation in Disaster Management using UAVs</strong>, Jorge Turriate (He/him), Master M2 EEEA MMVAI), 
-                <a href="https://www.univ-evry.fr/accueil.html" target="_blank"> Universit  ́e d’Evry Paris-Saclay <i class="fa fa-external-link"></i></a>, France. (2025) </li>
-            <li> <strong>M.Phil Thesis</strong>, Samiullah (He/him), <a href="https://awkum.edu.pk/" target="_blank"> 
-                  AWKUM <i class="fa fa-external-link"></i></a>, Mardan, Pakistan (2023-24)</li>
-            </ul>
-            
-            
-            <h3> Mentorships </h3> 
-            <ul>
-                <li> <strong>Mentor</strong> at <a href="https://gain.uos.de/" target="_blank"> GAIN Mentorship Program <i class="fa fa-external-link"></i></a>, Germany, 2024/2025.</li>
-            <li> <strong>Summer Internship Supervisor</strong> at Qatar Mobility Innovations Center (QMIC), 2022-25</li>
-            <li> <strong>Research Mentor</strong> at Qatar University Young Scientist Center (QUYSC), 2023-24</li>    
-            </ul>
-            
-            
-            
-        </section>
-    </div>   
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    <!-- ++++++++++++++++++++++ Talks  +++++++++++++++++++++++++++++++      -->    
-    <div class="container2">
-        <section id="talks" class="talks">
-        <h1>Talks </h1>
-                
-            
-            
-<!--            <h3>Invited Talks / Guest Lectures</h3>-->
-            <ul>
-            
-                <li> <strong>[Invited Talk]</strong> "Intelligent Edge for 6G and Massive IoT Systems" in <a href="https://mcsoc-forum.org/site/" target="_blank">IEEE MCSoC</a> 2025. </li>
-                
-                <li> <strong>[Keynote]</strong> "Progress in Visual Crowd Counting Methods" in <a href="https://www.ic-vprd.org/" target="_blank">ICVPRD</a> 2025. </li>
-                
-                <li> <strong>[Keynote]</strong> Revisiting Visual Crowd Counting in <a href="http://www.iwasgi.com/">ASGT</a> 2025. </li>
-            
-                <li> <strong>[Invited Talk]</strong> "Real-time Crowd Counting at the Edge" in <a href="https://www.ipmv.org/" target="_blank">ACM IPMV</a> 2025. [<a href="https://youtu.be/e33z6YsZ3cQ" target="_blank">video</a>] </li> 
-                
-                <li> <strong>[Invited Talk]</strong> "Intelligent Edge for 6G and Massive IoT Systems" <a href="https://www.icngn.org/" target="_blank">IEEE ICNGN</a> 2024.</li>
-                
-                <li> <strong>[Tutorial]</strong> "Mobile Edge Computing for Massive IoT Systems" in <a href="https://www.isncc-conf.org/home" target="_blank">IEEE ISNCC</a>, 2023.</li>
-                
-    
-            <li><strong>[Guest Lecture]</strong> "Network Slicing in 5G", at <a href="https://www.qu.edu.qa" target="_blank">Qatar University</a>, Doha, Qatar, April 11, 2023.</li>   
+    <!-- ── News ── -->
+    <section id="news" class="section">
+      <div class="section-label">News &amp; Updates</div>
 
-                <li><strong>[Invited Talk]</strong> "Machine Learning in Mobile Computing - Recent Trends, Opportunities and Challenges" in <a  href="https://youtu.be/D4B4jIuaHLA" target="_blank">MLIS</a> 2020. [<a href="https://youtu.be/D4B4jIuaHLA" target="_blank">video</a>]
-                   
-            </ul>
-            
-            Some of my talks are available on my <a href="https://www.youtube.com/@asifk" target="_blank"> YouTube channel <i class="fa fa-external-link"></i></a>.
-            
-        </section>
-    </div>   
-        
-        
-        
-        
-        
-        
-        
-        
-        
-            
-    
-     <!-- ++++++++++++++++++++++  Selected Publications  +++++++++++++++++++++++++++++++      -->   
-        
-    <div class="container2">
-        <section id="publications" class="publications">
-        <h1>Selected Publications</h1>
-        
-        For a complete list of publications, please visit <a href="https://scholar.google.com/citations?user=BgUrPm8AAAAJ&hl=en" target="_blank"> Google Scholar <i class="fa fa-external-link"></i></a>
-            
-            <ul>
-                
-            <li>
-             <a href="" target="_blank"> <b>Revisiting the Intrusion Detection in In-Vehicle Networks</b> </a> <br>
-                <strong>M. A. Khan</strong> H. Menouar and M. Abdallah, <br>
-                IEEE Transactions on Intelligent Transportation Systems (T-ITS), Nov 2025.    
-            </li>
-            
-            <li>
-             <a href="https://ieeexplore.ieee.org/document/11195876" target="_blank"> <b>Trust and Privacy in Commercial and Recreational Drone Navigation</b> </a> <br>
-                <strong>M. A. Khan</strong> and H. Menouar, <br>
-                IEEE Transactions on Technology and Society, Oct 2025.    
-            </li>
-                
-                
-            <li>
-             <a href="https://ieeexplore.ieee.org/document/11195870" target="_blank"> <b>LLM-Driven Real-Time Threat Prediction and Response for Internet of Energy (IoE)</b> </a> <br>
-                <strong>M. A. Khan</strong>, <br>
-                IEEE Network, 2025.    
-            </li>
-                
-            <li>
-             <a href="https://www.nature.com/articles/s41598-025-90750-5" target="_blank"> <b>Crowd counting at the edge using weighted knowledge distillation</b> </a> <br>
-                <strong>M. A. Khan</strong>, H. Menouar, R. Hamila, and A. Abu-Dayya, <br>
-                Scientific Reports, 15, 11932, 2025.    
-            </li>
-                
-            <li> 
-                <a href="https://ieeexplore.ieee.org/document/10777298" target="_blank"> <b>LiDAR in Connected and Autonomous Vehicles - Perception, Threat Model, and Defense</b> </a> <br>
-                <strong>M. A. Khan</strong>, H. Menouar, M. Abdallah, and A. Abu-Dayya, <br>
-                IEEE Transactions on Intelligent Vehicles, 2024 
-            </li>  
-                
-            <li> 
-                <a href="https://ieeexplore.ieee.org/abstract/document/10582439/" target="_blank"><b>Deep Learning in the Fast Lane: A Survey on Advanced Intrusion Detection Systems for Intelligent Vehicle Networks</b></a> <br>
-                M. Almehdhar, A. Albaseer, <strong>M. A. Khan</strong>, M. Abdallah, H. Menouar, S. Al-Kuwari, and A. Al-Fuqaha <br>
-                IEEE Open Journal of Vehicular Technology, 2024.  
-            </li>
-                
-            <li>
-                <a href="https://www.researchgate.net/publication/378350143_Object_Depth_and_Size_Estimation_using_Stereo-vision_and_Integration_with_SLAM"><b>Object Depth and Size Estimation using Stereo-vision and Integration with SLAM</b></a> <br>
-                L. Hamad, <strong>M. A. Khan</strong>, and A. Mohamed  <br>
-                IEEE Sensors Letters, 2024.
-                [<a href="https://www.youtube.com/watch?v=nusI6tA9eSk" target="_blank">video</a>].
-            </li>
-             
-            <li> 
-                <a href="https://ieeexplore.ieee.org/document/9765451" target="_blank"><b>On the Detection of Unauthorized Drones—Techniques and Future Perspectives: A Review</b></a> <br>
-                <strong>M. A. Khan</strong>, H. Menouar, A. Eldeeb, A. Abu-Dayya, and F. D. Salim   <br>
-                IEEE Sensors Journal, 2022.
-            </li>
-                
-                
-            <li>
-                <a href="https://ieeexplore.ieee.org/document/9870035" target="_blank"><b>Distributed Inference in Resource-Constrained IoT for Real-Time Video Surveillance</b></a> <br>
-                <strong>M. A. Khan</strong>, R. Hamila, A. Erbad, and M. Gabbouj  <br>
-                IEEE Systems Journal, 2022
-            </li>
-                
-            <li>
-                <a href="https://arxiv.org/pdf/2302.05374" target="_blank"><b>LCDnet: A Lightweight Crowd Density Estimation Model for Real-time Video Surveillance</b></a> <br>
-                <strong>M. A. Khan</strong>, H. Menouar, and R. Hamila  <br>
-                Journal of Real-Time Image Processing, 2023.
-            </li>
-    
-      
-            <li>
-                <a href="https://ieeexplore.ieee.org/document/9968084/" target="_blank"><b>CODE: Computation Offloading in D2D-Edge System for Video Streaming</b></a> <br>
-                <strong>M. A. Khan</strong>, A. Erbad, R. Hamila and E. Baccour  <br>
-                IEEE Systems Journal, 2022
-            </li>
-
-
-            <li>
-                <a href="https://arxiv.org/pdf/2111.13879" target="_blank"> <b>ML-based Handover Prediction and AP Selection in Cognitive Wi-Fi Networks</b></a> <br>
-                <strong>M. A. Khan</strong>, R. Hamila, A. Gastli, S. Kiranyaz, and N. A. Al-Emadi, <br>
-                Journal of Network and Systems Management, 2022
-            </li>
-
-
-            <li>
-                <a href="https://arxiv.org/pdf/2310.07245.pdf" target="_blank"><b>Crowd Counting in Harsh Weather using Image Denoising with Pix2Pix GANs</b></a> <br>
-                <strong>M. A. Khan</strong>, H. Menouar, and R. Hamila  <br>
-                IEEE IVCNZ 2024.  
-            </li>
-                
-                
-<!--
-            <li>
-                <a href="https://arxiv.org/pdf/2211.07137" target="_blank"><b>DroneNet: Crowd Density Estimation using Self-ONNs for Drones</b></a> <br>
-                <strong>M. A. Khan</strong>, H. Menouar, and R. Hamila  <br>
-                IEEE CCNC 2023.
-            </li>
--->
-                
-                
-            <li>
-                <a href="https://www.sciencedirect.com/science/article/abs/pii/S1084804519303595" target="_blank"><b>Real-time Throughput Prediction for Cognitive Wi-Fi Networks</b></a> <br>
-                <strong>M. A. Khan</strong>, R. Hamila, N. A. Al-Emadi, M. S. Kiranyaz, and M. Gabbouj  <br>
-                Journal of Network and Computer Applications, 2020.
-            </li>
-
-            <li>
-                <a href="https://ieeexplore.ieee.org/abstract/document/8892459" target="_blank"><b>Optimal Group Formation in Dense Wi-Fi Direct Networks for Content Distribution</b></a> <br>
-                <strong>M. A. Khan</strong>, R. Hamila and M. O. Hasna  <br>
-                IEEE Access, 2019.
-            </li>
-
-
-            <li>
-                <a href="https://ieeexplore.ieee.org/document/8712495" target="_blank"><b>A Novel UAV-Aided Network Architecture Using Wi-Fi Direct</b></a> <br> 
-                <strong>M. A. Khan</strong>, R. Hamila, M. S. Kiranyaz, and M. Gabbouj  <br>
-                IEEE Access, 2019.
-            </li>
-
-
-<!--
-            <li>
-                <a href="https://www.sciencedirect.com/science/article/abs/pii/S1084804517302230" target="_blank"><b>Wi-Fi direct research-Current status and future perspectives</b></a> <br>
-                <strong>M. A. Khan</strong>, W. Cherif, F. Filali and R. Hamila  <br>
-                Journal of Network and Computer Applications, 2017.
-            </li>
--->
-
-            </ul>
-            
-        </section>
-    </div>    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-     <!-- ++++++++++++++++++++++  Services  +++++++++++++++++++++++++++++++      -->   
-        
-    <div class="container2"> <!-- style="background: #d2d6d8"-->
-        <section id="services" class="services">
-            
-        <h1>Service</h1>
-            
-            
-            <h3>Journal Editorial Committee</h3>
-            <ul>
-                <li> <strong>Associate Editor</strong>, IEEE Signal Processing Letters (SPL) (Aug 2025-Present)</li>
-                <li> <strong>Associate Editor</strong>, IEEE Transactions on Neural Networks and Learning Systems (Jan 2025-Present)</li>
-                <li> <strong>Associate Editor</strong>, IEEE Transactions on Consumer Electronics (July 2024 - June 2026) </li>
-                <li> <strong>Associate Editor</strong>, IEEE Transactions on Technology and Society (May 2024 - May 2026)</li>
-                <li> <strong>Associate Editor</strong>, IEEE Future Directions Newsletter (Apr 2021 - Present) </li>
-            </ul>
-            
-            
-            <h3>Grant Reviewer</h3>
-            <ul>
-                <li>  <strong>Grant Evaluator</strong>, <a href="https://www.fwo.be/en/", target="_blank">Research Foundation Flanders (FWO)</a>, formerly called Belgian National Fund for Scientific Research (NFWO / FNRS), Brussels, Belgium. </li>
-                <li> <strong>Expert Reviewer</strong>, <a href="https://www.esf.org/", target="_blank">European Science Foundation</a> (Apr 2025-Present)</li>
-                
-            </ul>
-            
-            
-            <h3>Technical Program Committees</h3>
-            <ul>
-                <li> <strong>Program/Technical Committee Chair</strong> - IEEE ICFTSS 2024, CompAuto 2023-2024, CRET 2024 </li>
-                <li> <strong>Tutorial Chair</strong> - <a href="https://ieeegem.org/">IEEE GEM</a> 2023</li>
-                <li> <strong>Workshop Chair</strong> - IOROL 2025, 6GIoTT 2022</li>
-                <li> <strong>Area Chair</strong> - IJCNN 2025</li>
-                <li> <strong>PC Member (ML/AI)</strong> - 
-                    NeurIPS 2024,
-                    WACV 2025,
-                    IJCNN 2025, 
-                    IEEE BigData 2020,
-                    CVIPPR 2024
-                </li>
-                    
-                <li> <strong>PC Member (Communication/Others)</strong> - 
-                    IEEE ICC 2021-2025, 
-                    IEEE Globecom 2024-25, 
-                    IEEE VTC 2023, 
-                    IEEE CCNC 2021-2025, 
-                    IEEE ICCE 2025-2026, ICCE Berlin 2023, ICCE Taiwan,
-                    IEEE ICASSP 2020, 2024, 
-                    IEEE Sensors 2020, 
-                    IEEE IWCMC 2023, IEEE SusTech 2020-2025, ++
-                </li>
-            </ul>
-            
-            
-            <h3>Journal Reviewer</h3>
-            <ul>
-                <li>
-                    <strong>IEEE Transactions:</strong> TAI, TNNLS, TMLCN, TMC, TVT, T-ITS, TETC, SMC, TCE, TCSVT, TMTT, TDSC, TII
-                </li>
-                <li> 
-                   <strong>IEEE Journals:</strong> COMST, COMMAG, COMSTD, OJCOMS, OJVT, WCM, WCL, IOT, IOTMAG, NL, ISJ, Sensors, SENL, Access
-                </li>
-                <li>
-                <strong>Other Journals:</strong> Nature Scientific Reports, IJCV, ACM Computing Surveys, FGCS, IET Communications, IET Image Processing, 
-                </li>
-                <p>View my verified reviews on <a href="https://www.webofscience.com/wos/author/record/G-2629-2013" target="_blank">Web of Science <i class="fa fa-external-link"></i></a>. </p>
-            </ul>
-            
-            
-            <h3> Technical Committees </h3>
-            <ul>
-            <li> IEEE VTS TCs: <a href="https://vtsociety.org/committee/committee-autonomous-vehicles"> Committee on Autonomous Vehicles</a> </li>
-            <li> IEEE CTSoc TCs: <a href="https://ctsoc.ieee.org/technical/technical-committees/iot-tc.html?view=article&id=309:iot-tc-members&catid=21"> Internet of Things, Internet of Everywhere and Edge Computing (IOT)</a> </li>
-            <li> IEEE CTSoc TCs: <a href="https://ctsoc.ieee.org/technical/technical-committees/mda-tc.html?view=article&id=310:mda-tc-members&catid=21"> Machine learning, Deep learning and AI in CE (MDA)</a> </li>
-            <li> IEEE CTSoc TCs: <a href="https://ctsoc.ieee.org/technical/technical-committees.html?view=article&id=304:ccn-tc-members&catid=21"> Consumer Communications Networks and Connectivity (CCN)</a> </li>
-            </ul>
-            
-        </section>
-        </div>    
-        
-        
-        
-        
-                
-                
-            
-            
-        
-        <!-- ++++++++++++++++++++++  News  +++++++++++++++++++++++++++++++      -->
-        
-<!--
-        <div class="news-container">
-        <section id="news" class="news">
-            <h1 style="color: #eee;"> News &#128227;</h1>
-            <p>[<span class="news-date">Jan 2025</span>] Joined as Associate Editor of IEEE Transactions on Neural Networks and Learning Systems (TNNLS).</p>
-            <p>[<span class="news-date">Jan 2025</span>] Invited as Area Chair (AC) in <a href="https://2025.ijcnn.org/", target="_blank">IJCNN 2025 </a>.</p>
-            <p>[<span class="news-date">Jan 2025</span>] Invited as Keynote Speaker in <a href="https://www.ic-vprd.org/", target="_blank">ICVPRD 2025 </a>.</p>
-            <p>[<span class="news-date">Dec 2024</span>] Invited as Keynote Speaker in <a href="", target="_blank">ASGI 2025 </a>.</p>
-            <p>[<span class="news-date">Dec 2024</span>] Invited as Invited Speaker in <a href="https://www.ipmv.org/", target="_blank">IPMV 2025 </a>.</p>
-            
-            
-            <p>[<span class="news-date">Dec 2024</span>] New [<a href="https://ieeexplore.ieee.org/document/10777298", target="_blank">Article</a>] published in IEEE Transactions on Intelligent Vehicles.</p>
-            <p>[<span class="news-date">Oct 2024</span>] Invited to serve as TPC member at <a href="https://icc2025.ieee-icc.org/", target="_blank">IEEE ICC 2025 </a>.</p>
-            <p>[<span class="news-date">Jun 2024</span>] Joined as Associate Editor of IEEE Transactions on Consumer Electronics (TCE).</p>
-            <p>[<span class="news-date">Jun 2024</span>] Joined as Associate Editor of IEEE Transactions on Technology and Society (TTS).</p>
-            <p>[<span class="news-date">Jan 2024</span>] Invited as Speaker at <a href="https://www.icngn.org/index.html" target="_blank">IEEE ICNGN</a> 2024, Bangkok, Thailand.</p>
-            
-            <p>Share insights about your findings and what you’re currently focused on in your research.</p>
-        </section>
+      <div class="news-strip">
+        <div class="news-item news-item--book">
+          <!-- <span class="news-badge nb-book">Book</span> -->
+          <div class="book-entry">
+            <a href="https://www.wiley.com/en-us/shop/general-introductory-electrical-electronics-engineering/localization-in-wireless-networks-technologies-and-applications-p-9781394307968" target="_blank">
+              <img class="book-cover" src="img/book_wiley.webp" alt="Localization in Wireless Networks book cover">
+            </a>
+            <span>
+              <strong>Our New textbook has been published:</strong>
+              <a href="https://www.wiley.com/en-us/shop/general-introductory-electrical-electronics-engineering/localization-in-wireless-networks-technologies-and-applications-p-9781394307968" target="_blank">
+                Localization in Wireless Networks: Technologies and Applications</a> published by IEEE &amp; Wiley.
+            </span>
+          </div>
         </div>
--->
-        
+        <div class="news-item">
+          <span class="news-badge nb-call">Reviewers</span>
+          <span>
+            Seeking reviewers for IEEE TNNLS, TCE, and SPL. Hold a Ph.D. or relevant industry experience?
+            <a href="https://forms.gle/ZWYoQTW1MMA9AYKt7" target="_blank">Apply here →</a>
+          </span>
+        </div>
+      </div>
+    </section>
 
-        
-        
-        
-        
-    <!-- ++++++++++++++++++++++  Video  +++++++++++++++++++++++++++++++      -->
-        
-        <div class="video-container">
-        <section id="videos" class="videos">
+    <!-- ── Awards ── -->
+    <section id="awards" class="section">
+      <div class="section-label">Awards &amp; Grants</div>
 
-        
-        <h1 style="color:#eee"> Keynotes, Talks, and Presentations </h1> 
-        <p style="color: white; text-align: center">(Arranged in playlists)</p>
-        <div class="video-container">
-          
-        <!-- A playlist   -->
+      <div class="award-row">
+        <div class="award-icon">🏆</div>
+        <div>
+          <div class="award-title">Best Presenter Award</div>
+          <div class="award-meta">IEEE ICFTSS · Aug 2024 · Kuala Lumpur, Malaysia</div>
+        </div>
+      </div>
+
+      <div class="award-row">
+        <div class="award-icon">🏅</div>
+        <div>
+          <div class="award-title">Postdoctoral Research Award (PDRA) - ~$200,000</div>
+          <div class="award-meta">
+            <a href="https://qrdi.org.qa/en-us/Scientific-Research" target="_blank">Qatar National Research Fund (QNRF)</a> · 2022
+          </div>
+        </div>
+      </div>
+
+      <div class="award-row">
+        <div class="award-icon">🎓</div>
+        <div>
+          <div class="award-title">Graduate Assistant Scholarship - ~$40,000</div>
+          <div class="award-meta">Qatar University Office of Research &amp; Graduate Studies · 2014</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Projects ── -->
+    <section id="projects" class="section">
+      <div class="section-label">Applied AI Projects</div>
+
+      <div class="project-list">
+
+        <div class="proj-item">
+          <div class="proj-num">01</div>
+          <div class="proj-content">
+            <div class="proj-title">LASIK: Loss Prevention &amp; Theft Prediction at Amazon <span class="proj-year"></span></div>
+            <p class="proj-desc">Designed and shipped loss prevention and theft prediction ML pipelines in production for Amazon's middle-mile supply chain. Covered the full lifecycle from data pipeline to model training and deployment, collaborating directly with operations teams to define workflow requirements and track business outcomes.</p>
+            <div class="tag-strip">
+              <span class="tag">AWS SageMaker</span>
+              <span class="tag">AWS Redshift</span>
+              <span class="tag">MLOps</span>
+              <span class="tag">Python</span>
+              <span class="tag">Production ML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-num">02</div>
+          <div class="proj-content">
+            <div class="proj-title">Crowd Density Estimation (FIFA World Cup 2022) <span class="proj-year"></span></div>
+            <p class="proj-desc">Real-time crowd counting system using PTZ cameras and custom CNN models, deployed on NVIDIA Jetson Nano with TensorRT for low-latency inference. Enabled queue estimation at metro entry points for crowd control via live dashboards, as part of QMIC's Falcon-I smart city platform.</p>
+            <div class="tag-strip">
+              <span class="tag">Custom CNN</span>
+              <span class="tag">Jetson Nano</span>
+              <span class="tag">TensorRT</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Falcon-I</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-num">03</div>
+          <div class="proj-content">
+            <div class="proj-title">RoadScans: Urban Anomaly Detection, Lusail Smart City <span class="proj-year"></span></div>
+            <p class="proj-desc">AI system to detect faulty street pole lights in real-time in Lusail smart city. Custom-annotated dataset from local field deployments. Inference optimized for Jetson deployment and integrated into a maintenance vehicle for city surveillance.</p>
+            <div class="tag-strip">
+              <span class="tag">YOLO</span>
+              <span class="tag">Jetson</span>
+              <span class="tag">MLOps</span>
+              <span class="tag">Custom Dataset</span>
+              <span class="tag">Edge AI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-num">04</div>
+          <div class="proj-content">
+            <div class="proj-title">DroneCMS: Multi-modal Drone Detection System <span class="proj-year"></span></div>
+            <p class="proj-desc">Prototype multi-modal drone detection using ReSpeaker mic array, Ettus USRP RF sensors, and Jetson Xavier for vision. Combined acoustic, RF, and visual modalities via early fusion. Integrated attribute-based encryption (ABE) for secure drone alert propagation.</p>
+            <div class="tag-strip">
+              <span class="tag">Sensor Fusion</span>
+              <span class="tag">RF / USRP</span>
+              <span class="tag">Acoustic</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">ABE</span>
+              <span class="tag">Jetson Xavier</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-num">05</div>
+          <div class="proj-content">
+            <div class="proj-title">RoadSense: Road Surface Condition Monitoring <span class="proj-year"></span></div>
+            <p class="proj-desc">Collected and fused accelerometer, gyroscope, GPS, video, and CAN bus data to build a real-time classifier for road surface conditions (potholes, bumps). Deployed ML models on Android; integrated output with OpenStreetMap via a cloud dashboard.</p>
+            <div class="tag-strip">
+              <span class="tag">Sensor Fusion</span>
+              <span class="tag">Android</span>
+              <span class="tag">OpenStreetMap</span>
+              <span class="tag">Cloud Dashboard</span>
+              <span class="tag">Real-time ML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-item">
+          <div class="proj-num">06</div>
+          <div class="proj-content">
+            <div class="proj-title">NoiseRADAR: Acoustic Noisy Vehicle Detection <span class="proj-year"></span></div>
+            <p class="proj-desc">Acoustic-based system to detect and localize noisy vehicles using signal processing (ZCR, RMS, FFT) and ML models (SVM, RF, LSTM). Integrated a multi-microphone array with GCC-PHAT and SRP-PHAT algorithms for sound source localization in real road environments.</p>
+            <div class="tag-strip">
+              <span class="tag">Signal Processing</span>
+              <span class="tag">LSTM</span>
+              <span class="tag">SVM / RF</span>
+              <span class="tag">GCC-PHAT</span>
+              <span class="tag">Microphone Array</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Publications ── -->
+    <section id="publications" class="section">
+      <div class="section-label">Selected Publications</div>
+
+      <div class="pub-meta-bar">
+        <span class="pub-count">60+ peer-reviewed articles &amp; book chapters</span>
+        <a class="pub-link" href="https://scholar.google.com/citations?user=BgUrPm8AAAAJ&hl=en" target="_blank">
+          <i class="ai ai-google-scholar"></i> Full list on Google Scholar
+        </a>
+      </div>
+
+      <ul class="pub-list">
+
+        <li class="pub-item">
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <span class="pub-title"><a href="" target="_blank">Revisiting the Intrusion Detection in In-Vehicle Networks</a></span>
+            <div class="pub-authors"><strong>M. A. Khan</strong>, H. Menouar and M. Abdallah</div>
+            <div class="pub-venue">IEEE Trans. on Intelligent Transportation Systems (T-ITS)</div>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://ieeexplore.ieee.org/document/11195876" target="_blank">Trust and Privacy in Commercial and Recreational Drone Navigation</a></span>
+            <div class="pub-authors"><strong>M. A. Khan</strong> and H. Menouar</div>
+            <div class="pub-venue">IEEE Transactions on Technology and Society</div>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://ieeexplore.ieee.org/document/11195870" target="_blank">LLM-Driven Real-Time Threat Prediction and Response for Internet of Energy (IoE)</a></span>
+            <div class="pub-authors"><strong>M. A. Khan</strong></div>
+            <div class="pub-venue">IEEE Network</div>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-year">2025</span>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://www.nature.com/articles/s41598-025-90750-5" target="_blank">Crowd Counting at the Edge using Weighted Knowledge Distillation</a></span>
+            <div class="pub-authors"><strong>M. A. Khan</strong>, H. Menouar, R. Hamila, and A. Abu-Dayya</div>
+            <div class="pub-venue">Nature Scientific Reports</div>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-year">2024</span>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://ieeexplore.ieee.org/document/10777298" target="_blank">LiDAR in Connected and Autonomous Vehicles - Perception, Threat Model, and Defense</a></span>
+            <div class="pub-authors"><strong>M. A. Khan</strong>, H. Menouar, M. Abdallah, and A. Abu-Dayya</div>
+            <div class="pub-venue">IEEE Transactions on Intelligent Vehicles</div>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-year">2024</span>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/10582439/" target="_blank">Deep Learning in the Fast Lane: Advanced Intrusion Detection for Intelligent Vehicle Networks</a></span>
+            <div class="pub-authors">M. Almehdhar, A. Albaseer, <strong>M. A. Khan</strong>, M. Abdallah, H. Menouar et al.</div>
+            <div class="pub-venue">IEEE Open Journal of Vehicular Technology</div>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-year">2024</span>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://www.researchgate.net/publication/378350143" target="_blank">Object Depth and Size Estimation using Stereo-Vision and Integration with SLAM</a></span>
+            <div class="pub-authors">L. Hamad, <strong>M. A. Khan</strong>, and A. Mohamed</div>
+            <div class="pub-venue">IEEE Sensors Letters &nbsp;<a href="https://www.youtube.com/watch?v=nusI6tA9eSk" target="_blank">video</a></div>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-year">2023</span>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://arxiv.org/pdf/2302.05374" target="_blank">LCDnet: A Lightweight Crowd Density Estimation Model for Real-time Video Surveillance</a></span>
+            <div class="pub-authors"><strong>M. A. Khan</strong>, H. Menouar, and R. Hamila</div>
+            <div class="pub-venue">Journal of Real-Time Image Processing</div>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-year">2022</span>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://ieeexplore.ieee.org/document/9765451" target="_blank">On the Detection of Unauthorized Drones - Techniques and Future Perspectives: A Review</a></span>
+            <div class="pub-authors"><strong>M. A. Khan</strong>, H. Menouar, A. Eldeeb, A. Abu-Dayya, and F. D. Salim</div>
+            <div class="pub-venue">IEEE Sensors Journal</div>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-year">2022</span>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://ieeexplore.ieee.org/document/9870035" target="_blank">Distributed Inference in Resource-Constrained IoT for Real-Time Video Surveillance</a></span>
+            <div class="pub-authors"><strong>M. A. Khan</strong>, R. Hamila, A. Erbad, and M. Gabbouj</div>
+            <div class="pub-venue">IEEE Systems Journal</div>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-year">2022</span>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://ieeexplore.ieee.org/document/9968084/" target="_blank">CODE: Computation Offloading in D2D-Edge System for Video Streaming</a></span>
+            <div class="pub-authors"><strong>M. A. Khan</strong>, A. Erbad, R. Hamila and E. Baccour</div>
+            <div class="pub-venue">IEEE Systems Journal</div>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-year">2022</span>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://arxiv.org/pdf/2111.13879" target="_blank">ML-based Handover Prediction and AP Selection in Cognitive Wi-Fi Networks</a></span>
+            <div class="pub-authors"><strong>M. A. Khan</strong>, R. Hamila, A. Gastli, S. Kiranyaz, and N. A. Al-Emadi</div>
+            <div class="pub-venue">Journal of Network and Systems Management</div>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-year">2020</span>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1084804519303595" target="_blank">Real-time Throughput Prediction for Cognitive Wi-Fi Networks</a></span>
+            <div class="pub-authors"><strong>M. A. Khan</strong>, R. Hamila, N. A. Al-Emadi, M. S. Kiranyaz, and M. Gabbouj</div>
+            <div class="pub-venue">Journal of Network and Computer Applications</div>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-year">2019</span>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://ieeexplore.ieee.org/abstract/document/8892459" target="_blank">Optimal Group Formation in Dense Wi-Fi Direct Networks for Content Distribution</a></span>
+            <div class="pub-authors"><strong>M. A. Khan</strong>, R. Hamila and M. O. Hasna</div>
+            <div class="pub-venue">IEEE Access</div>
+          </div>
+        </li>
+
+        <li class="pub-item">
+          <span class="pub-year">2019</span>
+          <div class="pub-body">
+            <span class="pub-title"><a href="https://ieeexplore.ieee.org/document/8712495" target="_blank">A Novel UAV-Aided Network Architecture Using Wi-Fi Direct</a></span>
+            <div class="pub-authors"><strong>M. A. Khan</strong>, R. Hamila, M. S. Kiranyaz, and M. Gabbouj</div>
+            <div class="pub-venue">IEEE Access</div>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- ── Talks ── -->
+    <section id="talks" class="section">
+      <div class="section-label">Talks &amp; Presentations</div>
+
+      <div class="talk-list">
+
+        <div class="talk-item">
+          <span class="talk-badge tb-invited">Invited</span>
+          <div class="talk-text">"Intelligent Edge for 6G and Massive IoT Systems" at <a href="https://mcsoc-forum.org/site/" target="_blank">IEEE MCSoC</a> 2025</div>
+        </div>
+
+        <div class="talk-item">
+          <span class="talk-badge tb-keynote">Keynote</span>
+          <div class="talk-text">"Progress in Visual Crowd Counting Methods" at <a href="https://www.ic-vprd.org/" target="_blank">ICVPRD</a> 2025</div>
+        </div>
+
+        <div class="talk-item">
+          <span class="talk-badge tb-keynote">Keynote</span>
+          <div class="talk-text">"Revisiting Visual Crowd Counting" at <a href="http://www.iwasgi.com/" target="_blank">ASGT</a> 2025</div>
+        </div>
+
+        <div class="talk-item">
+          <span class="talk-badge tb-invited">Invited</span>
+          <div class="talk-text">"Real-time Crowd Counting at the Edge" at <a href="https://www.ipmv.org/" target="_blank">ACM IPMV</a> 2025 &nbsp;<a href="https://youtu.be/e33z6YsZ3cQ" target="_blank">[video]</a></div>
+        </div>
+
+        <div class="talk-item">
+          <span class="talk-badge tb-invited">Invited</span>
+          <div class="talk-text">"Intelligent Edge for 6G and Massive IoT Systems" at <a href="https://www.icngn.org/" target="_blank">IEEE ICNGN</a> 2024</div>
+        </div>
+
+        <div class="talk-item">
+          <span class="talk-badge tb-tutorial">Tutorial</span>
+          <div class="talk-text">"Mobile Edge Computing for Massive IoT Systems" at <a href="https://www.isncc-conf.org/home" target="_blank">IEEE ISNCC</a> 2023</div>
+        </div>
+
+        <div class="talk-item">
+          <span class="talk-badge tb-lecture">Lecture</span>
+          <div class="talk-text">"Network Slicing in 5G" - Qatar University, Doha, Qatar, Apr 2023</div>
+        </div>
+
+        <div class="talk-item">
+          <span class="talk-badge tb-invited">Invited</span>
+          <div class="talk-text">"Machine Learning in Mobile Computing" at <a href="https://youtu.be/D4B4jIuaHLA" target="_blank">MLIS 2020</a> &nbsp;<a href="https://youtu.be/D4B4jIuaHLA" target="_blank">[video]</a></div>
+        </div>
+
+      </div>
+
+      <p style="margin-top:1.2rem; font-size:0.82rem; color:var(--text-3);">
+        More on <a href="https://www.youtube.com/@asifk" target="_blank">YouTube</a>.
+      </p>
+    </section>
+
+    <!-- ── Teaching ── -->
+    <section id="teaching" class="section">
+      <div class="section-label">Teaching</div>
+
+      <div class="teaching-group">
+        <div class="tg-label">Courses</div>
+        <ul class="tg-list">
+          <li><strong>STAT-819</strong> Advanced Machine Learning (3 Cr.) - <a href="https://awkum.edu.pk/" target="_blank">AWKUM</a>, Mardan, Pakistan</li>
+          <li><strong>STAT-836</strong> Advanced Techniques and Logical Reasoning (3 Cr.) - <a href="https://awkum.edu.pk/" target="_blank">AWKUM</a>, Mardan, Pakistan</li>
+        </ul>
+      </div>
+
+      <div class="teaching-group">
+        <div class="tg-label">Thesis Supervision</div>
+        <ul class="tg-list">
+          <li>
+            <strong>Curriculum Learning for Monocular Depth Estimation in Disaster Management using UAVs</strong><br>
+            Jorge Turriate, Master M2 EEEA MMVAI, <a href="https://www.univ-evry.fr/accueil.html" target="_blank">Université d'Évry Paris-Saclay</a>, France (2025)
+          </li>
+          <li>
+            <strong>M.Phil Thesis</strong>, Samiullah, <a href="https://awkum.edu.pk/" target="_blank">AWKUM</a>, Mardan, Pakistan (2023–24)
+          </li>
+        </ul>
+      </div>
+
+      <div class="teaching-group">
+        <div class="tg-label">Mentorships</div>
+        <ul class="tg-list">
+          <li><strong>Mentor</strong> at <a href="https://gain.uos.de/" target="_blank">GAIN Mentorship Program</a>, Germany, 2024/25</li>
+          <li><strong>Summer Internship Supervisor</strong> at Qatar Mobility Innovations Center (QMIC), 2022–25</li>
+          <li><strong>Research Mentor</strong> at Qatar University Young Scientist Center (QUYSC), 2023–24</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── Service ── -->
+    <section id="service" class="section">
+      <div class="section-label">Service</div>
+
+      <div class="service-group">
+        <div class="sg-label">Editorial</div>
+        <ul class="sg-list">
+          <li><span>Associate Editor, IEEE Signal Processing Letters (SPL) - Aug 2025–Present</span></li>
+          <li><span>Associate Editor, IEEE TNNLS - Jan 2025–Present</span></li>
+          <li><span>Associate Editor, IEEE Trans. Consumer Electronics (TCE) - Jul 2024 – Jun 2026</span></li>
+          <li><span>Associate Editor, IEEE Trans. Technology and Society (TTS) - May 2024 – May 2026</span></li>
+          <li><span>Associate Editor, IEEE Future Directions Newsletter - Apr 2021–Present</span></li>
+        </ul>
+      </div>
+
+      <div class="service-group">
+        <div class="sg-label">Grant Review</div>
+        <ul class="sg-list">
+          <li><span>Grant Evaluator, <a href="https://www.fwo.be/en/" target="_blank">Research Foundation Flanders (FWO)</a>, Belgium</span></li>
+          <li><span>Expert Reviewer, <a href="https://www.esf.org/" target="_blank">European Science Foundation</a></span></li>
+        </ul>
+      </div>
+
+      <div class="service-group">
+        <div class="sg-label">Technical Program Committees</div>
+        <ul class="sg-list">
+          <li><span>Program  Technical Committee Chair - IEEE ICFTSS 2024, CompAuto 2023–24, CRET 2024</span></li>
+          <li><span>Tutorial Chair,  <a href="https://ieeegem.org/" target="_blank">IEEE GEM</a> 2023</span></li>
+          <li><span>Workshop Chair, IOROL 2025, 6GIoTT 2022</span></li>
+          <li><span>Area Chair, IJCNN 2025</span></li>
+          <li><span>PC Member (ML/AI), NeurIPS 2024, WACV 2025, IJCNN 2025, IEEE BigData 2020, CVIPPR 2024</span></li>
+          <li><span>PC Member (Comms), IEEE ICC 2021–25, Globecom 2024–25, VTC 2023, CCNC 2021–25, ICCE 2025–26, ICASSP 2020 &amp; 2024, and more</span></li>
+        </ul>
+      </div>
+
+      <div class="service-group">
+        <div class="sg-label">Journal Review</div>
+        <ul class="sg-list">
+          <li><span><strong>IEEE Transactions:</strong> TAI, TNNLS, TMLCN, TMC, TVT, T-ITS, TETC, SMC, TCE, TCSVT, TDSC, TII</span></li>
+          <li><span><strong>IEEE Journals:</strong> COMST, COMMAG, OJCOMS, OJVT, WCM, WCL, IOT, ISJ, Sensors, Access</span></li>
+          <li><span><strong>Other:</strong> Nature Scientific Reports, IJCV, ACM Computing Surveys, FGCS, IET Communications</span></li>
+          <li><span>Verified reviews: <a href="https://www.webofscience.com/wos/author/record/G-2629-2013" target="_blank">Web of Science</a></span></li>
+        </ul>
+      </div>
+
+      <div class="service-group">
+        <div class="sg-label">IEEE Technical Committees</div>
+        <ul class="sg-list">
+          <li><span>IEEE VTS <a href="https://vtsociety.org/committee/committee-autonomous-vehicles" target="_blank">Committee on Autonomous Vehicles</a></span></li>
+          <li><span>IEEE CTSoc <a href="https://ctsoc.ieee.org/technical/technical-committees/iot-tc.html" target="_blank">Internet of Things, Edge Computing (IOT)</a></span></li>
+          <li><span>IEEE CTSoc <a href="https://ctsoc.ieee.org/technical/technical-committees/mda-tc.html" target="_blank">Machine Learning, Deep Learning &amp; AI in CE (MDA)</a></span></li>
+          <li><span>IEEE CTSoc Consumer Communications Networks and Connectivity (CCN)</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── Videos ── -->
+    <section id="videos" class="section">
+      <div class="section-label">Keynotes &amp; Talks on Video</div>
+      <div class="video-grid">
         <iframe src="https://www.youtube.com/embed/videoseries?list=PLZrZAENtNBrlV_YDVfKpcKEZfFvK3KCZx"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-        <!-- A playlist   -->
-        <iframe src="https://www.youtube.com/embed/videoseries?list=PLZrZAENtNBrkHmXEFzI_5XYKpeSI8fBq3" 
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-        <!-- A playlist   -->
-        
-        
-        <!--  A single video-->
-<!--
-        <iframe src="https://youtu.be/embed/D4B4jIuaHLA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-        <iframe src="https://youtu.be/embed/e33z6YsZ3cQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-        <iframe src="https://youtu.be/embed/ME0kdHTzTXI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-        <iframe src="https://youtu.be/embed/UCOfL_-NGik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-        <iframe src="https://youtu.be/embed/wXzAMASPMWU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-        <iframe src="https://youtu.be/embed/_7ouRmpK7Rw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
--->
-            
-        
-        </div> 
-        </section>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-    </main>
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen title="Talks playlist 1"></iframe>
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLZrZAENtNBrkHmXEFzI_5XYKpeSI8fBq3"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen title="Talks playlist 2"></iframe>
+      </div>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Muhammad Asif Khan. All rights reserved.</p>
+      &copy; 2025 Muhammad Asif Khan - asifk@ieee.org
     </footer>
-    
-    
-    <script>
-        function toggleMenu() {
-        const nav = document.querySelector('nav');
-        nav.classList.toggle('active'); // Toggle the 'active' class
-        }
-    </script>
-    
+
+  </main>
+</div><!-- /.layout -->
+
+<script>
+(function () {
+  const html  = document.documentElement;
+  const btn   = document.getElementById('themeToggle');
+  const lbl   = document.getElementById('toggleLabel');
+
+  function applyTheme(dark) {
+    html.classList.toggle('dark', dark);
+    lbl.textContent = dark ? 'Dark mode' : 'Light mode';
+  }
+
+  // Init from storage or OS preference
+  const saved = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  applyTheme(saved === 'dark' || (!saved && prefersDark));
+
+  btn.addEventListener('click', () => {
+    const isDark = html.classList.toggle('dark');
+    lbl.textContent = isDark ? 'Dark mode' : 'Light mode';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.sid-nav a');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`.sid-nav a[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+
+  sections.forEach(s => observer.observe(s));
+})();
+</script>
+
 </body>
 </html>
